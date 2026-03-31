@@ -3,10 +3,10 @@
     admin:
       email: "admin@gmail.com"
       name: "Administrateur"
-      password: "$2b$12$YourHashedPasswordHere..." # Collez le hash ici
+      password: "abc123"
 cookie:
   expiry_days: 30
-  key: "signature_unique_123"
+  key: "signature_123"
   name: "auth_cookie"
 preauthorized:
   emails:
