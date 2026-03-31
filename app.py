@@ -1,37 +1,57 @@
 import streamlit as st
+import streamlit_authenticator as stauth
+import yaml
+import pandas as pd
+from yaml.loader import SafeLoader
 
-# 1. Test de configuration
-try:
-    st.set_page_config(page_title="Test Debug", layout="centered")
-    st.success("Configuration de la page : OK")
-except Exception as e:
-    st.error(f"Erreur de configuration : {e}")
+# Configuration de la page
+st.set_page_config(page_title="Dashboard Expert", layout="wide")
 
-# 2. Test de l'état de session (Session State)
-if 'logged_in' not in st.session_state:
-    st.session_state['logged_in'] = False
-    st.info("Initialisation de la session : OK")
+# 1. Chargement de la configuration d'authentification
+with open('config.yaml') as file:
+    config = yaml.load(file, Loader=SafeLoader)
 
-# 3. Formulaire de login simplifié pour diagnostic
-st.title("Interface de Connexion")
+# 2. Initialisation de l'authentificateur
+authenticator = stauth.Authenticate(
+    config['credentials'],
+    config['cookie']['name'],
+    config['cookie']['key'],
+    config['cookie']['expiry_days'],
+    config['preauthorized']
+)
 
-with st.form("login_form"):
-    user = st.text_input("Utilisateur")
-    pw = st.text_input("Mot de passe", type="password")
-    submit = st.form_submit_button("Se connecter")
+# 3. Formulaire de connexion
+name, authentication_status, username = authenticator.login('Connexion', 'main')
 
-    if submit:
-        # Vérifie si les variables sont bien capturées
-        st.write(f"Tentative de connexion pour : {user}")
-        if user == "admin" and pw == "admin": # Test simple
-            st.session_state['logged_in'] = True
-            st.success("Authentification réussie !")
-        else:
-            st.error("Identifiants incorrects (Test)")
-
-# 4. Affichage des erreurs système masquées
-import sys
-with st.expander("Voir les détails techniques du serveur"):
-    st.write("Version Python:", sys.version)
-    st.write("Arguments système:", sys.argv)
+# 4. Logique d'affichage
+if authentication_status:
+    # Barre latérale avec bouton de déconnexion et infos
+    authenticator.logout('Déconnexion', 'sidebar')
+    st.sidebar.title(f"Bienvenue {name}")
     
+    st.title("📊 Tableau de Bord Expert")
+    
+    # Chargement et affichage des données
+    try:
+        df = pd.read_csv('base_expert.csv')
+        
+        # Filtres simples
+        st.subheader("Vos Tâches")
+        status_filter = st.multiselect("Filtrer par Statut", options=df['Statut'].unique(), default=df['Statut'].unique())
+        
+        filtered_df = df[df['Statut'].isin(status_filter)]
+        
+        # Affichage du tableau de données
+        st.dataframe(filtered_df, use_container_width=True)
+        
+        # Petit graphique récapitulatif
+        st.subheader("Répartition par Catégorie")
+        st.bar_chart(df['Catégorie'].value_counts())
+        
+    except Exception as e:
+        st.error(f"Erreur lors du chargement de la base de données : {e}")
+
+elif authentication_status == False:
+    st.error('Utilisateur ou mot de passe incorrect.')
+elif authentication_status == None:
+    st.warning('Veuillez entrer vos identifiants.')
