@@ -1,0 +1,197 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[french]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\usepackage{array}
+\usepackage{xcolor}
+\usepackage{colortbl}
+\usepackage{tabularx}
+\usepackage{fancyhdr}
+
+% ==================== CONFIGURATION ====================
+\geometry{a4paper, margin=1.5cm, top=2cm, bottom=2cm}
+\setlength{\parindent}{0pt}
+\setlength{\headheight}{15pt}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\textbf{Planning Quotidien}}
+\fancyhead[R]{\textbf{Stage Ynion}}
+\fancyfoot[C]{\thepage}
+
+% ==================== COULEURS ====================
+\definecolor{stagecolor}{RGB}{41,128,185}
+\definecolor{prierecolor}{RGB}{142,68,173}
+\definecolor{reposcolor}{RGB}{127,140,141}
+\definecolor{formationcolor}{RGB}{39,174,96}
+
+% ==================== COMMANDES ====================
+\newcommand{\stage}[1]{\textcolor{stagecolor}{\textbf{#1}}}
+\newcommand{\priere}[1]{\textcolor{prierecolor}{\textbf{#1}}}
+\newcommand{\repos}[1]{\textcolor{reposcolor}{\textbf{#1}}}
+\newcommand{\formation}[1]{\textcolor{formationcolor}{\textbf{#1}}}
+
+% ==================== DOCUMENT ====================
+\begin{document}
+
+% ==================== PAGE DE GARDE ====================
+\begin{titlepage}
+    \centering
+    \vspace*{3cm}
+    {\Huge \textbf{PLANNING QUOTIDIEN}}\\[0.5cm]
+    {\Large Stage Ynion}\\[0.3cm]
+    {\large 8 Semaines}\\[1.5cm]
+    \rule{0.6\textwidth}{0.5pt}\\[0.5cm]
+    \vfill
+    {\small Intégration : Prières, Repas (1h30), Coucher 00h30}
+\end{titlepage}
+
+\newpage
+
+% ==================== PLANNING ====================
+\section*{Planning Type}
+
+\begin{table}[h]
+\centering
+\small
+\begin{tabularx}{\textwidth}{|>{\hsize=0.8\hsize}X|>{\hsize=2.2\hsize}X|}
+\hline
+\rowcolor{gray!20}
+\textbf{Horaire} & \textbf{Activité} \\
+\hline
+\multicolumn{2}{|c|}{\cellcolor{gray!10}\textbf{MATINEE}} \\
+\hline
+06:00-06:30 & \priere{Priere Fajr} - Reveil, priere, petit-dejeuner \\
+06:30-07:00 & Preparation - Sac, documents, feuilles de collecte \\
+07:00-07:15 & Objectifs - Definir les 3 priorites du jour \\
+\hline
+\multicolumn{2}{|c|}{\cellcolor{gray!10}\textbf{STAGE}} \\
+\hline
+07:15-12:00 & \stage{Stage - Terrain} - Chronometrages, observations \\
+12:00-12:30 & \priere{Priere Dohr} \\
+12:30-13:30 & \repos{Dejeuner} - Repas, pause \\
+13:30-18:00 & \stage{Stage - Analyse} - Traitement donnees, livrables \\
+\hline
+\multicolumn{2}{|c|}{\cellcolor{gray!10}\textbf{SOIREE}} \\
+\hline
+18:00-18:30 & \priere{Priere Maghreb} - Retour domicile \\
+18:30-19:30 & \repos{Pause} - Relaxation, famille \\
+19:30-21:00 & \repos{Cuisine + Diner} - Preparation et repas (1h30) \\
+21:00-21:15 & \priere{Priere Icha} \\
+\hline
+\multicolumn{2}{|c|}{\cellcolor{gray!10}\textbf{DEVELOPPEMENT}} \\
+\hline
+21:15-22:00 & \stage{Consolidation Stage} - Traitement final donnees \\
+22:00-22:15 & \repos{Pause} - Hydratation, etirements \\
+22:15-23:15 & \formation{Formation} - Excel / Python / IA / SAP \\
+23:15-23:30 & \formation{Langues} - Anglais (vocabulaire technique) \\
+23:30-23:45 & Lecture - Lean / Code / Cyber \\
+\hline
+\multicolumn{2}{|c|}{\cellcolor{gray!10}\textbf{CLOTURE}} \\
+\hline
+23:45-00:15 & Preparation coucher - Toilette, journal de bord \\
+00:15-00:30 & Invocations du soir \\
+00:30 & \textbf{Coucher} - Sommeil (5h30-6h) \\
+\hline
+\end{tabularx}
+\end{table}
+
+\newpage
+
+% ==================== INDICATEURS ====================
+\section*{Indicateurs de Performance}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|l|c|c|}
+\hline
+\rowcolor{gray!20}
+\textbf{Indicateur} & \textbf{Cible} & \textbf{Alerte} \\
+\hline
+Taux completion stage & $\ge$ 85\% & $<$ 70\% \\
+Temps formation effectif & $\ge$ 55 min & $<$ 45 min \\
+Qualite sommeil & 5h30 - 6h & $<$ 5h \\
+Respect planning & $\ge$ 80\% & $<$ 60\% \\
+\hline
+\end{tabular}
+\end{table}
+
+\newpage
+
+% ==================== JOURNAL DE BORD ====================
+\section*{Journal de Bord Quotidien}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|p{3cm}|p{11cm}|}
+\hline
+\rowcolor{gray!20}
+\textbf{Champ} & \textbf{Contenu} \\
+\hline
+Date & \underline{\hspace{10cm}} \\
+\hline
+Objectifs & 1. \underline{\hspace{8cm}} \\
+& 2. \underline{\hspace{8cm}} \\
+& 3. \underline{\hspace{8cm}} \\
+\hline
+Realisations & \underline{\hspace{11cm}} \\
+\hline
+Difficultes & \underline{\hspace{11cm}} \\
+\hline
+KPI & Stage \_\_\_\% \quad Formation \_\_\_min \quad Sommeil \_\_\_h \\
+\hline
+\end{tabular}
+\end{table}
+
+\newpage
+
+% ==================== REVUE HEBDOMADAIRE ====================
+\section*{Revue Hebdomadaire}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|c|p{9cm}|c|}
+\hline
+\rowcolor{gray!20}
+\textbf{\#} & \textbf{Verification} & \textbf{Statut} \\
+\hline
+1 & Livrables stage complets & $\square$ \\
+2 & Formation technique (5h) & $\square$ \\
+3 & Anglais (5 sessions) & $\square$ \\
+4 & Lectures (5 sessions) & $\square$ \\
+5 & Planning respecte ($\ge$80\%) & $\square$ \\
+6 & Journal de bord rempli & $\square$ \\
+\hline
+\end{tabular}
+\end{table}
+
+\newpage
+
+% ==================== RECOMMANDATIONS ====================
+\section*{Recommandations}
+
+\begin{enumerate}
+    \item \textbf{Theorie des Contraintes :} Le stage est le goulot. Priorite absolue aux livrables.
+    
+    \item \textbf{Pareto (80/20) :} 80\% de la valeur vient de VSM, TRS, equilibrage.
+    
+    \item \textbf{PDCA :} Plan (dimanche) - Do (execution) - Check (23h45) - Act (ajustements)
+    
+    \item \textbf{SMED personnel :} Reduire les transitions entre activites (max 5 min)
+    
+    \item \textbf{Journal de bord :} 5 minutes chaque soir
+\end{enumerate}
+
+\vspace{1cm}
+
+\begin{center}
+\fbox{\parbox{0.8\textwidth}{\centering \textbf{Conclusion} \\
+Ce planning integre prieres, repas (1h30), coucher 00h30 \\
+et priorise les actions pour reussir le stage.}}
+\end{center}
+
+\begin{center}
+\textbf{Version :} 1.0 \quad | \quad \textbf{Debut :} Semaine 1
+\end{center}
+
+\end{document}

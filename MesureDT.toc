@@ -1,0 +1,533 @@
+\babel@toc {french}{}\relax 
+\contentsline {part}{Partie 1 : Introduction}{2}{part*.1}%
+\contentsline {section}{\numberline {1}Définition et objectifs de la mesure du travail}{2}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Définition}{2}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Objectifs de la mesure du travail}{2}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Productivité industrielle}{2}{subsection.1.3}%
+\contentsline {section}{\numberline {2}Place du chronométrage dans l'étude du travail}{3}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Les deux piliers de l'étude du travail}{3}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Objectifs de l'étude des méthodes}{3}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Les techniques de mesure du travail}{3}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Place du chronométrage}{3}{subsection.2.4}%
+\contentsline {section}{\numberline {3}Historique et évolution : de Taylor aux temps prédéterminés}{4}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Frederick Winslow Taylor (1856-1915)}{4}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Frank et Lillian Gilbreth (années 1920)}{4}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}L'avènement des temps prédéterminés (1940-1970)}{4}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Tableau chronologique synthétique}{5}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Évolution contemporaine}{5}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.6}Organisation du cours}{5}{subsection.3.6}%
+\contentsline {subsection}{\numberline {3.7}Synthèse de l'introduction}{6}{subsection.3.7}%
+\contentsline {part}{Partie 1 : Fondamentaux et Prérequis}{6}{part*.2}%
+\contentsline {section}{\numberline {4}Le Temps dans l’Industrie}{6}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Unités de temps}{6}{subsection.4.1}%
+\contentsline {subsubsection}{\numberline {4.1.1}Unités classiques (système sexagésimal)}{6}{subsubsection.4.1.1}%
+\contentsline {subsubsection}{\numberline {4.1.2}Unités décimales}{6}{subsubsection.4.1.2}%
+\contentsline {subsubsection}{\numberline {4.1.3}Table de conversion}{7}{subsubsection.4.1.3}%
+\contentsline {subsection}{\numberline {4.2}Choix de l'unité}{7}{subsection.4.2}%
+\contentsline {subsubsection}{\numberline {4.2.1}Critères de sélection}{7}{subsubsection.4.2.1}%
+\contentsline {subsubsection}{\numberline {4.2.2}Exemple de choix}{7}{subsubsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.3}Types de temps}{7}{subsection.4.3}%
+\contentsline {subsubsection}{\numberline {4.3.1}Nature des temps (relation du temps à la ressource)}{8}{subsubsection.4.3.1}%
+\contentsline {subsubsection}{\numberline {4.3.2}Fréquence des temps (relation du temps à la production)}{8}{subsubsection.4.3.2}%
+\contentsline {subsubsection}{\numberline {4.3.3}Position des temps (relation des temps entre ressources)}{8}{subsubsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.4}Application pratique : Simogramme}{8}{subsection.4.4}%
+\contentsline {subsubsection}{\numberline {4.4.1}Définition et objectifs}{8}{subsubsection.4.4.1}%
+\contentsline {subsubsection}{\numberline {4.4.2}Étapes de construction d'un simogramme}{9}{subsubsection.4.4.2}%
+\contentsline {subsubsection}{\numberline {4.4.3}Exemple : Atelier de mise en plis de pantalon}{9}{subsubsection.4.4.3}%
+\contentsline {subsubsection}{\numberline {4.4.4}Analyse d'optimisation}{9}{subsubsection.4.4.4}%
+\contentsline {subsection}{\numberline {4.5}Synthèse}{10}{subsection.4.5}%
+\contentsline {section}{\numberline {5}Conditions Préalables au Chronométrage}{10}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Stabilisation de l'opérateur}{10}{subsection.5.1}%
+\contentsline {subsubsection}{\numberline {5.1.1}Caractéristiques d'un opérateur stabilisé}{10}{subsubsection.5.1.1}%
+\contentsline {subsubsection}{\numberline {5.1.2}La courbe d'apprentissage}{10}{subsubsection.5.1.2}%
+\contentsline {paragraph}{Loi de Wright (1963)}{10}{paragraph*.3}%
+\contentsline {paragraph}{Loi de Caquot}{11}{paragraph*.4}%
+\contentsline {subsubsection}{\numberline {5.1.3}Le taux d'aléas}{11}{subsubsection.5.1.3}%
+\contentsline {subsection}{\numberline {5.2}Stabilisation du poste de travail}{12}{subsection.5.2}%
+\contentsline {subsubsection}{\numberline {5.2.1}Aménagement du poste}{12}{subsubsection.5.2.1}%
+\contentsline {subsubsection}{\numberline {5.2.2}Alimentation du poste}{12}{subsubsection.5.2.2}%
+\contentsline {subsubsection}{\numberline {5.2.3}Travail correctement présenté et préparé}{12}{subsubsection.5.2.3}%
+\contentsline {subsubsection}{\numberline {5.2.4}Matières premières}{12}{subsubsection.5.2.4}%
+\contentsline {subsubsection}{\numberline {5.2.5}Machine en bon état de fonctionnement}{13}{subsubsection.5.2.5}%
+\contentsline {subsubsection}{\numberline {5.2.6}Grade de qualité bien défini}{13}{subsubsection.5.2.6}%
+\contentsline {subsubsection}{\numberline {5.2.7}Absence de dérangements extérieurs}{13}{subsubsection.5.2.7}%
+\contentsline {subsubsection}{\numberline {5.2.8}Choix de la plage horaire}{13}{subsubsection.5.2.8}%
+\contentsline {subsection}{\numberline {5.3}Stabilisation du chronométreur}{13}{subsection.5.3}%
+\contentsline {subsubsection}{\numberline {5.3.1}Compétences techniques}{13}{subsubsection.5.3.1}%
+\contentsline {subsubsection}{\numberline {5.3.2}Le jugement d'allure (JA)}{13}{subsubsection.5.3.2}%
+\contentsline {subsubsection}{\numberline {5.3.3}Échelles de jugement d'allure}{14}{subsubsection.5.3.3}%
+\contentsline {subsubsection}{\numberline {5.3.4}Tableau de correspondance entre échelles}{14}{subsubsection.5.3.4}%
+\contentsline {subsubsection}{\numberline {5.3.5}Éléments d'appréciation du jugement d'allure}{14}{subsubsection.5.3.5}%
+\contentsline {subsubsection}{\numberline {5.3.6}Méthode de Levelling}{15}{subsubsection.5.3.6}%
+\contentsline {subsubsection}{\numberline {5.3.7}Précision du chronométrage (bouclage)}{15}{subsubsection.5.3.7}%
+\contentsline {subsection}{\numberline {5.4}Qualités professionnelles du chronométreur}{15}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}Synthèse des conditions préalables}{16}{subsection.5.5}%
+\contentsline {part}{Partie 2 : Méthodologie de la Mesure}{16}{part*.5}%
+\contentsline {section}{\numberline {6}Les Différents Types de Chronométrage}{16}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Classification générale}{16}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Chronométrage sans jugement d'allure}{16}{subsection.6.2}%
+\contentsline {subsubsection}{\numberline {6.2.1}Chronométrage de diagnostic}{16}{subsubsection.6.2.1}%
+\contentsline {subsubsection}{\numberline {6.2.2}Chronométrage d'étude}{17}{subsubsection.6.2.2}%
+\contentsline {paragraph}{Calcul du taux d'aléas}{17}{paragraph*.6}%
+\contentsline {subsection}{\numberline {6.3}Chronométrage avec jugement d'allure}{18}{subsection.6.3}%
+\contentsline {subsubsection}{\numberline {6.3.1}Chronométrage de fixation de tâche}{18}{subsubsection.6.3.1}%
+\contentsline {paragraph}{Déroulement type :}{18}{paragraph*.7}%
+\contentsline {subsubsection}{\numberline {6.3.2}Chronométrage de confirmation}{18}{subsubsection.6.3.2}%
+\contentsline {subsubsection}{\numberline {6.3.3}Chronométrage de contrôle}{19}{subsubsection.6.3.3}%
+\contentsline {subsection}{\numberline {6.4}Récapitulatif des types de chronométrage}{19}{subsection.6.4}%
+\contentsline {subsection}{\numberline {6.5}Choix du type de chronométrage}{19}{subsection.6.5}%
+\contentsline {subsection}{\numberline {6.6}Exemple illustratif}{20}{subsection.6.6}%
+\contentsline {subsection}{\numberline {6.7}Synthèse}{20}{subsection.6.7}%
+\contentsline {section}{\numberline {7}Matériels et Préparation}{20}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Moyens matériels}{21}{subsection.7.1}%
+\contentsline {subsubsection}{\numberline {7.1.1}Le chronomètre}{21}{subsubsection.7.1.1}%
+\contentsline {paragraph}{Chronomètre électronique (digital)}{21}{paragraph*.8}%
+\contentsline {paragraph}{Chronomètre mécanique}{21}{paragraph*.9}%
+\contentsline {paragraph}{Autres moyens de mesure}{21}{paragraph*.10}%
+\contentsline {subsubsection}{\numberline {7.1.2}La planchette de chronométrage}{21}{subsubsection.7.1.2}%
+\contentsline {subsubsection}{\numberline {7.1.3}La feuille de relevés}{22}{subsubsection.7.1.3}%
+\contentsline {subsection}{\numberline {7.2}Position du chronométreur}{22}{subsection.7.2}%
+\contentsline {subsubsection}{\numberline {7.2.1}Position idéale}{22}{subsubsection.7.2.1}%
+\contentsline {subsection}{\numberline {7.3}Décomposition du travail}{22}{subsection.7.3}%
+\contentsline {subsubsection}{\numberline {7.3.1}Temps cycliques}{23}{subsubsection.7.3.1}%
+\contentsline {subsubsection}{\numberline {7.3.2}Temps fréquentiels}{23}{subsubsection.7.3.2}%
+\contentsline {subsubsection}{\numberline {7.3.3}Les "tops" de début et fin de séquence}{23}{subsubsection.7.3.3}%
+\contentsline {subsubsection}{\numberline {7.3.4}Nature des temps observés}{23}{subsubsection.7.3.4}%
+\contentsline {subsection}{\numberline {7.4}Définition du nombre d'observations}{24}{subsection.7.4}%
+\contentsline {subsubsection}{\numberline {7.4.1}Méthode par tableau}{24}{subsubsection.7.4.1}%
+\contentsline {subsubsection}{\numberline {7.4.2}Méthode statistique (formule)}{24}{subsubsection.7.4.2}%
+\contentsline {paragraph}{Valeurs typiques de t}{25}{paragraph*.11}%
+\contentsline {paragraph}{Calcul de la moyenne et de l'écart-type}{25}{paragraph*.12}%
+\contentsline {subsubsection}{\numberline {7.4.3}Exemples d'application}{25}{subsubsection.7.4.3}%
+\contentsline {subsubsection}{\numberline {7.4.4}Procédure pratique}{26}{subsubsection.7.4.4}%
+\contentsline {subsection}{\numberline {7.5}Synthèse}{26}{subsection.7.5}%
+\contentsline {section}{\numberline {8}Relevé des Temps}{26}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Procédure de chronométrage}{26}{subsection.8.1}%
+\contentsline {subsubsection}{\numberline {8.1.1}Préparation avant le relevé}{26}{subsubsection.8.1.1}%
+\contentsline {subsubsection}{\numberline {8.1.2}Chronométrage des temps cycliques}{27}{subsubsection.8.1.2}%
+\contentsline {subsubsection}{\numberline {8.1.3}Chronométrage des temps fréquentiels}{27}{subsubsection.8.1.3}%
+\contentsline {subsection}{\numberline {8.2}Gestion des irrégularités et valeurs aberrantes}{28}{subsection.8.2}%
+\contentsline {subsubsection}{\numberline {8.2.1}Définition}{28}{subsubsection.8.2.1}%
+\contentsline {subsubsection}{\numberline {8.2.2}Types d'irrégularités}{28}{subsubsection.8.2.2}%
+\contentsline {subsubsection}{\numberline {8.2.3}Traitement des irrégularités}{28}{subsubsection.8.2.3}%
+\contentsline {subsubsection}{\numberline {8.2.4}Détection des valeurs aberrantes}{28}{subsubsection.8.2.4}%
+\contentsline {subsubsection}{\numberline {8.2.5}Taux d'aléas}{29}{subsubsection.8.2.5}%
+\contentsline {subsection}{\numberline {8.3}Le bouclage (contrôle de précision)}{29}{subsection.8.3}%
+\contentsline {subsubsection}{\numberline {8.3.1}Définition}{29}{subsubsection.8.3.1}%
+\contentsline {subsubsection}{\numberline {8.3.2}Méthode du bouclage}{29}{subsubsection.8.3.2}%
+\contentsline {subsubsection}{\numberline {8.3.3}Calcul de l'écart de bouclage}{29}{subsubsection.8.3.3}%
+\contentsline {subsubsection}{\numberline {8.3.4}Tolérances de précision}{30}{subsubsection.8.3.4}%
+\contentsline {subsubsection}{\numberline {8.3.5}Exemple de bouclage}{30}{subsubsection.8.3.5}%
+\contentsline {subsubsection}{\numberline {8.3.6}Interprétation des écarts}{30}{subsubsection.8.3.6}%
+\contentsline {subsection}{\numberline {8.4}Enregistrement des résultats}{30}{subsection.8.4}%
+\contentsline {subsubsection}{\numberline {8.4.1}Feuille de relevés type}{30}{subsubsection.8.4.1}%
+\contentsline {subsection}{\numberline {8.5}Synthèse}{31}{subsection.8.5}%
+\contentsline {part}{Partie 3 : Traitement et Analyse des Données}{31}{part*.13}%
+\contentsline {section}{\numberline {9}Le Jugement d'Allure (JA)}{31}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Définition et objectif}{31}{subsection.9.1}%
+\contentsline {subsubsection}{\numberline {9.1.1}Définition}{31}{subsubsection.9.1.1}%
+\contentsline {subsubsection}{\numberline {9.1.2}Objectifs}{31}{subsubsection.9.1.2}%
+\contentsline {subsection}{\numberline {9.2}Échelles de jugement}{32}{subsection.9.2}%
+\contentsline {subsubsection}{\numberline {9.2.1}Échelle BTE (Bureau des Temps Élémentaires)}{32}{subsubsection.9.2.1}%
+\contentsline {subsubsection}{\numberline {9.2.2}Tableau de correspondance entre échelles}{32}{subsubsection.9.2.2}%
+\contentsline {subsection}{\numberline {9.3}Éléments d'appréciation}{33}{subsection.9.3}%
+\contentsline {subsubsection}{\numberline {9.3.1}L'habileté}{33}{subsubsection.9.3.1}%
+\contentsline {subsubsection}{\numberline {9.3.2}L'activité (vitesse)}{33}{subsubsection.9.3.2}%
+\contentsline {subsubsection}{\numberline {9.3.3}La régularité (stabilité)}{33}{subsubsection.9.3.3}%
+\contentsline {subsubsection}{\numberline {9.3.4}Les conditions de travail}{33}{subsubsection.9.3.4}%
+\contentsline {subsection}{\numberline {9.4}Méthodes d'évaluation}{33}{subsection.9.4}%
+\contentsline {subsubsection}{\numberline {9.4.1}Méthode directe}{33}{subsubsection.9.4.1}%
+\contentsline {subsubsection}{\numberline {9.4.2}Méthode de Levelling}{34}{subsubsection.9.4.2}%
+\contentsline {subsubsection}{\numberline {9.4.3}Grille de notation Levelling détaillée}{34}{subsubsection.9.4.3}%
+\contentsline {subsection}{\numberline {9.5}Enregistrement du jugement d'allure}{34}{subsection.9.5}%
+\contentsline {subsubsection}{\numberline {9.5.1}Moment de l'enregistrement}{34}{subsubsection.9.5.1}%
+\contentsline {subsubsection}{\numberline {9.5.2}Enregistrement sur la feuille de relevés}{35}{subsubsection.9.5.2}%
+\contentsline {subsubsection}{\numberline {9.5.3}Variabilité du jugement d'allure}{35}{subsubsection.9.5.3}%
+\contentsline {subsection}{\numberline {9.6}Conversion du temps observé en temps à l'allure 100}{35}{subsection.9.6}%
+\contentsline {subsubsection}{\numberline {9.6.1}Formule de conversion}{35}{subsubsection.9.6.1}%
+\contentsline {subsubsection}{\numberline {9.6.2}Exemples de conversion}{35}{subsubsection.9.6.2}%
+\contentsline {subsection}{\numberline {9.7}Étalonnage du chronométreur}{35}{subsection.9.7}%
+\contentsline {subsubsection}{\numberline {9.7.1}Nécessité de l'étalonnage}{35}{subsubsection.9.7.1}%
+\contentsline {subsubsection}{\numberline {9.7.2}Méthode d'étalonnage}{36}{subsubsection.9.7.2}%
+\contentsline {subsection}{\numberline {9.8}Qualités du chronométreur pour le jugement d'allure}{36}{subsection.9.8}%
+\contentsline {subsection}{\numberline {9.9}Synthèse}{36}{subsection.9.9}%
+\contentsline {section}{\numberline {10}Le Dépouillement des Mesures}{36}{section.10}%
+\contentsline {subsection}{\numberline {10.1}Calcul du temps observé moyen}{37}{subsection.10.1}%
+\contentsline {subsubsection}{\numberline {10.1.1}Définition}{37}{subsubsection.10.1.1}%
+\contentsline {subsubsection}{\numberline {10.1.2}Procédure de calcul}{37}{subsubsection.10.1.2}%
+\contentsline {subsection}{\numberline {10.2}Correction par le JA pour obtenir le temps de base}{37}{subsection.10.2}%
+\contentsline {subsubsection}{\numberline {10.2.1}Définition du temps de base}{37}{subsubsection.10.2.1}%
+\contentsline {subsubsection}{\numberline {10.2.2}Calcul pour chaque séquence}{37}{subsubsection.10.2.2}%
+\contentsline {subsubsection}{\numberline {10.2.3}Cas d'allures différentes par séquence}{38}{subsubsection.10.2.3}%
+\contentsline {subsection}{\numberline {10.3}Application des majorations (temps standard)}{38}{subsection.10.3}%
+\contentsline {subsubsection}{\numberline {10.3.1}Définition du temps standard}{38}{subsubsection.10.3.1}%
+\contentsline {subsubsection}{\numberline {10.3.2}Types de majorations}{38}{subsubsection.10.3.2}%
+\contentsline {subsubsection}{\numberline {10.3.3}Formules de calcul}{38}{subsubsection.10.3.3}%
+\contentsline {subsection}{\numberline {10.4}Utilisation de tables de coefficients}{39}{subsection.10.4}%
+\contentsline {subsubsection}{\numberline {10.4.1}Méthode traditionnelle (par nature de temps)}{39}{subsubsection.10.4.1}%
+\contentsline {subsubsection}{\numberline {10.4.2}Coefficients pour travaux manuels}{39}{subsubsection.10.4.2}%
+\contentsline {subsubsection}{\numberline {10.4.3}Coefficients pour machines à coudre}{39}{subsubsection.10.4.3}%
+\contentsline {subsubsection}{\numberline {10.4.4}Méthode simplifiée}{39}{subsubsection.10.4.4}%
+\contentsline {subsubsection}{\numberline {10.4.5}Exemple d'application des coefficients}{39}{subsubsection.10.4.5}%
+\contentsline {subsection}{\numberline {10.5}Application de la fréquence}{40}{subsection.10.5}%
+\contentsline {subsubsection}{\numberline {10.5.1}Définition}{40}{subsubsection.10.5.1}%
+\contentsline {subsubsection}{\numberline {10.5.2}Calcul du temps alloué avec fréquence}{40}{subsubsection.10.5.2}%
+\contentsline {subsubsection}{\numberline {10.5.3}Exemple d'application de la fréquence}{40}{subsubsection.10.5.3}%
+\contentsline {subsection}{\numberline {10.6}Calcul complet du temps standard}{40}{subsection.10.6}%
+\contentsline {subsubsection}{\numberline {10.6.1}Étapes de calcul}{40}{subsubsection.10.6.1}%
+\contentsline {subsubsection}{\numberline {10.6.2}Exemple complet}{41}{subsubsection.10.6.2}%
+\contentsline {subsection}{\numberline {10.7}Intégration des temps fréquentiels}{41}{subsection.10.7}%
+\contentsline {subsection}{\numberline {10.8}Synthèse}{41}{subsection.10.8}%
+\contentsline {part}{Partie 4 : Applications et Limites}{42}{part*.14}%
+\contentsline {section}{\numberline {11}Exploitation des Résultats}{42}{section.11}%
+\contentsline {subsection}{\numberline {11.1}Détermination du temps de cycle et de la production horaire}{42}{subsection.11.1}%
+\contentsline {subsubsection}{\numberline {11.1.1}Définition du temps de cycle}{42}{subsubsection.11.1.1}%
+\contentsline {subsubsection}{\numberline {11.1.2}Calcul de la production horaire}{42}{subsubsection.11.1.2}%
+\contentsline {subsubsection}{\numberline {11.1.3}Production horaire avec plusieurs machines}{42}{subsubsection.11.1.3}%
+\contentsline {subsection}{\numberline {11.2}Calcul des besoins en personnel et des coûts}{43}{subsection.11.2}%
+\contentsline {subsubsection}{\numberline {11.2.1}Calcul des besoins en effectifs}{43}{subsubsection.11.2.1}%
+\contentsline {subsubsection}{\numberline {11.2.2}Calcul des coûts de revient}{43}{subsubsection.11.2.2}%
+\contentsline {subsubsection}{\numberline {11.2.3}Calcul de la performance}{43}{subsubsection.11.2.3}%
+\contentsline {subsection}{\numberline {11.3}Équilibrage des lignes}{44}{subsection.11.3}%
+\contentsline {subsubsection}{\numberline {11.3.1}Définition}{44}{subsubsection.11.3.1}%
+\contentsline {subsubsection}{\numberline {11.3.2}Objectifs de l'équilibrage}{44}{subsubsection.11.3.2}%
+\contentsline {subsubsection}{\numberline {11.3.3}Méthode d'équilibrage}{44}{subsubsection.11.3.3}%
+\contentsline {subsection}{\numberline {11.4}Utilisation du simogramme pour l'équilibrage}{44}{subsection.11.4}%
+\contentsline {subsubsection}{\numberline {11.4.1}Définition du simogramme}{44}{subsubsection.11.4.1}%
+\contentsline {subsubsection}{\numberline {11.4.2}Objectifs du simogramme}{45}{subsubsection.11.4.2}%
+\contentsline {subsubsection}{\numberline {11.4.3}Étapes de construction d'un simogramme}{45}{subsubsection.11.4.3}%
+\contentsline {subsubsection}{\numberline {11.4.4}Exemple : Atelier de mise en plis de pantalon}{45}{subsubsection.11.4.4}%
+\contentsline {subsubsection}{\numberline {11.4.5}Analyse du simogramme pour l'optimisation}{45}{subsubsection.11.4.5}%
+\contentsline {subsubsection}{\numberline {11.4.6}Optimisation par ajout de machines}{46}{subsubsection.11.4.6}%
+\contentsline {subsubsection}{\numberline {11.4.7}Calcul de l'efficacité de la ligne}{46}{subsubsection.11.4.7}%
+\contentsline {subsection}{\numberline {11.5}Indicateurs de performance clés}{46}{subsection.11.5}%
+\contentsline {subsubsection}{\numberline {11.5.1}Taux de rendement synthétique (TRS)}{46}{subsubsection.11.5.1}%
+\contentsline {subsubsection}{\numberline {11.5.2}Temps de traversée (Lead Time)}{47}{subsubsection.11.5.2}%
+\contentsline {subsubsection}{\numberline {11.5.3}Taux de valeur ajoutée}{47}{subsubsection.11.5.3}%
+\contentsline {subsection}{\numberline {11.6}Synthèse}{47}{subsection.11.6}%
+\contentsline {section}{\numberline {12}Limites du Chronométrage et Alternatives}{47}{section.12}%
+\contentsline {subsection}{\numberline {12.1}Problèmes liés à la subjectivité}{47}{subsection.12.1}%
+\contentsline {subsubsection}{\numberline {12.1.1}La subjectivité du jugement d'allure}{47}{subsubsection.12.1.1}%
+\contentsline {subsubsection}{\numberline {12.1.2}Facteurs influençant le jugement d'allure}{48}{subsubsection.12.1.2}%
+\contentsline {subsubsection}{\numberline {12.1.3}Conséquences de la subjectivité}{48}{subsubsection.12.1.3}%
+\contentsline {subsubsection}{\numberline {12.1.4}Les limites de l'étalonnage}{48}{subsubsection.12.1.4}%
+\contentsline {subsection}{\numberline {12.2}Nécessité d'un poste existant et stabilisé}{48}{subsection.12.2}%
+\contentsline {subsubsection}{\numberline {12.2.1}Contrainte d'existence du poste}{48}{subsubsection.12.2.1}%
+\contentsline {subsubsection}{\numberline {12.2.2}Nécessité de stabilisation}{48}{subsubsection.12.2.2}%
+\contentsline {subsubsection}{\numberline {12.2.3}Contrainte de représentativité}{49}{subsubsection.12.2.3}%
+\contentsline {subsection}{\numberline {12.3}Introduction aux Temps Prédéterminés}{49}{subsection.12.3}%
+\contentsline {subsubsection}{\numberline {12.3.1}Définition}{49}{subsubsection.12.3.1}%
+\contentsline {subsubsection}{\numberline {12.3.2}Avantages des temps prédéterminés}{49}{subsubsection.12.3.2}%
+\contentsline {subsubsection}{\numberline {12.3.3}Les principales méthodes de temps prédéterminés}{49}{subsubsection.12.3.3}%
+\contentsline {subsection}{\numberline {12.4}La méthode MTM (Methods-Time Measurement)}{50}{subsection.12.4}%
+\contentsline {subsubsection}{\numberline {12.4.1}Historique et origine}{50}{subsubsection.12.4.1}%
+\contentsline {subsubsection}{\numberline {12.4.2}Unité de mesure : le TMU}{50}{subsubsection.12.4.2}%
+\contentsline {subsubsection}{\numberline {12.4.3}Les mouvements de base du MTM}{50}{subsubsection.12.4.3}%
+\contentsline {subsubsection}{\numberline {12.4.4}Les cas du mouvement "Atteindre"}{50}{subsubsection.12.4.4}%
+\contentsline {subsubsection}{\numberline {12.4.5}Extrait de table MTM}{50}{subsubsection.12.4.5}%
+\contentsline {subsubsection}{\numberline {12.4.6}Limites du MTM}{50}{subsubsection.12.4.6}%
+\contentsline {subsection}{\numberline {12.5}La méthode MOST (Maynard Operation Sequence Technique)}{51}{subsection.12.5}%
+\contentsline {subsubsection}{\numberline {12.5.1}Historique et origine}{51}{subsubsection.12.5.1}%
+\contentsline {subsubsection}{\numberline {12.5.2}Principe du MOST}{51}{subsubsection.12.5.2}%
+\contentsline {subsubsection}{\numberline {12.5.3}Les trois types de séquences MOST}{51}{subsubsection.12.5.3}%
+\contentsline {subsubsection}{\numberline {12.5.4}Les valeurs clés du Basic MOST}{51}{subsubsection.12.5.4}%
+\contentsline {subsubsection}{\numberline {12.5.5}Exemple d'application MOST}{52}{subsubsection.12.5.5}%
+\contentsline {subsubsection}{\numberline {12.5.6}Avantages du MOST}{52}{subsubsection.12.5.6}%
+\contentsline {subsection}{\numberline {12.6}Autres méthodes de temps prédéterminés}{52}{subsection.12.6}%
+\contentsline {subsubsection}{\numberline {12.6.1}MTS (Methods Time Standards)}{52}{subsubsection.12.6.1}%
+\contentsline {subsubsection}{\numberline {12.6.2}MODAPTS (Modular Arrangement of Predetermined Time Standards)}{52}{subsubsection.12.6.2}%
+\contentsline {subsubsection}{\numberline {12.6.3}WORK FACTOR}{52}{subsubsection.12.6.3}%
+\contentsline {subsection}{\numberline {12.7}Comparaison chronométrage vs temps prédéterminés}{52}{subsection.12.7}%
+\contentsline {subsection}{\numberline {12.8}Choix de la méthode adaptée}{52}{subsection.12.8}%
+\contentsline {subsubsection}{\numberline {12.8.1}Critères de choix}{52}{subsubsection.12.8.1}%
+\contentsline {subsubsection}{\numberline {12.8.2}Recommandations pratiques}{53}{subsubsection.12.8.2}%
+\contentsline {subsection}{\numberline {12.9}Synthèse}{53}{subsection.12.9}%
+\contentsline {section}{Conclusion}{53}{subsection.12.9}%
+\contentsline {subsection}{Synthèse des bonnes pratiques pour un chronométrage fiable}{53}{section*.15}%
+\contentsline {subsection}{Rôle du chronométrage dans l'amélioration continue de la productivité}{55}{Item.107}%
+\contentsline {part}{Partie 5 : Techniques Complémentaires de Mesure}{57}{part*.16}%
+\contentsline {section}{\numberline {13}Observations Instantanées}{57}{section.13}%
+\contentsline {subsection}{\numberline {13.1}Définition et objectifs}{57}{subsection.13.1}%
+\contentsline {subsection}{\numberline {13.2}Différence avec le chronométrage continu}{58}{subsection.13.2}%
+\contentsline {subsection}{\numberline {13.3}L'auto-pointage}{58}{subsection.13.3}%
+\contentsline {subsubsection}{\numberline {13.3.1}Définition}{58}{subsubsection.13.3.1}%
+\contentsline {subsubsection}{\numberline {13.3.2}Préparation de l'auto-pointage}{58}{subsubsection.13.3.2}%
+\contentsline {subsubsection}{\numberline {13.3.3}Réalisation de l'auto-pointage}{58}{subsubsection.13.3.3}%
+\contentsline {subsubsection}{\numberline {13.3.4}Exploitation de l'auto-pointage}{59}{subsubsection.13.3.4}%
+\contentsline {subsection}{\numberline {13.4}Méthodologie en 6 étapes}{59}{subsection.13.4}%
+\contentsline {subsubsection}{\numberline {13.4.1}Étape 1 : Définir les ressources, le niveau de confiance et la marge d'erreur}{59}{subsubsection.13.4.1}%
+\contentsline {subsubsection}{\numberline {13.4.2}Étape 2 : Estimer la proportion des états (pré-étude)}{59}{subsubsection.13.4.2}%
+\contentsline {subsubsection}{\numberline {13.4.3}Étape 3 : Calculer le nombre d'observations}{60}{subsubsection.13.4.3}%
+\contentsline {subsubsection}{\numberline {13.4.4}Étape 4 : Déterminer la durée des observations}{60}{subsubsection.13.4.4}%
+\contentsline {subsubsection}{\numberline {13.4.5}Étape 5 : Déterminer les horaires d'observation}{61}{subsubsection.13.4.5}%
+\contentsline {subsubsection}{\numberline {13.4.6}Étape 6 : Conclure l'étude et valider la marge d'erreur}{61}{subsubsection.13.4.6}%
+\contentsline {subsection}{\numberline {13.5}Exercice d'application : Étude de la répartition des activités d'un cariste}{62}{subsection.13.5}%
+\contentsline {subsubsection}{\numberline {13.5.1}Énoncé}{62}{subsubsection.13.5.1}%
+\contentsline {subsubsection}{\numberline {13.5.2}Questions}{62}{subsubsection.13.5.2}%
+\contentsline {subsubsection}{\numberline {13.5.3}Corrigé}{62}{subsubsection.13.5.3}%
+\contentsline {subsection}{\numberline {13.6}Synthèse}{63}{subsection.13.6}%
+\contentsline {section}{\numberline {14}Outils de Représentation des Temps}{64}{section.14}%
+\contentsline {subsection}{\numberline {14.1}Analyse de Déroulement}{64}{subsection.14.1}%
+\contentsline {subsubsection}{\numberline {14.1.1}Définition et objectifs}{64}{subsubsection.14.1.1}%
+\contentsline {subsubsection}{\numberline {14.1.2}Symboles d'analyse}{64}{subsubsection.14.1.2}%
+\contentsline {subsubsection}{\numberline {14.1.3}Indicateurs de performance}{65}{subsubsection.14.1.3}%
+\contentsline {subsection}{\numberline {14.2}Graphique de Déroulement}{65}{subsection.14.2}%
+\contentsline {subsubsection}{\numberline {14.2.1}Types de graphiques de déroulement}{65}{subsubsection.14.2.1}%
+\contentsline {subsubsection}{\numberline {14.2.2}Exemple de graphique exécutant}{66}{subsubsection.14.2.2}%
+\contentsline {subsection}{\numberline {14.3}Matrice de Déroulement}{66}{subsection.14.3}%
+\contentsline {subsubsection}{\numberline {14.3.1}Structure et informations collectées}{66}{subsubsection.14.3.1}%
+\contentsline {subsection}{\numberline {14.4}Value Stream Mapping (VSM)}{67}{subsection.14.4}%
+\contentsline {subsubsection}{\numberline {14.4.1}Définition et objectifs}{67}{subsubsection.14.4.1}%
+\contentsline {subsubsection}{\numberline {14.4.2}Flux physique et flux d'information}{67}{subsubsection.14.4.2}%
+\contentsline {subsubsection}{\numberline {14.4.3}Vocabulaire : valeur ajoutée et non-valeur ajoutée}{67}{subsubsection.14.4.3}%
+\contentsline {subsubsection}{\numberline {14.4.4}Phases de la VSM}{68}{subsubsection.14.4.4}%
+\contentsline {subsubsection}{\numberline {14.4.5}Exemple simplifié de VSM}{68}{subsubsection.14.4.5}%
+\contentsline {subsection}{\numberline {14.5}Exercice pratique : Cartographie d'un processus de production}{68}{subsection.14.5}%
+\contentsline {subsubsection}{\numberline {14.5.1}Énoncé}{68}{subsubsection.14.5.1}%
+\contentsline {subsubsection}{\numberline {14.5.2}Questions}{69}{subsubsection.14.5.2}%
+\contentsline {subsubsection}{\numberline {14.5.3}Corrigé}{69}{subsubsection.14.5.3}%
+\contentsline {subsection}{\numberline {14.6}Synthèse}{71}{subsection.14.6}%
+\contentsline {part}{Partie 6 : Temps Prédéterminés (Approfondissement)}{71}{part*.17}%
+\contentsline {section}{\numberline {15}Méthode MTM (Methods-Time Measurement)}{71}{section.15}%
+\contentsline {subsection}{\numberline {15.1}Définition et origine}{71}{subsection.15.1}%
+\contentsline {subsection}{\numberline {15.2}L'unité de mesure : le TMU (Time Measurement Unit)}{72}{subsection.15.2}%
+\contentsline {subsection}{\numberline {15.3}Les mouvements de base}{72}{subsection.15.3}%
+\contentsline {subsubsection}{\numberline {15.3.1}Mouvements des membres supérieurs}{72}{subsubsection.15.3.1}%
+\contentsline {subsubsection}{\numberline {15.3.2}Mouvements des membres inférieurs}{72}{subsubsection.15.3.2}%
+\contentsline {subsubsection}{\numberline {15.3.3}Mouvements du corps}{73}{subsubsection.15.3.3}%
+\contentsline {subsubsection}{\numberline {15.3.4}Mouvements visuels}{73}{subsubsection.15.3.4}%
+\contentsline {subsection}{\numberline {15.4}Les cas du mouvement "Atteindre" (R)}{73}{subsection.15.4}%
+\contentsline {subsubsection}{\numberline {15.4.1}Description des cas}{73}{subsubsection.15.4.1}%
+\contentsline {subsection}{\numberline {15.5}Les types de mouvements}{73}{subsection.15.5}%
+\contentsline {subsection}{\numberline {15.6}Extrait des tables MTM}{74}{subsection.15.6}%
+\contentsline {subsubsection}{\numberline {15.6.1}Table du mouvement "Atteindre" (R)}{74}{subsubsection.15.6.1}%
+\contentsline {subsubsection}{\numberline {15.6.2}Table du mouvement "Mouvoir" (M)}{74}{subsubsection.15.6.2}%
+\contentsline {subsection}{\numberline {15.7}Avantages et faiblesses du MTM}{74}{subsection.15.7}%
+\contentsline {subsubsection}{\numberline {15.7.1}Avantages}{74}{subsubsection.15.7.1}%
+\contentsline {subsubsection}{\numberline {15.7.2}Faiblesses}{75}{subsubsection.15.7.2}%
+\contentsline {subsection}{\numberline {15.8}Exemples de calcul détaillés}{75}{subsection.15.8}%
+\contentsline {subsubsection}{\numberline {15.8.1}Exemple 1 : Saisie d'une pièce sur une table}{75}{subsubsection.15.8.1}%
+\contentsline {subsubsection}{\numberline {15.8.2}Exemple 2 : Positionnement d'une pièce avec précision}{75}{subsubsection.15.8.2}%
+\contentsline {subsection}{\numberline {15.9}Exercices d'application MTM}{76}{subsection.15.9}%
+\contentsline {subsubsection}{\numberline {15.9.1}Exercice 1 : Saisie d'un outil}{76}{subsubsection.15.9.1}%
+\contentsline {subsubsection}{\numberline {15.9.2}Exercice 2 : Assemblage de deux pièces}{76}{subsubsection.15.9.2}%
+\contentsline {subsubsection}{\numberline {15.9.3}Exercice 3 : Calcul complet d'assemblage}{76}{subsubsection.15.9.3}%
+\contentsline {subsubsection}{\numberline {15.9.4}Corrigé de l'exercice 1}{76}{subsubsection.15.9.4}%
+\contentsline {subsubsection}{\numberline {15.9.5}Corrigé de l'exercice 2}{77}{subsubsection.15.9.5}%
+\contentsline {subsubsection}{\numberline {15.9.6}Corrigé de l'exercice 3}{77}{subsubsection.15.9.6}%
+\contentsline {subsection}{\numberline {15.10}Synthèse}{77}{subsection.15.10}%
+\contentsline {section}{\numberline {16}Méthode MOST (Maynard Operation Sequence Technique)}{77}{section.16}%
+\contentsline {subsection}{\numberline {16.1}Définition et origine}{78}{subsection.16.1}%
+\contentsline {subsection}{\numberline {16.2}Les trois types de séquences}{78}{subsection.16.2}%
+\contentsline {subsubsection}{\numberline {16.2.1}Séquence 1 : Déplacement d'objets (ABG ABP A)}{78}{subsubsection.16.2.1}%
+\contentsline {subsubsection}{\numberline {16.2.2}Séquence 2 : Mouvement guidé}{78}{subsubsection.16.2.2}%
+\contentsline {subsubsection}{\numberline {16.2.3}Séquence 3 : Utilisation d'outil à main}{79}{subsubsection.16.2.3}%
+\contentsline {subsection}{\numberline {16.3}Les indices et valeurs clés}{79}{subsection.16.3}%
+\contentsline {subsubsection}{\numberline {16.3.1}Valeurs clés (Basic MOST)}{79}{subsubsection.16.3.1}%
+\contentsline {subsection}{\numberline {16.4}Table MOST simplifiée}{79}{subsection.16.4}%
+\contentsline {subsubsection}{\numberline {16.4.1}Indices pour le paramètre A (Action)}{79}{subsubsection.16.4.1}%
+\contentsline {subsubsection}{\numberline {16.4.2}Indices pour le paramètre B (Body)}{80}{subsubsection.16.4.2}%
+\contentsline {subsubsection}{\numberline {16.4.3}Indices pour le paramètre G (Get)}{80}{subsubsection.16.4.3}%
+\contentsline {subsubsection}{\numberline {16.4.4}Indices pour le paramètre P (Place)}{80}{subsubsection.16.4.4}%
+\contentsline {subsection}{\numberline {16.5}Exemples de calcul}{80}{subsection.16.5}%
+\contentsline {subsubsection}{\numberline {16.5.1}Exemple 1 : Saisie d'un objet à portée de main}{80}{subsubsection.16.5.1}%
+\contentsline {subsubsection}{\numberline {16.5.2}Exemple 2 : Saisie d'un objet à distance}{81}{subsubsection.16.5.2}%
+\contentsline {subsubsection}{\numberline {16.5.3}Exemple 3 : Positionnement précis}{81}{subsubsection.16.5.3}%
+\contentsline {subsection}{\numberline {16.6}Comparaison MTM vs MOST}{82}{subsection.16.6}%
+\contentsline {subsection}{\numberline {16.7}Avantages et limites}{82}{subsection.16.7}%
+\contentsline {subsubsection}{\numberline {16.7.1}Avantages du MOST}{82}{subsubsection.16.7.1}%
+\contentsline {subsubsection}{\numberline {16.7.2}Limites du MOST}{82}{subsubsection.16.7.2}%
+\contentsline {subsection}{\numberline {16.8}Exercices d'application MOST}{82}{subsection.16.8}%
+\contentsline {subsubsection}{\numberline {16.8.1}Exercice 1 : Saisie d'un outil à portée}{83}{subsubsection.16.8.1}%
+\contentsline {subsubsection}{\numberline {16.8.2}Exercice 2 : Déplacement avec marche}{83}{subsubsection.16.8.2}%
+\contentsline {subsubsection}{\numberline {16.8.3}Exercice 3 : Positionnement précis}{83}{subsubsection.16.8.3}%
+\contentsline {subsubsection}{\numberline {16.8.4}Exercice 4 : Séquence complète}{83}{subsubsection.16.8.4}%
+\contentsline {subsubsection}{\numberline {16.8.5}Exercice 5 : Cas industriel}{83}{subsubsection.16.8.5}%
+\contentsline {subsection}{\numberline {16.9}Corrigés des exercices}{83}{subsection.16.9}%
+\contentsline {subsubsection}{\numberline {16.9.1}Corrigé exercice 1}{83}{subsubsection.16.9.1}%
+\contentsline {subsubsection}{\numberline {16.9.2}Corrigé exercice 2}{83}{subsubsection.16.9.2}%
+\contentsline {subsubsection}{\numberline {16.9.3}Corrigé exercice 3}{83}{subsubsection.16.9.3}%
+\contentsline {subsubsection}{\numberline {16.9.4}Corrigé exercice 4}{84}{subsubsection.16.9.4}%
+\contentsline {subsubsection}{\numberline {16.9.5}Corrigé exercice 5}{84}{subsubsection.16.9.5}%
+\contentsline {subsection}{\numberline {16.10}Synthèse}{84}{subsection.16.10}%
+\contentsline {part}{Partie 7 : Exercices et Cas Pratiques}{84}{part*.18}%
+\contentsline {section}{\numberline {17}Exercices de Conversion d'Unités}{84}{section.17}%
+\contentsline {subsection}{\numberline {17.1}Conversions de base}{85}{subsection.17.1}%
+\contentsline {subsection}{\numberline {17.2}Application industrielle}{85}{subsection.17.2}%
+\contentsline {subsection}{\numberline {17.3}Choix de l'unité adaptée}{85}{subsection.17.3}%
+\contentsline {subsection}{\numberline {17.4}Corrigés}{85}{subsection.17.4}%
+\contentsline {section}{\numberline {18}Exercices de Calcul du Nombre d'Observations}{86}{section.18}%
+\contentsline {subsection}{\numberline {18.1}Application de la formule statistique}{86}{subsection.18.1}%
+\contentsline {subsection}{\numberline {18.2}Utilisation des tableaux}{87}{subsection.18.2}%
+\contentsline {subsection}{\numberline {18.3}Cas avec différents niveaux de confiance}{87}{subsection.18.3}%
+\contentsline {subsection}{\numberline {18.4}Corrigés}{87}{subsection.18.4}%
+\contentsline {section}{\numberline {19}Exercices de Courbe d'Apprentissage}{88}{section.19}%
+\contentsline {subsection}{\numberline {19.1}Application de la loi de Wright}{88}{subsection.19.1}%
+\contentsline {subsection}{\numberline {19.2}Application de la loi de Caquot}{88}{subsection.19.2}%
+\contentsline {subsection}{\numberline {19.3}Calcul du coefficient d'apprentissage}{88}{subsection.19.3}%
+\contentsline {subsection}{\numberline {19.4}Estimation des temps cumulés}{88}{subsection.19.4}%
+\contentsline {subsection}{\numberline {19.5}Corrigés}{89}{subsection.19.5}%
+\contentsline {section}{\numberline {20}Exercices de Simogramme}{89}{section.20}%
+\contentsline {subsection}{\numberline {20.1}Construction d'un simogramme}{89}{subsection.20.1}%
+\contentsline {subsection}{\numberline {20.2}Optimisation homme-machine}{90}{subsection.20.2}%
+\contentsline {subsection}{\numberline {20.3}Calcul des productions horaires}{90}{subsection.20.3}%
+\contentsline {subsection}{\numberline {20.4}Corrigés}{90}{subsection.20.4}%
+\contentsline {section}{\numberline {21}Exercices de Chronométrage et Dépouillement}{91}{section.21}%
+\contentsline {subsection}{\numberline {21.1}Calcul du temps observé moyen}{91}{subsection.21.1}%
+\contentsline {subsection}{\numberline {21.2}Correction par le jugement d'allure}{91}{subsection.21.2}%
+\contentsline {subsection}{\numberline {21.3}Application des coefficients majorateurs}{91}{subsection.21.3}%
+\contentsline {subsection}{\numberline {21.4}Intégration de la fréquence}{92}{subsection.21.4}%
+\contentsline {subsection}{\numberline {21.5}Calcul complet du temps standard}{92}{subsection.21.5}%
+\contentsline {subsection}{\numberline {21.6}Corrigés}{92}{subsection.21.6}%
+\contentsline {section}{\numberline {22}Exercices de Jugement d'Allure}{93}{section.22}%
+\contentsline {subsection}{\numberline {22.1}Évaluation par méthode directe}{93}{subsection.22.1}%
+\contentsline {subsection}{\numberline {22.2}Application de la méthode de Levelling}{93}{subsection.22.2}%
+\contentsline {subsection}{\numberline {22.3}Conversion entre échelles}{93}{subsection.22.3}%
+\contentsline {subsection}{\numberline {22.4}Corrigés}{93}{subsection.22.4}%
+\contentsline {section}{\numberline {23}Exercices d'Équilibrage de Lignes}{94}{section.23}%
+\contentsline {subsection}{\numberline {23.1}Calcul du temps de cycle}{94}{subsection.23.1}%
+\contentsline {subsection}{\numberline {23.2}Répartition des charges}{94}{subsection.23.2}%
+\contentsline {subsection}{\numberline {23.3}Calcul de l'efficacité de la ligne}{95}{subsection.23.3}%
+\contentsline {subsection}{\numberline {23.4}Optimisation par regroupement}{95}{subsection.23.4}%
+\contentsline {subsection}{\numberline {23.5}Corrigés}{95}{subsection.23.5}%
+\contentsline {part}{Partie 8 : Cas Réels Industriels}{96}{part*.19}%
+\contentsline {section}{\numberline {24}Cas Réel 1 : Industrie Textile}{96}{section.24}%
+\contentsline {subsection}{\numberline {24.1}Contexte : Ligne de confection de pantalons}{96}{subsection.24.1}%
+\contentsline {subsection}{\numberline {24.2}Problématique : Disparités de charge et retards}{96}{subsection.24.2}%
+\contentsline {subsection}{\numberline {24.3}Démarche complète : diagnostic → étude → améliorations → fixation}{96}{subsection.24.3}%
+\contentsline {subsubsection}{\numberline {24.3.1}Étape 1 : Chronométrage de diagnostic}{96}{subsubsection.24.3.1}%
+\contentsline {subsubsection}{\numberline {24.3.2}Étape 2 : Chronométrage d'étude}{97}{subsubsection.24.3.2}%
+\contentsline {subsubsection}{\numberline {24.3.3}Étape 3 : Identification des causes}{97}{subsubsection.24.3.3}%
+\contentsline {subsubsection}{\numberline {24.3.4}Étape 4 : Plan d'amélioration}{97}{subsubsection.24.3.4}%
+\contentsline {subsubsection}{\numberline {24.3.5}Étape 5 : Chronométrage de fixation de tâche}{98}{subsubsection.24.3.5}%
+\contentsline {subsubsection}{\numberline {24.3.6}Étape 6 : Application des majorations}{98}{subsubsection.24.3.6}%
+\contentsline {subsection}{\numberline {24.4}Résultats et gains}{98}{subsection.24.4}%
+\contentsline {subsection}{\numberline {24.5}Questions de réflexion}{98}{subsection.24.5}%
+\contentsline {section}{\numberline {25}Cas Réel 2 : Industrie Automobile}{99}{section.25}%
+\contentsline {subsection}{\numberline {25.1}Contexte : Poste d'assemblage de portières}{99}{subsection.25.1}%
+\contentsline {subsection}{\numberline {25.2}Problématique : Goulot d'étranglement}{99}{subsection.25.2}%
+\contentsline {subsection}{\numberline {25.3}Analyse par simogramme}{99}{subsection.25.3}%
+\contentsline {subsubsection}{\numberline {25.3.1}Décomposition du poste goulot}{99}{subsubsection.25.3.1}%
+\contentsline {subsubsection}{\numberline {25.3.2}Simogramme avant optimisation}{100}{subsubsection.25.3.2}%
+\contentsline {subsection}{\numberline {25.4}Optimisation par ajout de ressources}{100}{subsection.25.4}%
+\contentsline {subsubsection}{\numberline {25.4.1}Solution 1 : Ajout d'une machine}{100}{subsubsection.25.4.1}%
+\contentsline {subsubsection}{\numberline {25.4.2}Solution 2 : Délégation des opérations manuelles}{100}{subsubsection.25.4.2}%
+\contentsline {subsubsection}{\numberline {25.4.3}Simogramme après optimisation}{100}{subsubsection.25.4.3}%
+\contentsline {subsection}{\numberline {25.5}Résultats et gains}{100}{subsection.25.5}%
+\contentsline {section}{\numberline {26}Cas Réel 3 : Industrie Agroalimentaire}{101}{section.26}%
+\contentsline {subsection}{\numberline {26.1}Contexte : Ligne de conditionnement de salades}{101}{subsection.26.1}%
+\contentsline {subsection}{\numberline {26.2}Problématique : Forte variabilité des performances}{101}{subsection.26.2}%
+\contentsline {subsection}{\numberline {26.3}Utilisation des observations instantanées}{101}{subsection.26.3}%
+\contentsline {subsubsection}{\numberline {26.3.1}Étape 1 : Définition des états}{101}{subsubsection.26.3.1}%
+\contentsline {subsubsection}{\numberline {26.3.2}Étape 2 : Pré-étude par auto-pointage}{102}{subsubsection.26.3.2}%
+\contentsline {subsubsection}{\numberline {26.3.3}Étape 3 : Calcul du nombre d'observations}{102}{subsubsection.26.3.3}%
+\contentsline {subsubsection}{\numberline {26.3.4}Étape 4 : Réalisation des observations}{102}{subsubsection.26.3.4}%
+\contentsline {subsection}{\numberline {26.4}Identification des causes}{102}{subsection.26.4}%
+\contentsline {subsection}{\numberline {26.5}Plan d'amélioration et résultats}{102}{subsection.26.5}%
+\contentsline {subsubsection}{\numberline {26.5.1}Actions mises en œuvre}{102}{subsubsection.26.5.1}%
+\contentsline {subsubsection}{\numberline {26.5.2}Résultats après 3 mois}{103}{subsubsection.26.5.2}%
+\contentsline {section}{\numberline {27}Cas Réel 4 : Industrie Mécanique}{103}{section.27}%
+\contentsline {subsection}{\numberline {27.1}Contexte : Atelier d'usinage}{103}{subsection.27.1}%
+\contentsline {subsection}{\numberline {27.2}Problématique : Définition des temps pour nouveau produit}{103}{subsection.27.2}%
+\contentsline {subsection}{\numberline {27.3}Utilisation de la méthode MOST}{103}{subsection.27.3}%
+\contentsline {subsubsection}{\numberline {27.3.1}Décomposition du travail}{103}{subsubsection.27.3.1}%
+\contentsline {subsubsection}{\numberline {27.3.2}Calcul du temps standard}{104}{subsubsection.27.3.2}%
+\contentsline {subsubsection}{\numberline {27.3.3}Application des majorations}{104}{subsubsection.27.3.3}%
+\contentsline {subsection}{\numberline {27.4}Comparaison avec chronométrage}{104}{subsection.27.4}%
+\contentsline {subsection}{\numberline {27.5}Validation et résultats}{104}{subsection.27.5}%
+\contentsline {subsection}{\numberline {27.6}Leçons apprises}{104}{subsection.27.6}%
+\contentsline {part}{Partie 9 : Annexes et Synthèse}{105}{part*.20}%
+\contentsline {section}{\numberline {28}Annexes}{105}{section.28}%
+\contentsline {subsection}{\numberline {28.1}Tableaux de conversion des unités}{105}{subsection.28.1}%
+\contentsline {subsubsection}{\numberline {28.1.1}Tableau 1 : Conversion des unités classiques vers les unités décimales}{105}{subsubsection.28.1.1}%
+\contentsline {subsubsection}{\numberline {28.1.2}Tableau 2 : Unités décimales et leurs équivalences}{105}{subsubsection.28.1.2}%
+\contentsline {subsubsection}{\numberline {28.1.3}Tableau 3 : Table de conversion rapide}{105}{subsubsection.28.1.3}%
+\contentsline {subsection}{\numberline {28.2}Tables MTM abrégées}{106}{subsection.28.2}%
+\contentsline {subsubsection}{\numberline {28.2.1}Tableau 4 : Mouvement "Atteindre" (R) - Extrait}{106}{subsubsection.28.2.1}%
+\contentsline {subsubsection}{\numberline {28.2.2}Tableau 5 : Mouvement "Mouvoir" (M) - Extrait}{106}{subsubsection.28.2.2}%
+\contentsline {subsection}{\numberline {28.3}Tables de coefficients majorateurs}{106}{subsection.28.3}%
+\contentsline {subsubsection}{\numberline {28.3.1}Tableau 6 : Coefficients pour travaux manuels}{106}{subsubsection.28.3.1}%
+\contentsline {subsubsection}{\numberline {28.3.2}Tableau 7 : Coefficients pour machines à coudre}{106}{subsubsection.28.3.2}%
+\contentsline {subsubsection}{\numberline {28.3.3}Tableau 8 : Coefficients pour machines d'usinage}{106}{subsubsection.28.3.3}%
+\contentsline {subsection}{\numberline {28.4}Modèles de feuilles de relevés de chronométrage}{106}{subsection.28.4}%
+\contentsline {subsubsection}{\numberline {28.4.1}Modèle 1 : Feuille de chronométrage standard}{106}{subsubsection.28.4.1}%
+\contentsline {subsection}{\numberline {28.5}Modèles de feuilles d'observations instantanées}{107}{subsection.28.5}%
+\contentsline {subsubsection}{\numberline {28.5.1}Modèle 2 : Feuille d'observations instantanées}{107}{subsubsection.28.5.1}%
+\contentsline {subsubsection}{\numberline {28.5.2}Modèle 3 : Feuille d'auto-pointage}{107}{subsubsection.28.5.2}%
+\contentsline {section}{\numberline {29}Glossaire}{107}{section.29}%
+\contentsline {subsection}{\numberline {29.1}Termes techniques et définitions}{107}{subsection.29.1}%
+\contentsline {subsubsection}{\numberline {29.1.1}Termes généraux}{107}{subsubsection.29.1.1}%
+\contentsline {subsubsection}{\numberline {29.1.2}Unités de mesure}{108}{subsubsection.29.1.2}%
+\contentsline {subsubsection}{\numberline {29.1.3}Outils de représentation}{108}{subsubsection.29.1.3}%
+\contentsline {subsubsection}{\numberline {29.1.4}Méthodes de temps prédéterminés}{108}{subsubsection.29.1.4}%
+\contentsline {section}{\numberline {30}Bibliographie et Références}{109}{section.30}%
+\contentsline {subsection}{\numberline {30.1}Ouvrages de référence}{109}{subsection.30.1}%
+\contentsline {subsection}{\numberline {30.2}Articles et publications}{110}{subsection.30.2}%
+\contentsline {subsection}{\numberline {30.3}Normes et standards}{110}{subsection.30.3}%
+\contentsline {section}{\numberline {31}Corrigés des Exercices}{111}{section.31}%
+\contentsline {subsection}{\numberline {31.1}Corrigés des exercices de conversion (Section 15)}{111}{subsection.31.1}%
+\contentsline {subsubsection}{\numberline {31.1.1}Exercice 15.1 - Corrigé}{111}{subsubsection.31.1.1}%
+\contentsline {subsubsection}{\numberline {31.1.2}Exercice 15.2 - Corrigé}{111}{subsubsection.31.1.2}%
+\contentsline {subsection}{\numberline {31.2}Corrigés des exercices de courbe d'apprentissage (Section 17)}{111}{subsection.31.2}%
+\contentsline {subsubsection}{\numberline {31.2.1}Exercice 17.1 - Corrigé}{111}{subsubsection.31.2.1}%
+\contentsline {subsubsection}{\numberline {31.2.2}Exercice 17.3 - Corrigé}{111}{subsubsection.31.2.2}%
+\contentsline {subsection}{\numberline {31.3}Corrigés des exercices de chronométrage (Section 19)}{112}{subsection.31.3}%
+\contentsline {subsubsection}{\numberline {31.3.1}Exercice 19.1 - Corrigé}{112}{subsubsection.31.3.1}%
+\contentsline {subsubsection}{\numberline {31.3.2}Exercice 19.2 - Corrigé}{112}{subsubsection.31.3.2}%
+\contentsline {subsubsection}{\numberline {31.3.3}Exercice 19.5 - Corrigé}{112}{subsubsection.31.3.3}%
+\contentsline {subsection}{\numberline {31.4}Corrigés des exercices de jugement d'allure (Section 20)}{112}{subsection.31.4}%
+\contentsline {subsubsection}{\numberline {31.4.1}Exercice 20.1 - Corrigé}{112}{subsubsection.31.4.1}%
+\contentsline {subsubsection}{\numberline {31.4.2}Exercice 20.2 - Corrigé}{112}{subsubsection.31.4.2}%
+\contentsline {subsection}{\numberline {31.5}Corrigés des exercices de simogramme (Section 18)}{112}{subsection.31.5}%
+\contentsline {subsubsection}{\numberline {31.5.1}Exercice 18.1 - Corrigé}{112}{subsubsection.31.5.1}%
+\contentsline {subsubsection}{\numberline {31.5.2}Exercice 18.2 - Corrigé}{113}{subsubsection.31.5.2}%
+\contentsline {subsection}{\numberline {31.6}Corrigés des exercices d'équilibrage (Section 21)}{113}{subsection.31.6}%
+\contentsline {subsubsection}{\numberline {31.6.1}Exercice 21.1 - Corrigé}{113}{subsubsection.31.6.1}%
+\contentsline {subsubsection}{\numberline {31.6.2}Exercice 21.3 - Corrigé}{113}{subsubsection.31.6.2}%
+\contentsline {part}{Partie 1 : Introduction}{2}{part*.21}%
+\contentsline {section}{\numberline {32}Définition et objectifs de la mesure du travail}{2}{section.32}%
+\contentsline {subsection}{\numberline {32.1}Définition}{2}{subsection.32.1}%
+\contentsline {subsection}{\numberline {32.2}Objectifs de la mesure du travail}{2}{subsection.32.2}%
+\contentsline {subsection}{\numberline {32.3}Productivité industrielle}{2}{subsection.32.3}%
+\contentsline {section}{\numberline {33}Place du chronométrage dans l'étude du travail}{3}{section.33}%
+\contentsline {subsection}{\numberline {33.1}Les deux piliers de l'étude du travail}{3}{subsection.33.1}%
+\contentsline {subsection}{\numberline {33.2}Objectifs de l'étude des méthodes}{3}{subsection.33.2}%
+\contentsline {subsection}{\numberline {33.3}Les techniques de mesure du travail}{3}{subsection.33.3}%
+\contentsline {subsection}{\numberline {33.4}Place du chronométrage}{3}{subsection.33.4}%
+\contentsline {section}{\numberline {34}Historique et évolution : de Taylor aux temps prédéterminés}{4}{section.34}%
+\contentsline {subsection}{\numberline {34.1}Frederick Winslow Taylor (1856-1915)}{4}{subsection.34.1}%
+\contentsline {subsection}{\numberline {34.2}Frank et Lillian Gilbreth (années 1920)}{4}{subsection.34.2}%
+\contentsline {subsection}{\numberline {34.3}L'avènement des temps prédéterminés (1940-1970)}{4}{subsection.34.3}%
+\contentsline {subsection}{\numberline {34.4}Tableau chronologique synthétique}{5}{subsection.34.4}%
+\contentsline {subsection}{\numberline {34.5}Évolution contemporaine}{5}{subsection.34.5}%
+\contentsline {subsection}{\numberline {34.6}Organisation du cours}{5}{subsection.34.6}%
+\contentsline {subsection}{\numberline {34.7}Synthèse de l'introduction}{6}{subsection.34.7}%
+\contentsline {part}{Partie 1 : Fondamentaux et Prérequis}{6}{part*.22}%
+\contentsline {section}{\numberline {35}Le Temps dans l’Industrie}{6}{section.35}%
+\contentsline {subsection}{\numberline {35.1}Unités de temps}{6}{subsection.35.1}%
+\contentsline {subsubsection}{\numberline {35.1.1}Unités classiques (système sexagésimal)}{6}{subsubsection.35.1.1}%
+\contentsline {subsubsection}{\numberline {35.1.2}Unités décimales}{6}{subsubsection.35.1.2}%
+\contentsline {subsubsection}{\numberline {35.1.3}Table de conversion}{7}{subsubsection.35.1.3}%
+\contentsline {subsection}{\numberline {35.2}Choix de l'unité}{7}{subsection.35.2}%
+\contentsline {subsubsection}{\numberline {35.2.1}Critères de sélection}{7}{subsubsection.35.2.1}%
+\contentsline {subsubsection}{\numberline {35.2.2}Exemple de choix}{7}{subsubsection.35.2.2}%
+\contentsline {subsection}{\numberline {35.3}Types de temps}{7}{subsection.35.3}%
+\contentsline {subsubsection}{\numberline {35.3.1}Nature des temps (relation du temps à la ressource)}{8}{subsubsection.35.3.1}%
+\contentsline {subsubsection}{\numberline {35.3.2}Fréquence des temps (relation du temps à la production)}{8}{subsubsection.35.3.2}%
+\contentsline {subsubsection}{\numberline {35.3.3}Position des temps (relation des temps entre ressources)}{8}{subsubsection.35.3.3}%
+\contentsline {subsection}{\numberline {35.4}Application pratique : Simogramme}{8}{subsection.35.4}%
+\contentsline {subsubsection}{\numberline {35.4.1}Définition et objectifs}{8}{subsubsection.35.4.1}%
+\contentsline {subsubsection}{\numberline {35.4.2}Étapes de construction d'un simogramme}{9}{subsubsection.35.4.2}%
+\contentsline {subsubsection}{\numberline {35.4.3}Exemple : Atelier de mise en plis de pantalon}{9}{subsubsection.35.4.3}%
+\contentsline {subsubsection}{\numberline {35.4.4}Analyse d'optimisation}{9}{subsubsection.35.4.4}%
+\contentsline {subsection}{\numberline {35.5}Synthèse}{10}{subsection.35.5}%
+\contentsline {section}{\numberline {36}Conditions Préalables au Chronométrage}{10}{section.36}%
+\contentsline {subsection}{\numberline {36.1}Stabilisation de l'opérateur}{10}{subsection.36.1}%
+\contentsline {subsubsection}{\numberline {36.1.1}Caractéristiques d'un opérateur stabilisé}{10}{subsubsection.36.1.1}%
+\contentsline {subsubsection}{\numberline {36.1.2}La courbe d'apprentissage}{10}{subsubsection.36.1.2}%
+\contentsline {paragraph}{Loi de Wright (1963)}{10}{paragraph*.23}%
+\contentsline {paragraph}{Loi de Caquot}{10}{paragraph*.24}%
+\contentsline {subsection}{\numberline {36.2}Stabilisation du poste de travail}{11}{subsection.36.2}%
+\contentsline {subsection}{\numberline {36.3}Stabilisation du chronométreur}{11}{subsection.36.3}%
+\contentsline {subsubsection}{\numberline {36.3.1}Le jugement d'allure (JA)}{11}{subsubsection.36.3.1}%
+\contentsline {subsection}{\numberline {36.4}Synthèse des conditions préalables}{11}{subsection.36.4}%

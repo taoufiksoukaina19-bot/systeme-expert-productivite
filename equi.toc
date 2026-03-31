@@ -1,0 +1,5 @@
+\babel@toc {french}{}\relax 
+\beamer@sectionintoc {1}{Introduction à l'équilibrage}{3}{0}{1}
+\beamer@sectionintoc {2}{Concepts fondamentaux}{6}{0}{2}
+\beamer@sectionintoc {3}{Pourquoi équilibrer ?}{13}{0}{3}
+\beamer@sectionintoc {4}{Quand et comment équilibrer ?}{16}{0}{4}

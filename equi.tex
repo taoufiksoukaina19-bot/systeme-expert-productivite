@@ -1,0 +1,390 @@
+\documentclass{beamer}
+
+% --- Thème et options ---
+\usetheme{Madrid}
+\usecolortheme{default}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}[frame number]
+
+% --- Packages ---
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usetikzlibrary{decorations.pathreplacing, positioning, arrows.meta}
+\usepackage{float}
+\usepackage{caption}
+
+% --- Définition de l'environnement importantnote pour beamer ---
+\newenvironment{importantnote}
+{%
+    \begin{block}{Note importante}
+}
+{%
+    \end{block}
+}
+
+% --- Informations du document ---
+\title{Équilibrage des lignes de production}
+\subtitle{Line Balancing - Principes fondamentaux}
+\author{}
+\institute{}
+\date{}
+
+\begin{document}
+
+% --- Slide 1: Titre ---
+\begin{frame}
+    \titlepage
+    \begin{center}
+        \small Méthodologie Lean Manufacturing
+    \end{center}
+\end{frame}
+
+% --- Slide 2: Sommaire ---
+\begin{frame}{Sommaire}
+    \tableofcontents
+\end{frame}
+
+% ============================================================
+% PARTIE 1: INTRODUCTION À L'ÉQUILIBRAGE
+% ============================================================
+\section{Introduction à l'équilibrage}
+
+\begin{frame}{Définition}
+    \begin{block}{Qu'est-ce que l'équilibrage des lignes ?}
+        L'équilibrage des lignes de production (\textit{Line Balancing}) est une méthode fondamentale du Lean Manufacturing qui vise à répartir équitablement la charge de travail entre les différents postes d'une chaîne de production.
+    \end{block}
+    
+    \vspace{0.5cm}
+    
+    \textbf{Objectifs :}
+    \begin{itemize}
+        \item Minimiser les temps morts
+        \item Optimiser l'utilisation des ressources
+        \item Améliorer le flux de production
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Objectifs de l'équilibrage}
+    \begin{columns}
+        \column{0.5\textwidth}
+        \begin{itemize}
+            \item Chaque poste a une durée proche du \textbf{Takt Time}
+            \item Respect des contraintes de précédence
+            \item Nombre de postes minimisé
+            \item Réduction des temps morts
+        \end{itemize}
+        
+        \column{0.5\textwidth}
+        \begin{importantnote}
+            Un équilibrage parfait est atteint lorsque la durée de chaque poste est exactement égale au Takt Time, éliminant ainsi toute attente.
+        \end{importantnote}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Le concept de goulot d'étranglement}
+    \begin{definition}[Goulot d'étranglement (Bottleneck)]
+        Un poste de travail qui reçoit plus de travail que ce qu'il peut traiter à sa capacité de production maximale.
+    \end{definition}
+    
+    \vspace{0.5cm}
+    
+    \textbf{Conséquences :}
+    \begin{itemize}
+        \item Interruption du flux de travail
+        \item Retards dans le processus de production
+        \item Accumulation de stocks intermédiaires
+    \end{itemize}
+    
+    \vspace{0.3cm}
+    \textcolor{blue}{→ L'équilibrage vise à identifier et résoudre ces goulots.}
+\end{frame}
+
+% ============================================================
+% PARTIE 2: LES CONCEPTS FONDAMENTAUX
+% ============================================================
+\section{Concepts fondamentaux}
+
+\begin{frame}{Trois concepts clés à distinguer}
+    \begin{center}
+        \begin{tikzpicture}
+            \node[draw, rounded corners, fill=blue!20, minimum width=2.5cm, minimum height=1cm] (takt) at (0,0) {Takt Time};
+            \node[draw, rounded corners, fill=green!20, minimum width=2.5cm, minimum height=1cm] (cycle) at (4,0) {Cycle Time};
+            \node[draw, rounded corners, fill=orange!20, minimum width=2.5cm, minimum height=1cm] (lead) at (8,0) {Lead Time};
+            
+            \node[below=0.3cm of takt] {Rythme client};
+            \node[below=0.3cm of cycle] {Temps réel};
+            \node[below=0.3cm of lead] {Temps total};
+        \end{tikzpicture}
+    \end{center}
+    
+    \vspace{0.5cm}
+    \begin{itemize}
+        \item Souvent confondus mais complémentaires
+        \item Chacun joue un rôle spécifique dans l'équilibrage
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Takt Time ($T_T$)}
+    \begin{block}{Définition}
+        Le Takt Time est le rythme de production dicté par la demande client. Il représente le temps maximum autorisé pour produire une unité.
+    \end{block}
+    
+    \begin{center}
+        \boxed{T_T = \frac{\text{Temps de production disponible par période}}{\text{Demande client par période}}}
+    \end{center}
+    
+    \vspace{0.3cm}
+    \textbf{Exemple :}
+    \[
+    T_T = \frac{7\text{h} \times 60}{600 \text{ pièces}} = 0,7 \text{ min/pièce} = 42 \text{ secondes/pièce}
+    \]
+\end{frame}
+
+\begin{frame}{Caractéristiques du Takt Time}
+    \begin{columns}
+        \column{0.5\textwidth}
+        \begin{itemize}
+            \item Donnée objective basée sur la demande client
+            \item Sert de référence pour l'équilibrage
+            \item Varie selon les fluctuations de la demande
+            \item Ne dépend pas de la capacité de production
+        \end{itemize}
+        
+        \column{0.5\textwidth}
+        \begin{center}
+            \begin{tikzpicture}
+                \draw[->] (0,0) -- (4,0) node[right] {Temps};
+                \draw[dashed, red, thick] (0,1) -- (4,1) node[right] {$T_T$};
+                \fill[blue!30] (0.5,0) rectangle (1.5,1);
+                \fill[blue!30] (1.8,0) rectangle (2.8,1);
+                \fill[blue!30] (3.1,0) rectangle (3.8,1);
+                \node at (1,0.5) {Pièce};
+                \node at (2.3,0.5) {Pièce};
+                \node at (3.45,0.5) {Pièce};
+            \end{tikzpicture}
+            \small{Rythme imposé par le client}
+        \end{center}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Cycle Time ($T_C$)}
+    \begin{block}{Définition}
+        Le Cycle Time est le temps réel entre deux pièces produites sur un poste donné.
+    \end{block}
+    
+    \begin{center}
+        \boxed{T_C = \frac{\text{Temps de production d'une pièce sur un poste}}{\text{Nombre de pièces produites}}}
+    \end{center}
+    
+    \vspace{0.3cm}
+    \textbf{Interprétation :}
+    \begin{itemize}
+        \item $T_C < T_T$ : Surcapacité (temps morts)
+        \item $T_C > T_T$ : Goulot (incapacité à suivre la demande)
+        \item $T_C = T_T$ : Équilibre parfait
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Lead Time ($LT$)}
+    \begin{block}{Définition}
+        Le Lead Time est le temps total entre l'entrée de la matière première et la sortie du produit fini.
+    \end{block}
+    
+    \begin{center}
+        \boxed{LT = \sum (\text{Temps de transformation}) + \sum (\text{Temps d'attente}) + \sum (\text{Temps de transport})}
+    \end{center}
+    
+    \vspace{0.3cm}
+    \textbf{Relation importante :}
+    \[
+    LT = N \times T_C + \text{temps d'attente}
+    \]
+    où $N$ est le nombre de postes.
+\end{frame}
+
+\begin{frame}{Tableau récapitulatif}
+    \begin{table}[H]
+    \centering
+    \begin{tabular}{|p{2.2cm}|p{3cm}|p{3cm}|p{3cm}|}
+    \hline
+    \textbf{Concept} & \textbf{Définition} & \textbf{Formule} & \textbf{Rôle} \\
+    \hline
+    Takt Time & Rythme imposé par le client & $T_T = \frac{T_{\text{dispo}}}{D}$ & Objectif à atteindre \\
+    \hline
+    Cycle Time & Temps réel de production & $T_C = \frac{T_{\text{prod}}}{Q}$ & Indicateur d'écart \\
+    \hline
+    Lead Time & Temps total de traversée & $LT = \sum T_C + \sum \text{attente}$ & Indicateur global \\
+    \hline
+    \end{tabular}
+    \end{table}
+\end{frame}
+
+\begin{frame}{Illustration graphique}
+    \begin{center}
+    \begin{tikzpicture}[scale=0.7, every node/.style={scale=0.7}]
+        % Timeline
+        \draw[thick, ->] (0,0) -- (12,0) node[right] {Temps};
+        
+        % Lead Time
+        \draw[decorate, decoration={brace, amplitude=10pt, mirror}] (0.5,-0.8) -- (11.5,-0.8) node[midway, below] {Lead Time};
+        
+        % Postes - CORRECTION : utilisation du point pour les décimales
+        \fill[blue!20] (1,0) rectangle (3,0.6) node[midway, above] {Poste 1\\$T_C=0.62$};
+        \fill[blue!20] (3.5,0) rectangle (5.5,0.6) node[midway, above] {Poste 2\\$T_C=0.66$};
+        \fill[blue!20] (6,0) rectangle (8,0.6) node[midway, above] {Poste 3\\$T_C=0.70$};
+        \fill[blue!20] (8.5,0) rectangle (10.5,0.6) node[midway, above] {Poste 4\\$T_C=0.63$};
+        
+        % Attentes
+        \draw[<->, red] (3,0.3) -- (3.5,0.3) node[midway, above] {Attente};
+        \draw[<->, red] (5.5,0.3) -- (6,0.3) node[midway, above] {Attente};
+        \draw[<->, red] (8,0.3) -- (8.5,0.3) node[midway, above] {Attente};
+        
+        % Takt Time line
+        \draw[dashed, green!60!black, thick] (0,1) -- (12,1) node[right] {Takt Time = 0.7 min};
+    \end{tikzpicture}
+    \end{center}
+    \vspace{0.3cm}
+    \begin{center}
+        \textcolor{blue}{Le Cycle Time du poste le plus lent détermine le rythme de production}
+    \end{center}
+\end{frame}
+
+% ============================================================
+% PARTIE 3: POURQUOI ÉQUILIBRER ?
+% ============================================================
+\section{Pourquoi équilibrer ?}
+
+\begin{frame}{Les bénéfices d'un bon équilibrage}
+    \begin{columns}
+        \column{0.5\textwidth}
+        \begin{itemize}
+            \item \textbf{Réduction des temps morts}
+            \item \textbf{Amélioration du flux de production}
+            \item \textbf{Optimisation des ressources}
+        \end{itemize}
+        
+        \column{0.5\textwidth}
+        \begin{itemize}
+            \item \textbf{Réduction des stocks WIP}
+            \item \textbf{Augmentation de la productivité}
+            \item \textbf{Meilleure visibilité des problèmes}
+        \end{itemize}
+    \end{columns}
+    
+    \vspace{0.5cm}
+    \begin{center}
+        \textcolor{green}{\textbf{→ Gain de compétitivité globale}}
+    \end{center}
+\end{frame}
+
+\begin{frame}{Les coûts du déséquilibre}
+    \begin{table}[H]
+    \centering
+    \begin{tabular}{|p{3cm}|p{7cm}|}
+    \hline
+    \textbf{Type de perte} & \textbf{Conséquences} \\
+    \hline
+    Temps morts & Sous-utilisation des opérateurs et des machines \\
+    \hline
+    Stocks WIP & Capital immobilisé, risque d'obsolescence, surfaces occupées \\
+    \hline
+    Lead time long & Manque de réactivité, délais clients allongés \\
+    \hline
+    Goulots & Production limitée par le poste le plus lent \\
+    \hline
+    Surcapacité & Investissements sous-optimisés \\
+    \hline
+    \end{tabular}
+    \end{table}
+\end{frame}
+
+\begin{frame}{Impact sur la performance globale}
+    \begin{center}
+    \begin{tikzpicture}[node distance=1cm, scale=0.9, every node/.style={scale=0.9}]
+        \node[draw, rectangle, fill=blue!10, minimum width=3cm, minimum height=0.8cm] (lean) at (0,0) {Lean Manufacturing};
+        \node[draw, rectangle, fill=green!10, minimum width=3cm, minimum height=0.8cm, below of=lean] (equi) {Équilibrage};
+        \node[draw, rectangle, fill=yellow!10, minimum width=2.5cm, minimum height=0.8cm, below left of=equi, xshift=-1.5cm] (prod) {Productivité};
+        \node[draw, rectangle, fill=yellow!10, minimum width=2.5cm, minimum height=0.8cm, below of=equi] (qual) {Qualité};
+        \node[draw, rectangle, fill=yellow!10, minimum width=2.5cm, minimum height=0.8cm, below right of=equi, xshift=1.5cm] (delai) {Délais};
+        \node[draw, rectangle, fill=red!10, minimum width=4cm, minimum height=0.8cm, below of=prod, xshift=2cm] (client) {Satisfaction Client};
+        
+        \draw[->, thick] (lean) -- (equi);
+        \draw[->, thick] (equi) -- (prod);
+        \draw[->, thick] (equi) -- (qual);
+        \draw[->, thick] (equi) -- (delai);
+        \draw[->, thick] (prod) -- (client);
+        \draw[->, thick] (qual) -- (client);
+        \draw[->, thick] (delai) -- (client);
+    \end{tikzpicture}
+    \end{center}
+\end{frame}
+
+% ============================================================
+% PARTIE 4: QUAND ET COMMENT ?
+% ============================================================
+\section{Quand et comment équilibrer ?}
+
+\begin{frame}{Quand faut-il équilibrer ?}
+    \begin{columns}
+        \column{0.5\textwidth}
+        \begin{itemize}
+            \item Création d'une nouvelle ligne
+            \item Changement significatif de la demande
+            \item Introduction d'un nouveau produit
+        \end{itemize}
+        
+        \column{0.5\textwidth}
+        \begin{itemize}
+            \item Identification de goulots récurrents
+            \item Taux d'efficacité < 80\%
+            \item Stocks intermédiaires anormalement élevés
+        \end{itemize}
+    \end{columns}
+    
+    \vspace{0.5cm}
+    \begin{importantnote}
+        L'équilibrage n'est pas une action ponctuelle mais une démarche d'amélioration continue. Les lignes doivent être régulièrement rééquilibrées.
+    \end{importantnote}
+\end{frame}
+
+\begin{frame}{Résumé}
+    \begin{center}
+        \begin{tikzpicture}
+            \node[draw, rounded corners, fill=blue!20, minimum width=8cm, minimum height=0.8cm] (titre) at (0,0) {\textbf{L'équilibrage des lignes de production}};
+            
+            \node[draw, rounded corners, fill=green!10, minimum width=3.5cm, minimum height=2.5cm, below left=0.5cm of titre] (def) {\begin{tabular}{c} \textbf{Définition} \\ Répartition \\ équitable des \\ charges \end{tabular}};
+            
+            \node[draw, rounded corners, fill=yellow!10, minimum width=3.5cm, minimum height=2.5cm, below=0.5cm of titre] (obj) {\begin{tabular}{c} \textbf{Objectif} \\ Atteindre \\ le Takt Time \end{tabular}};
+            
+            \node[draw, rounded corners, fill=orange!10, minimum width=3.5cm, minimum height=2.5cm, below right=0.5cm of titre] (ben) {\begin{tabular}{c} \textbf{Bénéfices} \\ Productivité \\ Qualité \\ Délais \end{tabular}};
+        \end{tikzpicture}
+    \end{center}
+\end{frame}
+
+\begin{frame}{Conclusion}
+    \begin{center}
+        \Large
+        \textcolor{blue}{« L'équilibrage est le cœur du Lean Manufacturing »}
+    \end{center}
+    
+    \vspace{1cm}
+    
+    \begin{itemize}
+        \item Un outil fondamental pour l'optimisation industrielle
+        \item Une approche structurée basée sur des concepts clés
+        \item Des bénéfices mesurables sur la performance globale
+        \item Une démarche d'amélioration continue
+    \end{itemize}
+    
+    \vspace{1cm}
+    \begin{center}
+        \textbf{À retenir :} Le Takt Time est le rythme, le Cycle Time est la réalité, l'équilibrage est la solution.
+    \end{center}
+\end{frame}
+
+\end{document}

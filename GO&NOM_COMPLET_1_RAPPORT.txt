@@ -1,0 +1,165 @@
+================================================================================
+RAPPORT DE GENERATION GO&NOM
+================================================================================
+
+Date de generation: 2026-03-30 16:48:09
+Nombre de produits: 49
+
+REPARTITION PAR ETAPE DE PRODUCTION:
+----------------------------------------
+  montage             :    34 composants
+  conditionnement     :    21 composants
+  perçage             :     5 composants
+  découpe             :     2 composants
+  placage de chant    :     2 composants
+
+
+LISTE DES PRODUITS:
+----------------------------------------
+  1. MEUBLE INMAA D 50*36 CM BLANC BRILLANT
+     Composants: 3
+
+  2. MOD
+     Composants: 1
+
+  3. MEUBLE INARA D 60 CM CEMENTO BLANC
+     Composants: 1
+
+  4. MEUBLE DENIA D 60 CM OAK
+     Composants: 1
+
+  5. MEUBLE MADRID D 60 CM OAK
+     Composants: 1
+
+  6. MEUBLE MADRID D 120 CM OAK
+     Composants: 1
+
+  7. MEUBLE SEBOU (P) 60 CM BLANC BRILLANT
+     Composants: 3
+
+  8. MEUBLE MADRID D 120 CM OAK
+     Composants: 1
+
+  9. MEUBLE AGADIR AVEC PIED 8080 MARON
+     Composants: 3
+
+ 10. MEUBLE DENIA D 80 CM OAK
+     Composants: 3
+
+ 11. MEUBLE INARA D 80 CM BLANC CEMENTO
+     Composants: 3
+
+ 12. MEUBLE BELFAST D 120 CM OAK
+     Composants: 3
+
+ 13. MEUBLE ONDAS 100 CM OAK BLANC MAT OAK
+     Composants: 4
+
+ 14. MEUBLE RABAT D 120 CM BLANC BRILLANT
+     Composants: 1
+
+ 15. MIROIR CORDOBA D 100 CM BLANC BRILLANT
+     Composants: 1
+
+ 16. MIROIR CORDOBA D 100 CM NOIR BRILLANT
+     Composants: 1
+
+ 17. MIROIR CORDOBA D 120 CM BLANC BRILLANT
+     Composants: 1
+
+ 18. MIROIR CORDOBA D 120 CM NOIR BRILLANT
+     Composants: 1
+
+ 19. MIROIR CORDOBA D 50 CM BLANC BRILLANT
+     Composants: 1
+
+ 20. MIROIR CORDOBA D 50 CM NOIR BRILLANT
+     Composants: 1
+
+ 21. MIROIR CORDOBA D 60 CM BLANC BRILLANT
+     Composants: 1
+
+ 22. MIROIR CORDOBA D 60 CM NOIR BRILLANT
+     Composants: 1
+
+ 23. MIROIR CORDOBA D 70 CM BLANC BRILLANT
+     Composants: 1
+
+ 24. MIROIR CORDOBA D 80 CM BLANC BRILLANT
+     Composants: 1
+
+ 25. MEUBLE INARA D 60 CM BLANC BRILLANT
+     Composants: 1
+
+ 26. MEUBLE SEBOU D 60 CM OAK
+     Composants: 1
+
+ 27. MEUBLE INARA D 60 CM BLANC CEMENTO
+     Composants: 1
+
+ 28. MEUBLE MARE 60 CM PINO ZERMAT
+     Composants: 1
+
+ 29. MEUBLE MADRID D 60 CM BLANC BRILLANT
+     Composants: 1
+
+ 30. MEUBLE ALICANTE 2T D 60 CM BLANC BRILLANT
+     Composants: 1
+
+ 31. MEUBLE BILBAO D 60 CM OAK
+     Composants: 1
+
+ 32. MEUBLE BILBAO D 60 CM TRUFA
+     Composants: 1
+
+ 33. MEUBLE MADRID D 80 CM TRUFA
+     Composants: 1
+
+ 34. MEUBLE ALICANTE 2T D 80 CM BLANC BRILLANT
+     Composants: 1
+
+ 35. MEUBLE BILBAO D 80 CM OAK
+     Composants: 1
+
+ 36. MIROIR ETAGERE K3 60 CM OAK
+     Composants: 1
+
+ 37. MEUBLE MYKONOS PVC D 60 CM 2F CHENE
+     Composants: 1
+
+ 38. MEUBLE PATRAS D 60 CM PVC BLANC BRILLANT
+     Composants: 1
+
+ 39. MEUBLE TORINO D 60 CM PVC BLANC BRILLANT
+     Composants: 1
+
+ 40. MEUBLE PATRAS D 80 CM PVC BLANC BRILLANT
+     Composants: 1
+
+ 41. MEUBLE MYKONOS PVC D 80 CM 2F CHENE
+     Composants: 1
+
+ 42. MEUBLE TORINO D 80 CM PVC BLANC BRILLANT
+     Composants: 1
+
+ 43. MEUBLE LYON D 60 CM BLANC NOIR
+     Composants: 1
+
+ 44. MEUBLE LYON D 80 CM BLANC GRAPHITE
+     Composants: 1
+
+ 45. MEUBLE MONACO D 60 CM BLANC BRILLANT
+     Composants: 1
+
+ 46. MEUBLE MONACO D 80 CM BLANC BRILLANT
+     Composants: 1
+
+ 47. MEUBLE MONACO D 100 CM NOIR BRILLANT
+     Composants: 1
+
+ 48. MEUBLE RABAT D 60 CM BLANC BRILLANT
+     Composants: 1
+
+ 49. MEUBLE RABAT D 80 CM BLANC BRILLANT
+     Composants: 1
+

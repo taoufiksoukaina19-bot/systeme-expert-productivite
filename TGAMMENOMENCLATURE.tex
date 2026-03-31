@@ -1,0 +1,1964 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{geometry}
+\geometry{left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+
+% Configuration des en-têtes et pieds de page
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small Nomenclatures \& Gammes CEJID 2026}
+\fancyhead[R]{\small \thepage}
+\fancyfoot[C]{\small Document technique - Usage industriel}
+
+% Configuration des hyperliens
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=blue,
+    citecolor=black
+}
+
+% Rétablir les titres de section en français
+\usepackage{titlesec}
+\titleformat{\section}{\Large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\large\bfseries}{\thesubsection}{1em}{}
+
+\begin{document}
+
+% Page de titre
+\begin{titlepage}
+    \centering
+    \vspace*{2cm}
+    {\Huge\bfseries Nomenclatures et Gammes Opératoires\par}
+    \vspace{0.5cm}
+    {\Large\bfseries CEJID 2026\par}
+    \vspace{1cm}
+    {\large Établissement des gammes par poste et de la nomenclature associée\par}
+    \vspace{2cm}
+    {\large Document technique\par}
+    \vspace{1cm}
+    {\large Version 1.0\par}
+    \vspace{2cm}
+    {\large Date : \today\par}
+\end{titlepage}
+
+% Table des matières
+\tableofcontents
+\newpage
+
+% ============================================================
+% PARTIE 1 : INTRODUCTION
+% ============================================================
+
+\section{Introduction}
+
+\subsection{Objectif du document}
+Le présent document a pour objectif de définir et formaliser les \textbf{gammes opératoires par poste de charge} ainsi que la \textbf{nomenclature correspondante} (Bill Of Materials - BOM) pour l'ensemble des produits fabriqués par CEJID pour l'année 2026.
+
+Conformément aux spécifications, ce document doit permettre de :
+\begin{itemize}
+    \item Structurer les opérations de fabrication par poste de travail (découpe, usinage, placage de chants, assemblage, finition, emballage) ;
+    \item Établir la liste complète des composants entrant dans chaque produit fini ;
+    \item Fournir une base technique pour le calcul ultérieur des temps de cycle (TC) et des coûts de revient.
+\end{itemize}
+
+\subsection{Périmètre fonctionnel et produits concernés}
+Le périmètre de ce document couvre l'ensemble des produits finis référencés dans les fichiers sources, répartis selon les catégories suivantes :
+
+\begin{itemize}
+    \item \textbf{Meubles mélaminés} (onglet \texttt{NOM MELAMINE}) : modèles INMAA, K2, INARA, DENIA, MADRID, SEBOU, AGADIR, BELFAST, ONDAS, ALICANTE, BILBAO, etc.
+    \item \textbf{Meubles PVC} (onglet \texttt{PVC 2026}) : modèles MYKONOS, PATRAS, TORINO.
+    \item \textbf{Meubles laqués} (onglets \texttt{LAQUEE 2026} et \texttt{LAQUEE BARDAGE}) : modèles LYON, MONACO, RABAT.
+    \item \textbf{Miroirs} (onglet \texttt{NOM MELAMINE}) : modèles CORDOBA (50, 60, 70, 80, 100, 120 cm) et K3.
+\end{itemize}
+
+Pour chaque produit, sont détaillés :
+\begin{itemize}
+    \item La liste des composants (panneaux, quincaillerie, colles, emballages) ;
+    \item Les quantités associées, exprimées dans leurs unités respectives (U, KG, M², ML) ;
+    \item Les formules de calcul lorsque les quantités sont définies de manière paramétrique.
+\end{itemize}
+
+\subsection{Sources des données (fichiers Excel)}
+Les données utilisées pour l'élaboration de ce document proviennent de deux fichiers Excel distincts :
+
+\paragraph{Fichier 1 : \texttt{Nomenclature CEJID 2026.xlsx}}
+Ce fichier contient plusieurs onglets :
+\begin{itemize}
+    \item \texttt{NOM MELAMINE} : nomenclature des meubles mélaminés et des miroirs ;
+    \item \texttt{PVC 2026} : nomenclature des meubles en PVC ;
+    \item \texttt{LAQUEE 2026} : nomenclature des meubles laqués ;
+    \item \texttt{LAQUEE BARDAGE} : complément pour les meubles laqués avec bardage.
+\end{itemize}
+
+\paragraph{Fichier 2 : \texttt{PROCESS PRODUIT YNION.xlsx}}
+Ce fichier contient les gammes opératoires sous forme de tableaux structurés par onglet :
+\begin{itemize}
+    \item \texttt{PROCESS PIENTURE} : gammes pour les produits laqués ;
+    \item \texttt{PROCESS TIROIR LAQUEE} : gammes spécifiques pour les tiroirs laqués ;
+    \item \texttt{PROCESS TIROIR MELAMINI} : gammes pour les tiroirs mélaminés ;
+    \item \texttt{PROCESS PORTE MELAMINI} : gammes pour les portes mélaminées.
+\end{itemize}
+
+Chaque onglet définit les postes de charge, les opérations élémentaires, les temps associés (réglage, machine, transfert) et les références produits concernées.
+
+\paragraph{Traitement des données}
+Les quantités exprimées sous forme de formules (exemple : \texttt{=0.02+0.09+0.02}) ont été interprétées et consolidées. Les unités de mesure (U, KG, M², ML) sont conservées telles que définies dans les fichiers sources.
+% ============================================================
+% PARTIE 2 : MÉTHODOLOGIE D'ÉLABORATION
+% ============================================================
+
+\section{Méthodologie d'élaboration}
+
+\subsection{Structure des données d'entrée}
+
+Les données sources sont organisées selon une structure commune à tous les onglets des fichiers Excel. Cette section décrit les champs et leur interprétation.
+
+\subsubsection{Description des colonnes (fichier Nomenclature CEJID 2026)}
+
+\begin{longtable}{|p{3cm}|p{4cm}|p{8cm}|}
+\hline
+\multicolumn{1}{|c|}{\textbf{Colonne}} & \multicolumn{1}{c|}{\textbf{Libellé}} & \multicolumn{1}{c|}{\textbf{Description}} \\
+\hline
+\endfirsthead
+\hline
+\multicolumn{1}{|c|}{\textbf{Colonne}} & \multicolumn{1}{c|}{\textbf{Libellé}} & \multicolumn{1}{c|}{\textbf{Description}} \\
+\hline
+\endhead
+\hline
+\endfoot
+A & Reference Article & Code unique du produit fini (ex: MEU050NMABLB, MIR100CORBLB) \\
+B & Designation & Libellé commercial du produit \\
+C & Composant & Code du composant (matière, quincaillerie, emballage) \\
+D & Désignation Composant & Libellé technique du composant \\
+E & Quantité & Quantité nécessaire par produit fini (peut contenir des formules Excel) \\
+F & Unité Qté & Unité de mesure (U, KG, M², ML) \\
+\hline
+\end{longtable}
+
+\subsubsection{Structure des gammes opératoires (fichier PROCESS PRODUIT YNION)}
+
+Le fichier \texttt{PROCESS PRODUIT YNION.xlsx} contient plusieurs onglets structurés selon le modèle suivant :
+
+\begin{itemize}
+    \item \textbf{PROCESS PIENTURE} : Gammes pour produits laqués (Lyon, Monaco, Rabat)
+    \item \textbf{PROCESS TIROIR LAQUEE} : Gammes spécifiques pour tiroirs laqués
+    \item \textbf{PROCESS TIROIR MELAMINI} : Gammes pour tiroirs mélaminés (Madrid, Istanbul)
+    \item \textbf{PROCESS PORTE MELAMINI} : Gammes pour portes mélaminées (Inmaa, K2, Sebou, Agadir)
+\end{itemize}
+
+\subsubsection{Règles d'interprétation des données}
+
+Les quantités exprimées sous forme de formules Excel ont été interprétées selon les règles suivantes :
+
+\begin{longtable}{|p{4cm}|p{4cm}|p{8cm}|}
+\hline
+\multicolumn{1}{|c|}{\textbf{Type de formule}} & \multicolumn{1}{c|}{\textbf{Exemple}} & \multicolumn{1}{c|}{\textbf{Interprétation}} \\
+\hline
+\endfirsthead
+\hline
+\multicolumn{1}{|c|}{\textbf{Type de formule}} & \multicolumn{1}{c|}{\textbf{Exemple}} & \multicolumn{1}{c|}{\textbf{Interprétation}} \\
+\hline
+\endhead
+\hline
+\endfoot
+Addition simple & =0.02+0.09+0.02 & Somme des termes = 0,13 KG \\
+Multiplication & =1.4*1.15 & Produit = 1,61 ML \\
+Division & =1/50 & Quotient = 0,02 KG \\
+Formule paramétrée & =0.02+0.09+0.02 & Colle de chant (valeur consolidée) \\
+\hline
+\end{longtable}
+
+\subsection{Classification des composants}
+
+Afin de structurer la nomenclature et de faciliter l'analyse des coûts, les composants ont été classés en cinq grandes catégories.
+
+\subsubsection{Tableau de classification générale}
+
+\begin{longtable}{|p{2.5cm}|p{3cm}|p{5cm}|p{5cm}|}
+\hline
+\multicolumn{1}{|c|}{\textbf{Code type}} & \multicolumn{1}{c|}{\textbf{Préfixe}} & \multicolumn{1}{c|}{\textbf{Catégorie}} & \multicolumn{1}{c|}{\textbf{Exemples}} \\
+\hline
+\endfirsthead
+\hline
+\multicolumn{1}{|c|}{\textbf{Code type}} & \multicolumn{1}{c|}{\textbf{Préfixe}} & \multicolumn{1}{c|}{\textbf{Catégorie}} & \multicolumn{1}{c|}{\textbf{Exemples}} \\
+\hline
+\endhead
+\hline
+\endfoot
+MPP... & MPPA, MPPF & Panneaux & MPPAF16SR209, MPPAF28516BLS, MPAPVC15JY032 \\
+MPB... & MPBC, MPC & Bandes de chant & MPBC819BL209, MPBC0819N822 \\
+QUV... & QUVI, QUDV & Vis, chevilles, tourillons & QUVICH055000, QUDVCHPL0810 \\
+QUF... & QUFCH & Charnières & QUFCHAFR3500, QUFCHNOR3500 \\
+QUP... & QUPO & Poignées & QUPOCH500500, QUPOCH159CU0 \\
+QUS... & QUSA & Coulisses & QUSACOFR3500 \\
+QUC... & QUCO, QUCOTF & Colles & QUCOCOTHERM0, QUCORAT1495R \\
+MPF... & MPFRAL, MPFOB & Laques et finitions & MPFRAL9005NM, MPFOBUP1017T \\
+EMC... & EMCAE & Cartons d'emballage & EMCAEURMB601, EMCAEURMR100 \\
+EMS... & EMSP & Sachets plastiques & EMSPDPMB9012, EMSPDPMR9090 \\
+DVC... & DVCO & Palettes & DVCOPAL80120 \\
+\hline
+\end{longtable}
+
+\subsubsection{Classification détaillée des matières premières}
+
+\paragraph{Panneaux (MPP...)}
+\begin{itemize}
+    \item \textbf{Mélaminé} : MPPAF16SR209 (blanc brillant), MPPAF28516BLS (blanc standard), MPPAF28516COS (chêne)
+    \item \textbf{Hydrofuge} : MPPACNHD2856, MPPACNHD2858
+    \item \textbf{PVC} : MPAPVC15JY032 (PVC chêne), MPAPVC15ZL03G (PVC blanc brillant)
+    \item \textbf{MDF} : MPPAF24405GG (MDF gris), MPPAF24125LC (lino)
+\end{itemize}
+
+\paragraph{Bandes de chant (MPB...)}
+\begin{itemize}
+    \item \textbf{Blanc brillant} : MPBC819BL209
+    \item \textbf{Blanc serf} : MPBC8192011N
+    \item \textbf{Chêne} : MPBC0819N822
+    \item \textbf{Ciment} : MPBC0819CE67
+    \item \textbf{Noir brillant} : MPBC0819NE64
+    \item \textbf{Chêne truffe} : MPC0819R534
+\end{itemize}
+
+\subsubsection{Classification détaillée de la quincaillerie}
+
+\begin{longtable}{|p{3cm}|p{4cm}|p{9cm}|}
+\hline
+\multicolumn{1}{|c|}{\textbf{Sous-catégorie}} & \multicolumn{1}{c|}{\textbf{Code type}} & \multicolumn{1}{c|}{\textbf{Exemples}} \\
+\hline
+\endfirsthead
+\hline
+\multicolumn{1}{|c|}{\textbf{Sous-catégorie}} & \multicolumn{1}{c|}{\textbf{Code type}} & \multicolumn{1}{c|}{\textbf{Exemples}} \\
+\hline
+\endhead
+\hline
+\endfoot
+Vis & QUVI... & QUVICH055000 (5x50 chrome), QUVICH041600 (4x16 chrome) \\
+Chevilles & QUDVCH... & QUDVCHPL0810 (cheville 8x10) \\
+Tourillons & QUVITOU... & QUVITOU08300 (tourillon 8x30) \\
+Charnières & QUFCH... & QUFCHAFR3500 (à frein), QUFCHNOR3500 (normale) \\
+Poignées & QUPO... & QUPOCH500500 (JRG chrome), QUPOCH159CU0 (U chromé) \\
+Coulisses & QUSA... & QUSACOFR3500 (coulisse à frein 35) \\
+Supports & QUDVSU... & QUDVSUMET000 (support métal), QUDVSUHS933C \\
+\hline
+\end{longtable}
+
+\subsubsection{Classification détaillée des produits chimiques}
+
+\begin{longtable}{|p{3cm}|p{4cm}|p{9cm}|}
+\hline
+\multicolumn{1}{|c|}{\textbf{Sous-catégorie}} & \multicolumn{1}{c|}{\textbf{Code type}} & \multicolumn{1}{c|}{\textbf{Exemples}} \\
+\hline
+\endfirsthead
+\hline
+\multicolumn{1}{|c|}{\textbf{Sous-catégorie}} & \multicolumn{1}{c|}{\textbf{Code type}} & \multicolumn{1}{c|}{\textbf{Exemples}} \\
+\hline
+\endhead
+\hline
+\endfoot
+Colles à chant & QUCO... & QUCOCOTHERM0 (colle thermofusible), QUCOFAKFX360 \\
+Colles D3 & QUCORA... & QUCORAT1495R \\
+Colles d'assemblage & QUCOUN... & QUCOUNNU1000, QUCOUNNU1001 \\
+Laques & MPFRAL... & MPFRAL9005NM (noir mat), MPFRAL7037GR (gris graphite) \\
+Fonds & MPFOB... & MPFOBUP1017T (fond blanc polyuréthane) \\
+Vernis & MPGLC... & MPGLCKD4010T (brillant clair) \\
+Diluants & MPDL... & MPDLMDU5002M, MPDLRDU5023L \\
+Catalyseurs & MPCAT... & MPCATCU2126U, MPCATCB5228A \\
+\hline
+\end{longtable}
+
+\subsection{Définition des postes de charge}
+
+Les postes de charge sont définis à partir des informations contenues dans le fichier \texttt{PROCESS PRODUIT YNION.xlsx}. Chaque poste correspond à une étape majeure du processus de fabrication.
+
+\subsubsection{Tableau des postes de charge}
+
+\begin{longtable}{|c|p{4cm}|p{3cm}|p{6cm}|}
+\hline
+\multicolumn{1}{|c|}{\textbf{Code}} & \multicolumn{1}{c|}{\textbf{Libellé}} & \multicolumn{1}{c|}{\textbf{Type}} & \multicolumn{1}{c|}{\textbf{Opérations principales}} \\
+\hline
+\endfirsthead
+\hline
+\multicolumn{1}{|c|}{\textbf{Code}} & \multicolumn{1}{c|}{\textbf{Libellé}} & \multicolumn{1}{c|}{\textbf{Type}} & \multicolumn{1}{c|}{\textbf{Opérations principales}} \\
+\hline
+\endhead
+\hline
+\endfoot
+100 & Découpe panneaux & Machine & Découpe Mélaminé, PVC, hydrofuge aux dimensions \\
+200 & Usinage / Perçage & Machine & Perçage, fraisage, inserts, mortaises \\
+300 & Placage de chants & Machine & Application bandes PVC, ABS, mélaminé \\
+400 & Assemblage quincaillerie & Manuelle & Pose charnières, poignées, coulisses, tourillons \\
+500 & Finition / Laquage & Atelier & Ponceuse, application fond, couche finition \\
+600 & Montage tiroirs & Manuelle & Assemblage tiroirs mélaminés ou laqués \\
+700 & Emballage & Manuelle & Mise sous sachet, cartonnage, palettisation \\
+800 & Contrôle qualité & Contrôle & Vérification dimensionnelle, aspect, fonctionnelle \\
+\hline
+\end{longtable}
+
+\subsubsection{Définition des temps opératoires}
+
+Pour chaque poste de charge, les temps opératoires sont définis selon les paramètres suivants :
+
+\begin{itemize}
+    \item \textbf{Temps de réglage (TR)} : temps nécessaire pour préparer la machine ou le poste avant la production (en heures ou minutes)
+    \item \textbf{Temps machine (TM)} : temps unitaire d'exécution de l'opération par la machine
+    \item \textbf{Temps main-d'œuvre (TMO)} : temps unitaire d'intervention de l'opérateur
+    \item \textbf{Temps de transfert (TT)} : temps de déplacement entre deux postes successifs
+\end{itemize}
+
+\subsubsection{Correspondance postes / familles produits}
+
+\begin{longtable}{|p{2.5cm}|p{5cm}|p{8cm}|}
+\hline
+\multicolumn{1}{|c|}{\textbf{Poste}} & \multicolumn{1}{c|}{\textbf{Familles concernées}} & \multicolumn{1}{c|}{\textbf{Observations}} \\
+\hline
+\endfirsthead
+\hline
+\multicolumn{1}{|c|}{\textbf{Poste}} & \multicolumn{1}{c|}{\textbf{Familles concernées}} & \multicolumn{1}{c|}{\textbf{Observations}} \\
+\hline
+\endhead
+\hline
+\endfoot
+100 & Tous produits & Découpe sur scies optimisées \\
+200 & Tous produits & Usinage CNC pour séries \\
+300 & Mélaminé, PVC & Placage sur machine à chants \\
+400 & Tous produits & Assemblage manuel sur ligne \\
+500 & Laqué uniquement & Cabine de laquage + séchage \\
+600 & Denia, Madrid, Rabat & Tiroirs 1 ou 2 tiroirs \\
+700 & Tous produits & Cartonnage + palettisation \\
+800 & Tous produits & Contrôle final avant expédition \\
+\hline
+\end{longtable}
+
+\subsubsection{Capacités et rendements}
+
+Pour chaque poste de charge, les capacités nominales sont définies comme suit :
+
+\begin{longtable}{|c|p{4cm}|c|c|}
+\hline
+\multicolumn{1}{|c|}{\textbf{Poste}} & \multicolumn{1}{c|}{\textbf{Libellé}} & \multicolumn{1}{c|}{\textbf{Capacité (heures/jour)}} & \multicolumn{1}{c|}{\textbf{Rendement théorique}} \\
+\hline
+\endfirsthead
+\hline
+\multicolumn{1}{|c|}{\textbf{Poste}} & \multicolumn{1}{c|}{\textbf{Libellé}} & \multicolumn{1}{c|}{\textbf{Capacité (heures/jour)}} & \multicolumn{1}{c|}{\textbf{Rendement théorique}} \\
+\hline
+\endhead
+\hline
+\endfoot
+100 & Découpe & 14 h (2 équipes) & 95\% \\
+200 & Usinage & 14 h (2 équipes) & 92\% \\
+300 & Placage chants & 7 h (1 équipe) & 90\% \\
+400 & Assemblage & 7 h (1 équipe) & 85\% \\
+500 & Laquage & 7 h (1 équipe) & 88\% \\
+600 & Montage tiroirs & 7 h (1 équipe) & 90\% \\
+700 & Emballage & 7 h (1 équipe) & 95\% \\
+800 & Contrôle & 7 h (1 équipe) & 98\% \\
+\hline
+\end{longtable}
+% ============================================================
+% PARTIE 3 : GAMMES OPÉRATOIRES PAR POSTE DE CHARGE
+% ============================================================
+
+\section{Gammes opératoires par poste de charge}
+
+Cette section détaille pour chaque poste de charge les opérations élémentaires, les temps associés, les outils/machines utilisés, ainsi que les références produits concernées.
+
+\subsection{Poste 100 – Découpe panneaux}
+
+\subsubsection{Description du poste}
+Le poste 100 assure la découpe des panneaux (mélaminé, hydrofuge, PVC, MDF) aux dimensions requises par les nomenclatures.
+
+\subsubsection{Moyens de production}
+\begin{itemize}
+    \item Scie optimisée SCM (3 unités)
+    \item Scie verticale Altendorf (2 unités)
+    \item Équipement de contrôle dimensionnel
+\end{itemize}
+
+\subsubsection{Opérations types}
+
+\begin{longtable}{|c|p{5cm}|c|c|c|p{3cm}|}
+\hline
+\multicolumn{1}{|c|}{\textbf{Réf. opération}} & \multicolumn{1}{c|}{\textbf{Libellé}} & \multicolumn{1}{c|}{\textbf{TR (min)}} & \multicolumn{1}{c|}{\textbf{TM (min)}} & \multicolumn{1}{c|}{\textbf{TMO (min)}} & \multicolumn{1}{c|}{\textbf{Unité}} \\
+\hline
+\endfirsthead
+\hline
+\multicolumn{1}{|c|}{\textbf{Réf. opération}} & \multicolumn{1}{c|}{\textbf{Libellé}} & \multicolumn{1}{c|}{\textbf{TR (min)}} & \multicolumn{1}{c|}{\textbf{TM (min)}} & \multicolumn{1}{c|}{\textbf{TMO (min)}} & \multicolumn{1}{c|}{\textbf{Unité}} \\
+\hline
+\endhead
+\hline
+\endfoot
+100-01 & Découpe panneau mélaminé 16mm & 15 & 2,5 & 2,5 & m² \\
+100-02 & Découpe panneau hydrofuge 16/18mm & 15 & 2,8 & 2,8 & m² \\
+100-03 & Découpe PVC 15mm & 10 & 2,0 & 2,0 & m² \\
+100-04 & Découpe MDF 5mm & 8 & 1,5 & 1,5 & m² \\
+100-05 & Découpe lino 5mm & 8 & 1,5 & 1,5 & m² \\
+\hline
+\end{longtable}
+
+\subsubsection{Produits concernés}
+Tous les meubles (mélaminés, PVC, laqués) et miroirs.
+
+\subsection{Poste 200 – Usinage / Perçage}
+
+\subsubsection{Description du poste}
+Le poste 200 réalise les usinages complémentaires : perçages pour tourillons, charnières, poignées, et fraisages divers.
+
+\subsubsection{Moyens de production}
+\begin{itemize}
+    \item Centre d'usinage CNC Biesse (2 unités)
+    \item Perceuse multibroche (3 unités)
+    \item Fraiseuse à copier (1 unité)
+\end{itemize}
+
+\subsubsection{Opérations types}
+
+\begin{longtable}{|c|p{5cm}|c|c|c|p{3cm}|}
+\hline
+\multicolumn{1}{|c|}{\textbf{Réf. opération}} & \multicolumn{1}{c|}{\textbf{Libellé}} & \multicolumn{1}{c|}{\textbf{TR (min)}} & \multicolumn{1}{c|}{\textbf{TM (min)}} & \multicolumn{1}{c|}{\textbf{TMO (min)}} & \multicolumn{1}{c|}{\textbf{Unité}} \\
+\hline
+\endfirsthead
+\hline
+\multicolumn{1}{|c|}{\textbf{Réf. opération}} & \multicolumn{1}{c|}{\textbf{Libellé}} & \multicolumn{1}{c|}{\textbf{TR (min)}} & \multicolumn{1}{c|}{\textbf{TM (min)}} & \multicolumn{1}{c|}{\textbf{TMO (min)}} & \multicolumn{1}{c|}{\textbf{Unité}} \\
+\hline
+\endhead
+\hline
+\endfoot
+200-01 & Perçage tourillons (8mm) & 10 & 0,5 & 0,5 & perçage \\
+200-02 & Perçage charnières (35mm) & 15 & 1,0 & 1,0 & charnière \\
+200-03 & Perçage poignées & 8 & 0,4 & 0,4 & poignée \\
+200-04 & Fraisage rainures & 12 & 1,2 & 1,2 & ml \\
+200-05 & Mortaisage coulisses & 10 & 0,8 & 0,8 & coulisse \\
+\hline
+\end{longtable}
+
+\subsubsection{Produits concernés}
+Tous les meubles.
+
+\subsection{Poste 300 – Placage de chants}
+
+\subsubsection{Description du poste}
+Le poste 300 applique les bandes de chant sur les chants des panneaux découpés.
+
+\subsubsection{Moyens de production}
+\begin{itemize}
+    \item Machine à chants Homag (1 unité)
+    \item Poste manuel de placage (1 unité pour retouches)
+\end{itemize}
+
+\subsubsection{Opérations types}
+
+\begin{longtable}{|c|p{5cm}|c|c|c|p{3cm}|}
+\hline
+\multicolumn{1}{|c|}{\textbf{Réf. opération}} & \multicolumn{1}{c|}{\textbf{Libellé}} & \multicolumn{1}{c|}{\textbf{TR (min)}} & \multicolumn{1}{c|}{\textbf{TM (min)}} & \multicolumn{1}{c|}{\textbf{TMO (min)}} & \multicolumn{1}{c|}{\textbf{Unité}} \\
+\hline
+\endfirsthead
+\hline
+\multicolumn{1}{|c|}{\textbf{Réf. opération}} & \multicolumn{1}{c|}{\textbf{Libellé}} & \multicolumn{1}{c|}{\textbf{TR (min)}} & \multicolumn{1}{c|}{\textbf{TM (min)}} & \multicolumn{1}{c|}{\textbf{TMO (min)}} & \multicolumn{1}{c|}{\textbf{Unité}} \\
+\hline
+\endhead
+\hline
+\endfoot
+300-01 & Placage blanc brillant & 20 & 0,6 & 0,6 & ml \\
+300-02 & Placage blanc serf & 20 & 0,6 & 0,6 & ml \\
+300-03 & Placage chêne & 20 & 0,7 & 0,7 & ml \\
+300-04 & Placage ciment & 20 & 0,7 & 0,7 & ml \\
+300-05 & Placage noir brillant & 20 & 0,6 & 0,6 & ml \\
+300-06 & Placage chêne truffe & 20 & 0,7 & 0,7 & ml \\
+\hline
+\end{longtable}
+
+\subsubsection{Produits concernés}
+Meubles mélaminés, meubles PVC.
+
+\subsection{Poste 400 – Assemblage quincaillerie}
+
+\subsubsection{Description du poste}
+Le poste 400 assure le montage de tous les éléments de quincaillerie sur les panneaux usinés.
+
+\subsubsection{Moyens de production}
+\begin{itemize}
+    \item Poste d'assemblage manuel (4 stations)
+    \item Outillage électroportatif (visseuses, perceuses)
+\end{itemize}
+
+\subsubsection{Opérations types}
+
+\begin{longtable}{|c|p{5cm}|c|c|c|p{3cm}|}
+\hline
+\multicolumn{1}{|c|}{\textbf{Réf. opération}} & \multicolumn{1}{c|}{\textbf{Libellé}} & \multicolumn{1}{c|}{\textbf{TR (min)}} & \multicolumn{1}{c|}{\textbf{TM (min)}} & \multicolumn{1}{c|}{\textbf{TMO (min)}} & \multicolumn{1}{c|}{\textbf{Unité}} \\
+\hline
+\endfirsthead
+\hline
+\multicolumn{1}{|c|}{\textbf{Réf. opération}} & \multicolumn{1}{c|}{\textbf{Libellé}} & \multicolumn{1}{c|}{\textbf{TR (min)}} & \multicolumn{1}{c|}{\textbf{TM (min)}} & \multicolumn{1}{c|}{\textbf{TMO (min)}} & \multicolumn{1}{c|}{\textbf{Unité}} \\
+\hline
+\endhead
+\hline
+\endfoot
+400-01 & Pose charnière à frein & 5 & 0,8 & 0,8 & charnière \\
+400-02 & Pose charnière normale & 5 & 0,6 & 0,6 & charnière \\
+400-03 & Pose poignée & 3 & 0,5 & 0,5 & poignée \\
+400-04 & Pose tourillon & 2 & 0,2 & 0,2 & tourillon \\
+400-05 & Pose coulisse & 8 & 1,5 & 1,5 & coulisse \\
+400-06 & Pose support métal & 4 & 0,7 & 0,7 & support \\
+400-07 & Pose taquet métallique & 2 & 0,3 & 0,3 & taquet \\
+400-08 & Pose patte / pied & 6 & 1,0 & 1,0 & pied \\
+\hline
+\end{longtable}
+
+\subsubsection{Produits concernés}
+Tous les meubles.
+
+\subsection{Poste 500 – Finition / Laquage}
+
+\subsubsection{Description du poste}
+Le poste 500 est dédié à l'application des finitions sur les meubles laqués (Lyon, Monaco, Rabat).
+
+\subsubsection{Moyens de production}
+\begin{itemize}
+    \item Cabine de laquage (1 unité)
+    \item Étuve de séchage (1 unité)
+    \item Poste de ponçage (2 unités)
+\end{itemize}
+
+\subsubsection{Opérations types}
+
+\begin{longtable}{|c|p{5cm}|c|c|c|p{3cm}|}
+\hline
+\multicolumn{1}{|c|}{\textbf{Réf. opération}} & \multicolumn{1}{c|}{\textbf{Libellé}} & \multicolumn{1}{c|}{\textbf{TR (min)}} & \multicolumn{1}{c|}{\textbf{TM (min)}} & \multicolumn{1}{c|}{\textbf{TMO (min)}} & \multicolumn{1}{c|}{\textbf{Unité}} \\
+\hline
+\endfirsthead
+\hline
+\multicolumn{1}{|c|}{\textbf{Réf. opération}} & \multicolumn{1}{c|}{\textbf{Libellé}} & \multicolumn{1}{c|}{\textbf{TR (min)}} & \multicolumn{1}{c|}{\textbf{TM (min)}} & \multicolumn{1}{c|}{\textbf{TMO (min)}} & \multicolumn{1}{c|}{\textbf{Unité}} \\
+\hline
+\endhead
+\hline
+\endfoot
+500-01 & Ponceuse préparatoire & 10 & 2,0 & 2,0 & m² \\
+500-02 & Application fond PU & 15 & 3,0 & 3,0 & m² \\
+500-03 & Séchage fond (étuve) & 0 & 60,0 & 0 & m² \\
+500-04 & Ponceuse intermédiaire & 10 & 1,5 & 1,5 & m² \\
+500-05 & Application couche finition mate & 15 & 3,5 & 3,5 & m² \\
+500-06 & Application couche finition brillante & 15 & 4,0 & 4,0 & m² \\
+500-07 & Application vernis clair & 15 & 2,5 & 2,5 & m² \\
+500-08 & Séchage final (étuve) & 0 & 120,0 & 0 & m² \\
+\hline
+\end{longtable}
+
+\subsubsection{Produits concernés}
+Meubles laqués : Lyon (blanc/noir, blanc/graphite), Monaco (blanc brillant, noir brillant), Rabat (blanc brillant).
+
+\subsection{Poste 600 – Montage tiroirs}
+
+\subsubsection{Description du poste}
+Le poste 600 assure l'assemblage des tiroirs (mélaminés ou laqués) pour les meubles équipés (Denia, Madrid, Rabat, Bilbao, Alicante).
+
+\subsubsection{Moyens de production}
+\begin{itemize}
+    \item Poste d'assemblage tiroirs (2 stations)
+    \item Outillage spécifique (agrafage, vissage)
+\end{itemize}
+
+\subsubsection{Opérations types}
+
+\begin{longtable}{|c|p{5cm}|c|c|c|p{3cm}|}
+\hline
+\multicolumn{1}{|c|}{\textbf{Réf. opération}} & \multicolumn{1}{c|}{\textbf{Libellé}} & \multicolumn{1}{c|}{\textbf{TR (min)}} & \multicolumn{1}{c|}{\textbf{TM (min)}} & \multicolumn{1}{c|}{\textbf{TMO (min)}} & \multicolumn{1}{c|}{\textbf{Unité}} \\
+\hline
+\endfirsthead
+\hline
+\multicolumn{1}{|c|}{\textbf{Réf. opération}} & \multicolumn{1}{c|}{\textbf{Libellé}} & \multicolumn{1}{c|}{\textbf{TR (min)}} & \multicolumn{1}{c|}{\textbf{TM (min)}} & \multicolumn{1}{c|}{\textbf{TMO (min)}} & \multicolumn{1}{c|}{\textbf{Unité}} \\
+\hline
+\endhead
+\hline
+\endfoot
+600-01 & Assemblage fond tiroir & 5 & 1,2 & 1,2 & tiroir \\
+600-02 & Pose coulisses tiroir & 8 & 1,5 & 1,5 & tiroir \\
+600-03 & Pose face avant & 6 & 1,0 & 1,0 & tiroir \\
+600-04 & Pose taquets & 4 & 0,8 & 0,8 & tiroir \\
+600-05 & Contrôle tiroir & 3 & 0,5 & 0,5 & tiroir \\
+\hline
+\end{longtable}
+
+\subsubsection{Produits concernés}
+Denia (1 tiroir), Madrid (2 tiroirs), Rabat, Bilbao, Alicante.
+
+\subsection{Poste 700 – Emballage}
+
+\subsubsection{Description du poste}
+Le poste 700 réalise l'emballage complet des produits finis : mise sous sachet plastique, cartonnage, palettisation.
+
+\subsubsection{Moyens de production}
+\begin{itemize}
+    \item Poste d'emballage manuel (3 stations)
+    \item Palettiseur (1 unité)
+    \item Film étirable automatique (1 unité)
+\end{itemize}
+
+\subsubsection{Opérations types}
+
+\begin{longtable}{|c|p{5cm}|c|c|c|p{3cm}|}
+\hline
+\multicolumn{1}{|c|}{\textbf{Réf. opération}} & \multicolumn{1}{c|}{\textbf{Libellé}} & \multicolumn{1}{c|}{\textbf{TR (min)}} & \multicolumn{1}{c|}{\textbf{TM (min)}} & \multicolumn{1}{c|}{\textbf{TMO (min)}} & \multicolumn{1}{c|}{\textbf{Unité}} \\
+\hline
+\endfirsthead
+\hline
+\multicolumn{1}{|c|}{\textbf{Réf. opération}} & \multicolumn{1}{c|}{\textbf{Libellé}} & \multicolumn{1}{c|}{\textbf{TR (min)}} & \multicolumn{1}{c|}{\textbf{TM (min)}} & \multicolumn{1}{c|}{\textbf{TMO (min)}} & \multicolumn{1}{c|}{\textbf{Unité}} \\
+\hline
+\endhead
+\hline
+\endfoot
+700-01 & Mise sous sachet LDPE & 2 & 0,5 & 0,5 & sachet \\
+700-02 & Cartonnage meuble & 8 & 2,0 & 2,0 & carton \\
+700-03 & Cartonnage miroir & 5 & 1,5 & 1,5 & carton \\
+700-04 & Mise sous palette & 10 & 3,0 & 3,0 & palette \\
+700-05 & Filmage palette & 5 & 1,5 & 1,5 & palette \\
+\hline
+\end{longtable}
+
+\subsubsection{Produits concernés}
+Tous les produits.
+
+\subsection{Poste 800 – Contrôle qualité}
+
+\subsubsection{Description du poste}
+Le poste 800 assure le contrôle qualité final avant expédition des produits finis.
+
+\subsubsection{Moyens de production}
+\begin{itemize}
+    \item Poste de contrôle dimensionnel (1 unité)
+    \item Poste de contrôle aspect (1 unité)
+    \item Poste de contrôle fonctionnel (1 unité)
+\end{itemize}
+
+\subsubsection{Opérations types}
+
+\begin{longtable}{|c|p{5cm}|c|c|c|p{3cm}|}
+\hline
+\multicolumn{1}{|c|}{\textbf{Réf. opération}} & \multicolumn{1}{c|}{\textbf{Libellé}} & \multicolumn{1}{c|}{\textbf{TR (min)}} & \multicolumn{1}{c|}{\textbf{TM (min)}} & \multicolumn{1}{c|}{\textbf{TMO (min)}} & \multicolumn{1}{c|}{\textbf{Unité}} \\
+\hline
+\endfirsthead
+\hline
+\multicolumn{1}{|c|}{\textbf{Réf. opération}} & \multicolumn{1}{c|}{\textbf{Libellé}} & \multicolumn{1}{c|}{\textbf{TR (min)}} & \multicolumn{1}{c|}{\textbf{TM (min)}} & \multicolumn{1}{c|}{\textbf{TMO (min)}} & \multicolumn{1}{c|}{\textbf{Unité}} \\
+\hline
+\endhead
+\hline
+\endfoot
+800-01 & Contrôle dimensionnel & 5 & 1,0 & 1,0 & produit \\
+800-02 & Contrôle aspect (couleur, défauts) & 5 & 1,0 & 1,0 & produit \\
+800-03 & Contrôle fonctionnel (ouvrants) & 5 & 0,8 & 0,8 & produit \\
+800-04 & Contrôle emballage & 3 & 0,5 & 0,5 & produit \\
+800-05 & Établissement rapport CQ & 5 & 1,0 & 1,0 & lot \\
+\hline
+\end{longtable}
+
+\subsubsection{Produits concernés}
+Tous les produits (échantillonnage selon plan de contrôle).
+% ============================================================
+% PARTIE 4 : NOMENCLATURE CORRESPONDANTE (BOM)
+% ============================================================
+
+\section{Nomenclature correspondante (BOM)}
+
+Cette section présente la nomenclature complète (Bill Of Materials) pour l'ensemble des produits, structurée par catégories de composants. Les quantités sont exprimées dans leurs unités respectives (U = unité, KG = kilogramme, M² = mètre carré, ML = mètre linéaire).
+
+\subsection{Matières premières (panneaux, bandes de chant)}
+
+\subsubsection{Panneaux mélaminés}
+
+\begin{longtable}{|p{4cm}|p{6cm}|c|c|p{3cm}|}
+\hline
+\multicolumn{1}{|c|}{\textbf{Code composant}} & \multicolumn{1}{c|}{\textbf{Désignation}} & \multicolumn{1}{c|}{\textbf{Unité}} & \multicolumn{1}{c|}{\textbf{Prix unitaire (€)}} & \multicolumn{1}{c|}{\textbf{Observations}} \\
+\hline
+\endfirsthead
+\hline
+\multicolumn{1}{|c|}{\textbf{Code composant}} & \multicolumn{1}{c|}{\textbf{Désignation}} & \multicolumn{1}{c|}{\textbf{Unité}} & \multicolumn{1}{c|}{\textbf{Prix unitaire (€)}} & \multicolumn{1}{c|}{\textbf{Observations}} \\
+\hline
+\endhead
+\hline
+\endfoot
+MPPAF16SR209 & Panneau Finsa 275x210x16 Super Decor 2F White SR209 L100 & M² & 12,50 & Blanc brillant \\
+MPPAF28516BLS & Panneau Finsa 285x210x16 Super Decor 2F Blanco Standard & M² & 11,80 & Blanc standard \\
+MPPAF28516COS & Panneau Finsa 285x210x16 Super Decor 2F Cambrian Oak Sega & M² & 14,20 & Chêne \\
+MPPAF28516CSM & Panneau Finsa 285x210x16 Super Decor 2F Cemento Super Mate & M² & 13,50 & Ciment \\
+MPPAF28516RF & Panneau Finsa 285x210x16 Super Decor 2F Roble Trufa P.Profundo & M² & 14,20 & Chêne truffe \\
+MPPAF28516PZ & Panneau Finsa 285x210x16 Super Decor 2F Pino Zermat P.Arena & M² & 13,80 & Pin zermat \\
+MPPAF24405GG & Panneau Finsa 244x210x5 MDF Gris GU S.3 & M² & 8,50 & MDF gris \\
+MPPAF24125LC & Panneau Finsa 244x210x5 Lino Cancun Textil Kraf & M² & 9,20 & Lino \\
+\hline
+\end{longtable}
+
+\subsubsection{Panneaux hydrofuges (laqués)}
+
+\begin{longtable}{|p{4cm}|p{6cm}|c|c|p{3cm}|}
+\hline
+\multicolumn{1}{|c|}{\textbf{Code composant}} & \multicolumn{1}{c|}{\textbf{Désignation}} & \multicolumn{1}{c|}{\textbf{Unité}} & \multicolumn{1}{c|}{\textbf{Prix unitaire (€)}} & \multicolumn{1}{c|}{\textbf{Observations}} \\
+\hline
+\endfirsthead
+\hline
+\multicolumn{1}{|c|}{\textbf{Code composant}} & \multicolumn{1}{c|}{\textbf{Désignation}} & \multicolumn{1}{c|}{\textbf{Unité}} & \multicolumn{1}{c|}{\textbf{Prix unitaire (€)}} & \multicolumn{1}{c|}{\textbf{Observations}} \\
+\hline
+\endhead
+\hline
+\endfoot
+MPPACNHD2856 & Panneau Finsa 285x210x16 Fib Hidrofugo Blanco Standard & M² & 15,50 & Hydrofuge 16mm \\
+MPPACNHD2858 & Panneau Finsa 285x210x18 Fib Hidrofugo Blanco Standard & M² & 17,20 & Hydrofuge 18mm \\
+MPPAFHBS36622 & Panneau Finsa 366x210x22 Fib Hidrofugo Blanco Standard & M² & 19,80 & Hydrofuge 22mm \\
+\hline
+\end{longtable}
+
+\subsubsection{Panneaux PVC}
+
+\begin{longtable}{|p{4cm}|p{6cm}|c|c|p{3cm}|}
+\hline
+\multicolumn{1}{|c|}{\textbf{Code composant}} & \multicolumn{1}{c|}{\textbf{Désignation}} & \multicolumn{1}{c|}{\textbf{Unité}} & \multicolumn{1}{c|}{\textbf{Prix unitaire (€)}} & \multicolumn{1}{c|}{\textbf{Observations}} \\
+\hline
+\endfirsthead
+\hline
+\multicolumn{1}{|c|}{\textbf{Code composant}} & \multicolumn{1}{c|}{\textbf{Désignation}} & \multicolumn{1}{c|}{\textbf{Unité}} & \multicolumn{1}{c|}{\textbf{Prix unitaire (€)}} & \multicolumn{1}{c|}{\textbf{Observations}} \\
+\hline
+\endhead
+\hline
+\endfoot
+MPAPVC15JY032 & Panneau PVC 244x122x15 1F JY032 Chêne & M² & 18,50 & PVC chêne \\
+MPAPVC15ZL03G & Panneau PVC 244x122x15 1F ZL-003G Blanc Brillant & M² & 17,80 & PVC blanc brillant \\
+MPAPVC05PVCFO & Panneau PVC 244x122x05 PVC Foam & M² & 12,50 & PVC mousse 5mm \\
+\hline
+\end{longtable}
+
+\subsubsection{Bandes de chant}
+
+\begin{longtable}{|p{4cm}|p{7cm}|c|c|p{2cm}|}
+\hline
+\multicolumn{1}{|c|}{\textbf{Code composant}} & \multicolumn{1}{c|}{\textbf{Désignation}} & \multicolumn{1}{c|}{\textbf{Unité}} & \multicolumn{1}{c|}{\textbf{Prix unitaire (€)}} & \multicolumn{1}{c|}{\textbf{Observations}} \\
+\hline
+\endfirsthead
+\hline
+\multicolumn{1}{|c|}{\textbf{Code composant}} & \multicolumn{1}{c|}{\textbf{Désignation}} & \multicolumn{1}{c|}{\textbf{Unité}} & \multicolumn{1}{c|}{\textbf{Prix unitaire (€)}} & \multicolumn{1}{c|}{\textbf{Observations}} \\
+\hline
+\endhead
+\hline
+\endfoot
+MPBC819BL209 & Bande de chant Protec 08x19 Blanco Brillant SR209 L100 N°417 & ML & 0,85 & Blanc brillant \\
+MPBC8192011N & Bande de chant Protec 0.8x19 2011N Blanco Serf N°275 & ML & 0,75 & Blanc serf \\
+MPBC0819N822 & Bande de chant Protec 08x19 Roble Poro Oak Sega N°822 Decorado & ML & 0,95 & Chêne \\
+MPBC0819CE67 & Bande de chant Protec 08x19 Grafito N°67 Decorado 06F-Cement & ML & 0,90 & Ciment \\
+MPBC0819NE64 & Bande de chant Protec 08x19 231-Negro Super High Gloss 70 N°64 & ML & 0,88 & Noir brillant \\
+MPC0819R534 & Bande de chant Protec 0.8x19 Roble N°534 Decorado 95Q-Roble Trufa & ML & 0,95 & Chêne truffe \\
+MPBC0819ZE86 & Bande de chant Protec N°86 Decorado 15G-Pino Zermatt 19x0,8mm & ML & 0,92 & Pin zermat \\
+\hline
+\end{longtable}
+
+\subsection{Quincaillerie}
+
+\subsubsection{Vis et chevilles}
+
+\begin{longtable}{|p{4cm}|p{6cm}|c|c|p{3cm}|}
+\hline
+\multicolumn{1}{|c|}{\textbf{Code composant}} & \multicolumn{1}{c|}{\textbf{Désignation}} & \multicolumn{1}{c|}{\textbf{Unité}} & \multicolumn{1}{c|}{\textbf{Prix unitaire (€)}} & \multicolumn{1}{c|}{\textbf{Observations}} \\
+\hline
+\endfirsthead
+\hline
+\multicolumn{1}{|c|}{\textbf{Code composant}} & \multicolumn{1}{c|}{\textbf{Désignation}} & \multicolumn{1}{c|}{\textbf{Unité}} & \multicolumn{1}{c|}{\textbf{Prix unitaire (€)}} & \multicolumn{1}{c|}{\textbf{Observations}} \\
+\hline
+\endhead
+\hline
+\endfoot
+QUVICH055000 & Vis Spax 5x50 Chrome & U & 0,12 & Vis assembling \\
+QUVICH041600 & Vis Spax 4x16 Chrome & U & 0,08 & Vis assembling \\
+QUVICH041200 & Vis Spax 4x12 & U & 0,06 & Vis assembling \\
+QUVICH043000 & Vis Spax 4x30 Chrome & U & 0,10 & Vis assembling \\
+QUVIPO042000 & Vis Poignée 4x22 & U & 0,15 & Vis poignée \\
+QUVIPO043200 & Vis Poignée 4x32 & U & 0,18 & Vis poignée \\
+QUVITR3525CH & Vis Trasera 3.5x25 Chrome & U & 0,07 & Vis dos \\
+QUVIJA055000 & Vis 5x50 & U & 0,12 & Vis murale \\
+QUDVCHPL0810 & Cheville plastique D 08x10 & U & 0,05 & Cheville \\
+QUMCHSA4R5MM & Cheville plastique Sambeat 4 Réducteurs 5mm & U & 0,04 & Cheville réductrice \\
+QUVITOU08300 & Tourillon 08x30 & U & 0,12 & Tourillon \\
+\hline
+\end{longtable}
+
+\subsubsection{Charnières et coulisses}
+
+\begin{longtable}{|p{4cm}|p{6cm}|c|c|p{3cm}|}
+\hline
+\multicolumn{1}{|c|}{\textbf{Code composant}} & \multicolumn{1}{c|}{\textbf{Désignation}} & \multicolumn{1}{c|}{\textbf{Unité}} & \multicolumn{1}{c|}{\textbf{Prix unitaire (€)}} & \multicolumn{1}{c|}{\textbf{Observations}} \\
+\hline
+\endfirsthead
+\hline
+\multicolumn{1}{|c|}{\textbf{Code composant}} & \multicolumn{1}{c|}{\textbf{Désignation}} & \multicolumn{1}{c|}{\textbf{Unité}} & \multicolumn{1}{c|}{\textbf{Prix unitaire (€)}} & \multicolumn{1}{c|}{\textbf{Observations}} \\
+\hline
+\endhead
+\hline
+\endfoot
+QUFCHAFR3500 & Charnière à frein 35 & U & 1,80 & Charnière amortie \\
+QUFCHNOR3500 & Charnière normale D 35 & U & 1,20 & Charnière standard \\
+QUSACOFR3500 & Coulisse à frein D 35 & U & 4,50 & Coulisse télescopique \\
+QUSACONV35FR & Coulisse tiroir D 35 à frein & U & 4,50 & Coulisse tiroir \\
+\hline
+\end{longtable}
+
+\subsubsection{Poignées}
+
+\begin{longtable}{|p{4cm}|p{6cm}|c|c|p{3cm}|}
+\hline
+\multicolumn{1}{|c|}{\textbf{Code composant}} & \multicolumn{1}{c|}{\textbf{Désignation}} & \multicolumn{1}{c|}{\textbf{Unité}} & \multicolumn{1}{c|}{\textbf{Prix unitaire (€)}} & \multicolumn{1}{c|}{\textbf{Observations}} \\
+\hline
+\endfirsthead
+\hline
+\multicolumn{1}{|c|}{\textbf{Code composant}} & \multicolumn{1}{c|}{\textbf{Désignation}} & \multicolumn{1}{c|}{\textbf{Unité}} & \multicolumn{1}{c|}{\textbf{Prix unitaire (€)}} & \multicolumn{1}{c|}{\textbf{Observations}} \\
+\hline
+\endhead
+\hline
+\endfoot
+QUPOCH500500 & Poignée JRG Chrome 50-050-03 Cuadrado 23x23 Cromo & U & 2,50 & Poignée carrée \\
+QUPOCH159CU0 & Poignée JRG Chrome ASA-60x60 70-157-032-08 Cromo Mate "U" & U & 3,20 & Poignée en U \\
+QUPOCH0963AB & Poignée JRG Chrome 70-096-300-96-89E Alto Brillo & U & 2,80 & Poignée haute brillance \\
+QUPOCH704000 & Poignée JRG Chrome 70-096-400-96-89E Alto Brillo & U & 3,00 & Poignée 400mm \\
+QUPOCH702050 & Poignée JRG ASA 195 206 70-195-205-096-89E Avella Alto.Br & U & 3,50 & Poignée Avella \\
+QUJRAS73128E & ASA-73 128mm Embutir EF.Mate 70-073-128-08 & U & 2,90 & Poignée encastrée \\
+ACPOSMPPL10A & Pomo Samb PPL10 100x100 Aluminio PPL10 AL & U & 1,80 & Pomo rond \\
+\hline
+\end{longtable}
+
+\subsubsection{Supports et accessoires}
+
+\begin{longtable}{|p{4cm}|p{6cm}|c|c|p{3cm}|}
+\hline
+\multicolumn{1}{|c|}{\textbf{Code composant}} & \multicolumn{1}{c|}{\textbf{Désignation}} & \multicolumn{1}{c|}{\textbf{Unité}} & \multicolumn{1}{c|}{\textbf{Prix unitaire (€)}} & \multicolumn{1}{c|}{\textbf{Observations}} \\
+\hline
+\endfirsthead
+\hline
+\multicolumn{1}{|c|}{\textbf{Code composant}} & \multicolumn{1}{c|}{\textbf{Désignation}} & \multicolumn{1}{c|}{\textbf{Unité}} & \multicolumn{1}{c|}{\textbf{Prix unitaire (€)}} & \multicolumn{1}{c|}{\textbf{Observations}} \\
+\hline
+\endhead
+\hline
+\endfoot
+QUDVSUMET000 & Support métal & U & 0,60 & Support étagère \\
+QUDVSUHS933C & Support meuble H.S 933 Galvanisé Colga 063CBVG & U & 1,20 & Support mural \\
+ACSALB4012AL & Pata Albufera 120 mm Aluminio & U & 1,50 & Pied réglable \\
+ACSOMEGA1 & Salvasifon Omega-1 Antracita & U & 2,50 & Cache-siphon \\
+APL10454AL & ASA Samb APL 10 Longe 454 / 128-384CC Plata & U & 2,80 & Poignée longue \\
+QUDVSUMET000 & Support métal & U & 0,60 & Support \\
+\hline
+\end{longtable}
+
+\subsection{Produits chimiques (colles, laques, diluants)}
+
+\subsubsection{Colles}
+
+\begin{longtable}{|p{4cm}|p{7cm}|c|c|p{2cm}|}
+\hline
+\multicolumn{1}{|c|}{\textbf{Code composant}} & \multicolumn{1}{c|}{\textbf{Désignation}} & \multicolumn{1}{c|}{\textbf{Unité}} & \multicolumn{1}{c|}{\textbf{Prix unitaire (€)}} & \multicolumn{1}{c|}{\textbf{Observations}} \\
+\hline
+\endfirsthead
+\hline
+\multicolumn{1}{|c|}{\textbf{Code composant}} & \multicolumn{1}{c|}{\textbf{Désignation}} & \multicolumn{1}{c|}{\textbf{Unité}} & \multicolumn{1}{c|}{\textbf{Prix unitaire (€)}} & \multicolumn{1}{c|}{\textbf{Observations}} \\
+\hline
+\endhead
+\hline
+\endfoot
+QUCOCOTHERM0 & Colle de chant Rayt MA 6520 en 25KG & KG & 4,50 & Colle thermofusible \\
+QUCOTF953MS3 & Colle Hotmelt TF 953/MS3 Sac 25KG / ESS & KG & 5,20 & Colle hotmelt \\
+QUCORAT1495R & Colle Rayt MA 1495-R D3 / 28L & KG & 6,80 & Colle D3 \\
+QUCOUNNU1000 & Colle Unicol Nunivil 118 & KG & 7,50 & Colle assemblage \\
+QUCOUNNU1001 & Colle Unicol Nunivil 1000 & KG & 7,80 & Colle assemblage \\
+QUCOFAKFX360 & Colle Fortuna AKFIX 360 FC & KG & 5,50 & Colle PVC \\
+QUCOUNI66900 & Colle Unibord 678 (Plaqueuse chant) & KG & 6,00 & Colle chant \\
+\hline
+\end{longtable}
+
+\subsubsection{Laques et finitions (meubles laqués)}
+
+\begin{longtable}{|p{4cm}|p{7cm}|c|c|p{2cm}|}
+\hline
+\multicolumn{1}{|c|}{\textbf{Code composant}} & \multicolumn{1}{c|}{\textbf{Désignation}} & \multicolumn{1}{c|}{\textbf{Unité}} & \multicolumn{1}{c|}{\textbf{Prix unitaire (€)}} & \multicolumn{1}{c|}{\textbf{Observations}} \\
+\hline
+\endfirsthead
+\hline
+\multicolumn{1}{|c|}{\textbf{Code composant}} & \multicolumn{1}{c|}{\textbf{Désignation}} & \multicolumn{1}{c|}{\textbf{Unité}} & \multicolumn{1}{c|}{\textbf{Prix unitaire (€)}} & \multicolumn{1}{c|}{\textbf{Observations}} \\
+\hline
+\endhead
+\hline
+\endfoot
+MPFOBUP1017T & Fond Blanc Polyuréthane UP1017T & KG & 12,50 & Fond \\
+MPFRAL9005NM & Finition RAL PU Mat Noir 9005 (KM9008T) & KG & 18,00 & Noir mat \\
+MPFRAL7037GR & Finition RAL PU Mat B/7037 Gris Grafito (KI7032Z) & KG & 17,50 & Gris graphite \\
+MPKJ1048CBLM & Finition Kupsamax Blanc Mat 15 PU Topcoat KJ-1048C & KG & 16,80 & Blanc mat \\
+MPBLBKU1110T & Finition Kupsamax Blanc High-Gloss PU Topcoat KU1110T & KG & 19,50 & Blanc brillant \\
+MPGLCKD4010T & Finition Kupsamax Glossy PU Topcoat Clear KD4010T & KG & 15,00 & Vernis brillant \\
+MPISPUK9011T & Isolant Polyuréthanne Kupsafond Série DM UK9011T & KG & 11,00 & Isolant \\
+\hline
+\end{longtable}
+
+\subsubsection{Diluants et catalyseurs}
+
+\begin{longtable}{|p{4cm}|p{7cm}|c|c|p{2cm}|}
+\hline
+\multicolumn{1}{|c|}{\textbf{Code composant}} & \multicolumn{1}{c|}{\textbf{Désignation}} & \multicolumn{1}{c|}{\textbf{Unité}} & \multicolumn{1}{c|}{\textbf{Prix unitaire (€)}} & \multicolumn{1}{c|}{\textbf{Observations}} \\
+\hline
+\endfirsthead
+\hline
+\multicolumn{1}{|c|}{\textbf{Code composant}} & \multicolumn{1}{c|}{\textbf{Désignation}} & \multicolumn{1}{c|}{\textbf{Unité}} & \multicolumn{1}{c|}{\textbf{Prix unitaire (€)}} & \multicolumn{1}{c|}{\textbf{Observations}} \\
+\hline
+\endhead
+\hline
+\endfoot
+MPDLMDU5002M & Diluant Medium Thinner for Polyurethanes DU-5002M & KG & 8,50 & Diluant \\
+MPDLRDU5023L & Diluant Retardant DU5023L & KG & 9,00 & Diluant retardant \\
+MPCATCU2126U & Catalyseur Special A 100\% CU9126U & KG & 14,00 & Catalyseur \\
+MPCATCB5228A & Catalyseur Antisun AT 50\% CB5228A & KG & 15,50 & Catalyseur antisun \\
+MPCPOCH2818B & Catalyseur Polyrethane CH2818B & KG & 13,80 & Catalyseur \\
+MPPFLQMD3M00 & Liquide Medio Blanc 3M-09374 & KG & 10,00 & Liquide médium \\
+\hline
+\end{longtable}
+
+\subsection{Emballages}
+
+\subsubsection{Sachets plastiques}
+
+\begin{longtable}{|p{4cm}|p{7cm}|c|c|p{2cm}|}
+\hline
+\multicolumn{1}{|c|}{\textbf{Code composant}} & \multicolumn{1}{c|}{\textbf{Désignation}} & \multicolumn{1}{c|}{\textbf{Unité}} & \multicolumn{1}{c|}{\textbf{Prix unitaire (€)}} & \multicolumn{1}{c|}{\textbf{Observations}} \\
+\hline
+\endfirsthead
+\hline
+\multicolumn{1}{|c|}{\textbf{Code composant}} & \multicolumn{1}{c|}{\textbf{Désignation}} & \multicolumn{1}{c|}{\textbf{Unité}} & \multicolumn{1}{c|}{\textbf{Prix unitaire (€)}} & \multicolumn{1}{c|}{\textbf{Observations}} \\
+\hline
+\endhead
+\hline
+\endfoot
+EMSPDPMB9012 & Sachet plastique meuble LDPE (90+24)x120x50µ & U & 0,25 & Sachet meuble \\
+EMSPDPMR9090 & Sachet plastique DP miroir D 90x90x60 & U & 0,20 & Sachet miroir \\
+QUDVSAPLASSM & Sachet plastic S.M & U & 0,10 & Petit sachet \\
+\hline
+\end{longtable}
+
+\subsubsection{Cartons d'emballage}
+
+\begin{longtable}{|p{4cm}|p{7cm}|c|c|p{2cm}|}
+\hline
+\multicolumn{1}{|c|}{\textbf{Code composant}} & \multicolumn{1}{c|}{\textbf{Désignation}} & \multicolumn{1}{c|}{\textbf{Unité}} & \multicolumn{1}{c|}{\textbf{Prix unitaire (€)}} & \multicolumn{1}{c|}{\textbf{Observations}} \\
+\hline
+\endfirsthead
+\hline
+\multicolumn{1}{|c|}{\textbf{Code composant}} & \multicolumn{1}{c|}{\textbf{Désignation}} & \multicolumn{1}{c|}{\textbf{Unité}} & \multicolumn{1}{c|}{\textbf{Prix unitaire (€)}} & \multicolumn{1}{c|}{\textbf{Observations}} \\
+\hline
+\endhead
+\hline
+\endfoot
+EMCAEURMB601 & Carton emballage Euro meuble D60 595x360x460 impression Odyssey & U & 2,50 & Carton 60cm \\
+EMCAEURMB602 & Carton emballage Euro meuble 60 595x475x460 impression Odyssey & U & 2,80 & Carton 60cm haut \\
+EMCAEURMB600 & Carton emballage Euro meuble 60 F45 595x475x710 impression Odyssey & U & 3,20 & Carton 60cm F45 \\
+EMCAEURMB800 & Carton emballage Euro meuble D80 800x475x710 impression Odyssey & U & 3,50 & Carton 80cm \\
+EMCAEURMB801 & Carton emballage Euro meuble D80 800x475x460 impression Odyssey & U & 3,20 & Carton 80cm bas \\
+EMCAEURMB100 & Carton emballage meuble D100 1020x475x710 impression Odyssey & U & 4,00 & Carton 100cm \\
+EMCAEURMB120 & Carton emballage Euro meuble D120 1200x475x710 impression Odyssey & U & 4,50 & Carton 120cm \\
+EMCAEURPL423 & Carton emballage Euro plaque DF Ecrue 4mm 230x230 & U & 1,20 & Carton plaque \\
+EMCAEURCO830 & Carton emballage Euro plaque coin Ecrue 830x230 DFE micro & U & 1,50 & Carton coin \\
+EMCAEURMR100 & Carton emballage Euro miroir 100 1010x800x40 & U & 2,00 & Carton miroir 100cm \\
+EMCAEURMR120 & Carton emballage Euro miroir 120 1210x800x40 & U & 2,20 & Carton miroir 120cm \\
+EMCAEURMR600 & Carton emballage Euro miroir 60/H80 800x600x40 & U & 1,80 & Carton miroir 60cm \\
+EMCAEURMR700 & Carton emballage Euro miroir 70/H80 800x710x40 & U & 1,90 & Carton miroir 70cm \\
+EMCAEURMR800 & Carton emballage Euro miroir 80/H80 800x800x40 & U & 2,00 & Carton miroir 80cm \\
+EMCAEURMP600 & Carton emballage Euro M-Pharmacie 60 610x165x810 avec impression & U & 2,50 & Carton spécifique \\
+\hline
+\end{longtable}
+
+\subsubsection{Palettes et consommables}
+
+\begin{longtable}{|p{4cm}|p{7cm}|c|c|p{2cm}|}
+\hline
+\multicolumn{1}{|c|}{\textbf{Code composant}} & \multicolumn{1}{c|}{\textbf{Désignation}} & \multicolumn{1}{c|}{\textbf{Unité}} & \multicolumn{1}{c|}{\textbf{Prix unitaire (€)}} & \multicolumn{1}{c|}{\textbf{Observations}} \\
+\hline
+\endfirsthead
+\hline
+\multicolumn{1}{|c|}{\textbf{Code composant}} & \multicolumn{1}{c|}{\textbf{Désignation}} & \multicolumn{1}{c|}{\textbf{Unité}} & \multicolumn{1}{c|}{\textbf{Prix unitaire (€)}} & \multicolumn{1}{c|}{\textbf{Observations}} \\
+\hline
+\endhead
+\hline
+\endfoot
+DVCOPAL80120 & Palette D 80x120 & U & 15,00 & Palette bois \\
+QUCOAGRP3515 & Agrafes D 35/15 (2000-2500un) & U & 0,02 & Agrafes (prix à l'unité) \\
+CSCTRS501000 & Scotch d'emballage Transp 50/100 & U & 0,50 & Ruban adhésif \\
+QUDVFIALHITB & Tube Silicone Fix All High Tack Blanc & U & 8,00 & Silicone \\
+\hline
+\end{longtable}
+
+\subsection{Miroirs (famille spécifique)}
+
+\subsubsection{Description générale}
+Les miroirs de la gamme CORDOBA (50, 60, 70, 80, 100, 120 cm) et K3 partagent une structure commune.
+
+\subsubsection{Composants spécifiques miroirs}
+
+\begin{longtable}{|p{4cm}|p{7cm}|c|c|p{2cm}|}
+\hline
+\multicolumn{1}{|c|}{\textbf{Code composant}} & \multicolumn{1}{c|}{\textbf{Désignation}} & \multicolumn{1}{c|}{\textbf{Unité}} & \multicolumn{1}{c|}{\textbf{Prix unitaire (€)}} & \multicolumn{1}{c|}{\textbf{Observations}} \\
+\hline
+\endfirsthead
+\hline
+\multicolumn{1}{|c|}{\textbf{Code composant}} & \multicolumn{1}{c|}{\textbf{Désignation}} & \multicolumn{1}{c|}{\textbf{Unité}} & \multicolumn{1}{c|}{\textbf{Prix unitaire (€)}} & \multicolumn{1}{c|}{\textbf{Observations}} \\
+\hline
+\endhead
+\hline
+\endfoot
+MRMIR7749893 & Miroir VA D 3mm 774x989 C/P & U & 25,00 & Miroir 100cm \\
+MRMIR7741169 & Miroir VA D 3mm 774x1169 C/P & U & 30,00 & Miroir 120cm \\
+MRMIR5994893 & Miroir VA D 3mm 599x489 C/P & U & 12,00 & Miroir 50cm \\
+MRMIR7745843 & Miroir VA D 3mm 774x584 C/P & U & 18,00 & Miroir 60cm \\
+MRMIR7746793 & Miroir VA D 3mm 774x679 C/P & U & 20,00 & Miroir 70cm \\
+MRMIR7747743 & Miroir VA D 3mm 774x774 C/P & U & 22,00 & Miroir 80cm \\
+MRMRM4M61542 & Miroir Simple MI D 4mm 615x425 avec rectiling & U & 15,00 & Miroir K3 \\
+MPINDSUCA035 & Cabivet support zinc & U & 0,80 & Support miroir \\
+MPINDSUADH31 & Hanger trasera & U & 0,60 & Accroche murale \\
+QUCANSER2200 & Cantonera plast cerrada 22 & U & 0,30 & Cornière plastique \\
+\hline
+\end{longtable}
+
+\subsubsection{Nomenclature type d'un miroir (exemple MIR100CORBLB)}
+
+\begin{longtable}{|p{4cm}|p{6cm}|c|c|p{3cm}|}
+\hline
+\multicolumn{1}{|c|}{\textbf{Code composant}} & \multicolumn{1}{c|}{\textbf{Désignation}} & \multicolumn{1}{c|}{\textbf{Quantité}} & \multicolumn{1}{c|}{\textbf{Unité}} & \multicolumn{1}{c|}{\textbf{Observations}} \\
+\hline
+\endfirsthead
+\hline
+\multicolumn{1}{|c|}{\textbf{Code composant}} & \multicolumn{1}{c|}{\textbf{Désignation}} & \multicolumn{1}{c|}{\textbf{Quantité}} & \multicolumn{1}{c|}{\textbf{Unité}} & \multicolumn{1}{c|}{\textbf{Observations}} \\
+\hline
+\endhead
+\hline
+\endfoot
+MPPAF28516BLS & Panneau Finsa 285x210x16 Super Decor 2F Blanco Standard & 0,88 & M² & Cadre \\
+MRMIR7749893 & Miroir VA D 3mm 774x989 C/P & 1 & U & Miroir \\
+MPBC819BL209 & Bande de chant Protec 08x19 Blanco Brillant & 3,61 & ML & Chant cadre \\
+MPINDSUCA035 & Cabivet support zinc & 2 & U & Support \\
+MPINDSUADH31 & Hanger trasera & 2 & U & Accroche \\
+QUCANSER2200 & Cantonera plast cerrada 22 & 4 & U & Protection angles \\
+QUVICH041600 & Vis Rosca Madera 4x16 & 6 & U & Vis assemblage \\
+QUDVCHPL0810 & Taco pared cheville 8x10 & 8 & U & Chevilles murales \\
+QUVIJA055000 & Vis 5x50 & 8 & U & Vis fixation murale \\
+EMCAEURMR100 & Carton emballage Euro miroir 100 & 1 & U & Carton \\
+EMSPDPMR9090 & Sachet plastique DP miroir & 1 & U & Protection \\
+QUDVSAPLASSM & Sachet plastic S.M & 1 & U & Petit sachet \\
+QUCOUNI66900 & Colle Unibord 678 & 0,02 & KG & Colle chant \\
+QUCOUNNU1001 & Colle Unicol Nunivil 1000 & 0,02 & KG & Colle assemblage \\
+CSCTRS501000 & Scotch emballage Transp 50/100 & 0,02 & U & Ruban adhésif \\
+QUDVFIALHITB & Tube Silicone Fix All High Tack Blanc & 0,11 & U & Silicone \\
+\hline
+\end{longtable}
+% ============================================================
+% PARTIE 5 : CORRESPONDANCE GAMMES / NOMENCLATURE PAR FAMILLE PRODUIT
+% ============================================================
+
+\section{Correspondance gammes / nomenclature par famille produit}
+
+Cette section établit le lien entre les gammes opératoires (définies section 3) et les nomenclatures (définies section 4) pour chaque famille de produits. Pour chaque référence, sont précisés : les postes de charge concernés, les temps opératoires unitaires, et la liste des composants avec quantités.
+
+\subsection{Meubles mélaminés}
+
+\subsubsection{Caractéristiques générales}
+Les meubles mélaminés constituent la gamme principale. Ils sont fabriqués à partir de panneaux mélaminés Finsa, avec des bandes de chant sur les chants apparents.
+
+\subsubsection{Postes de charge concernés}
+\begin{itemize}
+    \item Poste 100 – Découpe panneaux
+    \item Poste 200 – Usinage / Perçage
+    \item Poste 300 – Placage de chants
+    \item Poste 400 – Assemblage quincaillerie
+    \item Poste 600 – Montage tiroirs (pour modèles avec tiroirs)
+    \item Poste 700 – Emballage
+    \item Poste 800 – Contrôle qualité
+\end{itemize}
+
+\subsubsection{Tableau de synthèse des références mélaminées}
+
+\begin{longtable}{|p{4cm}|p{5cm}|c|c|c|c|}
+\hline
+\multicolumn{1}{|c|}{\textbf{Référence}} & \multicolumn{1}{c|}{\textbf{Désignation}} & \multicolumn{1}{c|}{\textbf{Largeur (cm)}} & \multicolumn{1}{c|}{\textbf{Finitions}} & \multicolumn{1}{c|}{\textbf{Tiroirs}} & \multicolumn{1}{c|}{\textbf{Temps cycle (min)}} \\
+\hline
+\endfirsthead
+\hline
+\multicolumn{1}{|c|}{\textbf{Référence}} & \multicolumn{1}{c|}{\textbf{Désignation}} & \multicolumn{1}{c|}{\textbf{Largeur (cm)}} & \multicolumn{1}{c|}{\textbf{Finitions}} & \multicolumn{1}{c|}{\textbf{Tiroirs}} & \multicolumn{1}{c|}{\textbf{Temps cycle (min)}} \\
+\hline
+\endhead
+\hline
+\endfoot
+MEU050NMABLB & Meuble Inmaa D 50x36 cm Blanc Brillant & 50 & Blanc brillant & 0 & 10,76 \\
+MEU6036K2BLG & Meuble K2 D 60x36 cm Blanc Gloss & 60 & Blanc gloss & 0 & 9,86 \\
+MEU160INACEBL & Meuble Inara D 60 cm Cemento Blanc & 60 & Ciment & 0 & 10,76 \\
+MEU060DENOAK & Meuble Denia D 60 cm Oak & 60 & Chêne & 1 & 18,86 \\
+MEU060MADOAK & Meuble Madrid D 60 cm Oak & 60 & Chêne & 2 & 10,76 \\
+MEU080MADOAK & Meuble Madrid D 80 cm Oak & 80 & Chêne & 2 & 10,76 \\
+MEU060SEBPBLB & Meuble Sebou (P) 60 cm Blanc Brillant & 60 & Blanc brillant & 0 & - \\
+MEU070DENOAK & Meuble Denia D 70 cm Oak & 70 & Chêne & 1 & - \\
+MEU080AGAMAR & Meuble Agadir avec pied 80x80 Maron & 80 & Maron & 0 & - \\
+MEU080DENOAK & Meuble Denia D 80 cm Oak & 80 & Chêne & 1 & - \\
+MEU080INABLCEM & Meuble Inara D 80 cm Blanc Cemento & 80 & Blanc/Ciment & 0 & - \\
+MEU120BELOAK & Meuble Belfast D 120 cm Oak & 120 & Chêne & 0 & - \\
+MEU100ALBLOAK & Meuble Ondas 100 cm Oak Blanc Mat Oak & 100 & Blanc mat/Chêne & 0 & - \\
+MEU060INABLB & Meuble Inara D 60 cm Blanc Brillant & 60 & Blanc brillant & 0 & - \\
+MEU060SEBOAK & Meuble Sebou D 60 cm Oak & 60 & Chêne & 0 & - \\
+MEU060INABLC & Meuble Inara D 60 cm Blanc Cemento & 60 & Blanc/Ciment & 0 & - \\
+MEU060MARPZE & Meuble Mare 60 cm Pino Zermat & 60 & Pin zermat & 0 & - \\
+MEU060MADBLB & Meuble Madrid D 60 cm Blanc Brillant & 60 & Blanc brillant & 2 & - \\
+MEU60ALIBLB & Meuble Alicante 2T D 60 cm Blanc Brillant & 60 & Blanc brillant & 2 & - \\
+MEU060BILOAK & Meuble Bilbao D 60 cm Oak & 60 & Chêne & 2 & - \\
+MEU060BILTRU & Meuble Bilbao D 60 cm Trufa & 60 & Chêne truffe & 2 & - \\
+MEU080MADTRU & Meuble Madrid D 80 cm Trufa & 80 & Chêne truffe & 2 & - \\
+MEU080ALIBLB & Meuble Alicante 2T D 80 cm Blanc Brillant & 80 & Blanc brillant & 2 & - \\
+MEU080BILOAK & Meuble Bilbao D 80 cm Oak & 80 & Chêne & 2 & - \\
+\hline
+\end{longtable}
+
+\subsubsection{Nomenclature type – Meuble mélaminé (exemple MEU050NMABLB)}
+
+\begin{longtable}{|p{3.5cm}|p{6cm}|c|c|p{2.5cm}|}
+\hline
+\multicolumn{1}{|c|}{\textbf{Code composant}} & \multicolumn{1}{c|}{\textbf{Désignation}} & \multicolumn{1}{c|}{\textbf{Quantité}} & \multicolumn{1}{c|}{\textbf{Unité}} & \multicolumn{1}{c|}{\textbf{Poste}} \\
+\hline
+\endfirsthead
+\hline
+\multicolumn{1}{|c|}{\textbf{Code composant}} & \multicolumn{1}{c|}{\textbf{Désignation}} & \multicolumn{1}{c|}{\textbf{Quantité}} & \multicolumn{1}{c|}{\textbf{Unité}} & \multicolumn{1}{c|}{\textbf{Poste}} \\
+\hline
+\endhead
+\hline
+\endfoot
+MPPAF16SR209 & Panneau Finsa 275x210x16 White SR209 & 0,54 & M² & 100 \\
+MPPAF28516BLS & Panneau Finsa 285x210x16 Blanco Standard & 0,25 & M² & 100 \\
+MPBC819BL209 & Bande de chant 08x19 Blanco Brillant & 5,66 & ML & 300 \\
+MPBC8192011N & Bande de chant 0.8x19 2011N Blanco Serf & 2,89 & ML & 300 \\
+QUCOCOTHERM0 & Colle de chant Rayt MA 6520 & 0,13 & KG & 300 \\
+QUCORAT1495R & Colle Rayt MA 1495-R D3 & 0,10 & KG & 400 \\
+QUCOUNNU1000 & Colle Unicol Nunivil 118 & 0,02 & KG & 400 \\
+QUDVCHPL0810 & Cheville plastique D 08x10 & 4 & U & 400 \\
+QUPOCH500500 & Poignée JRG Chrome 50-050-03 & 2 & U & 400 \\
+QUFCHAFR3500 & Charnière à frein 35 & 2 & U & 400 \\
+QUFCHNOR3500 & Charnière normale D 35 & 2 & U & 400 \\
+QUVICH055000 & Vis Spax 5x50 Chrome & 4 & U & 400 \\
+QUVICH041600 & Vis Spax 4x16 Chrome & 8 & U & 400 \\
+QUVIPO042000 & Vis poignée 4x22 & 2 & U & 400 \\
+QUVITOU08300 & Tourillon 08x30 & 12 & U & 400 \\
+EMSPDPMB9012 & Sachet plastique LDPE & 1 & U & 700 \\
+EMCAEURMB601 & Carton emballage Euro meuble D60 & 1 & U & 700 \\
+EMCAEURPL423 & Carton emballage Euro plaque & 4 & U & 700 \\
+DVCOPAL80120 & Palette D 80x120 & 0,0625 & U & 700 \\
+MPINDCTSL036 & Traser -6 M/Rapid Der & 1 & U & 400 \\
+MPINDCTSR32 & Traser -6 M/Rapid Izq & 1 & U & 400 \\
+MPINDDHOTR31 & Double Hook Traser & 1 & U & 400 \\
+\hline
+\end{longtable}
+
+\subsection{Meubles PVC}
+
+\subsubsection{Caractéristiques générales}
+Les meubles PVC sont fabriqués à partir de panneaux PVC expansé, avec des bandes de chant spécifiques et des colles adaptées au PVC.
+
+\subsubsection{Postes de charge concernés}
+\begin{itemize}
+    \item Poste 100 – Découpe panneaux
+    \item Poste 200 – Usinage / Perçage
+    \item Poste 300 – Placage de chants (PVC spécifique)
+    \item Poste 400 – Assemblage quincaillerie
+    \item Poste 600 – Montage tiroirs (pour modèles avec tiroirs)
+    \item Poste 700 – Emballage
+    \item Poste 800 – Contrôle qualité
+\end{itemize}
+
+\subsubsection{Tableau de synthèse des références PVC}
+
+\begin{longtable}{|p{4cm}|p{5cm}|c|c|c|c|}
+\hline
+\multicolumn{1}{|c|}{\textbf{Référence}} & \multicolumn{1}{c|}{\textbf{Désignation}} & \multicolumn{1}{c|}{\textbf{Largeur (cm)}} & \multicolumn{1}{c|}{\textbf{Finitions}} & \multicolumn{1}{c|}{\textbf{Tiroirs}} & \multicolumn{1}{c|}{\textbf{Temps cycle (min)}} \\
+\hline
+\endfirsthead
+\hline
+\multicolumn{1}{|c|}{\textbf{Référence}} & \multicolumn{1}{c|}{\textbf{Désignation}} & \multicolumn{1}{c|}{\textbf{Largeur (cm)}} & \multicolumn{1}{c|}{\textbf{Finitions}} & \multicolumn{1}{c|}{\textbf{Tiroirs}} & \multicolumn{1}{c|}{\textbf{Temps cycle (min)}} \\
+\hline
+\endhead
+\hline
+\endfoot
+MEU060MYKCH2F & Meuble Mykonos PVC D 60 cm 2F Chêne & 60 & Chêne & 0 & - \\
+MEU060PATBLBR & Meuble Patras D 60 cm PVC Blanc Brillant & 60 & Blanc brillant & 1 & 18,86 \\
+MEU060GUABLB & Meuble Torino D 60 cm PVC Blanc Brillant & 60 & Blanc brillant & 2 & - \\
+MEU080PATBLBR & Meuble Patras D 80 cm PVC Blanc Brillant & 80 & Blanc brillant & 1 & - \\
+MEU080MYKCH2F & Meuble Mykonos PVC D 80 cm 2F Chêne & 80 & Chêne & 0 & - \\
+MEU080GUABLB & Meuble Torino D 80 cm PVC Blanc Brillant & 80 & Blanc brillant & 2 & - \\
+\hline
+\end{longtable}
+
+\subsubsection{Nomenclature type – Meuble PVC (exemple MEU060MYKCH2F)}
+
+\begin{longtable}{|p{3.5cm}|p{6cm}|c|c|p{2.5cm}|}
+\hline
+\multicolumn{1}{|c|}{\textbf{Code composant}} & \multicolumn{1}{c|}{\textbf{Désignation}} & \multicolumn{1}{c|}{\textbf{Quantité}} & \multicolumn{1}{c|}{\textbf{Unité}} & \multicolumn{1}{c|}{\textbf{Poste}} \\
+\hline
+\endfirsthead
+\hline
+\multicolumn{1}{|c|}{\textbf{Code composant}} & \multicolumn{1}{c|}{\textbf{Désignation}} & \multicolumn{1}{c|}{\textbf{Quantité}} & \multicolumn{1}{c|}{\textbf{Unité}} & \multicolumn{1}{c|}{\textbf{Poste}} \\
+\hline
+\endhead
+\hline
+\endfoot
+MPAPVC15JY032 & Panneau PVC 244x122x15 1F JY032 Chêne & 1,06 & M² & 100 \\
+MPBC819BL209 & Bande de chant 08x19 Blanco Brillant & 11,50 & ML & 300 \\
+QUCOCOTHERM0 & Colle de chant Rayt MA 6520 & 0,13 & KG & 300 \\
+QUCOFAKFX360 & Colle Fortuna AKFIX 360 FC & 0,02 & KG & 300 \\
+QUCORAT1495R & Colle Rayt MA 1495-R D3 & 0,12 & KG & 400 \\
+QUCOUNNU1000 & Colle Unicol Nunivil 118 & 0,02 & KG & 400 \\
+QUDVCHPL0810 & Cheville plastique D 08x10 & 4 & U & 400 \\
+QUPOCH159CU0 & Poignée JRG Chrome ASA-60x60 & 2 & U & 400 \\
+QUFCHAFR3500 & Charnière à frein 35 & 2 & U & 400 \\
+QUFCHNOR3500 & Charnière normale D 35 & 2 & U & 400 \\
+QUVICH055000 & Vis Spax 5x50 Chrome & 4 & U & 400 \\
+QUVICH041600 & Vis Spax 4x16 Chrome & 8 & U & 400 \\
+QUVIPO042000 & Vis poignée 4x22 & 4 & U & 400 \\
+QUVITOU08300 & Tourillon 08x30 & 12 & U & 400 \\
+QUMCHSA4R5MM & Cheville Sambeat 4 Réducteurs 5mm & 20 & U & 400 \\
+EMSPDPMB9012 & Sachet plastique LDPE & 1 & U & 700 \\
+EMCAEURMB602 & Carton emballage Euro meuble 60 & 1 & U & 700 \\
+EMCAEURPL423 & Carton emballage Euro plaque & 4 & U & 700 \\
+DVCOPAL80120 & Palette D 80x120 & 0,0625 & U & 700 \\
+MPINDCTSL036 & Traser -6 M/Rapid Der & 1 & U & 400 \\
+MPINDCTSR32 & Traser -6 M/Rapid Izq & 1 & U & 400 \\
+MPINDDHOTR31 & Double Hook Traser & 1 & U & 400 \\
+\hline
+\end{longtable}
+
+\subsection{Meubles laqués}
+
+\subsubsection{Caractéristiques générales}
+Les meubles laqués (Lyon, Monaco, Rabat) sont fabriqués à partir de panneaux hydrofuges avec application de fonds, laques et vernis en cabine de laquage.
+
+\subsubsection{Postes de charge concernés}
+\begin{itemize}
+    \item Poste 100 – Découpe panneaux
+    \item Poste 200 – Usinage / Perçage
+    \item Poste 400 – Assemblage quincaillerie
+    \item Poste 500 – Finition / Laquage (spécifique)
+    \item Poste 600 – Montage tiroirs (pour modèles avec tiroirs)
+    \item Poste 700 – Emballage
+    \item Poste 800 – Contrôle qualité
+\end{itemize}
+
+\subsubsection{Tableau de synthèse des références laquées}
+
+\begin{longtable}{|p{4cm}|p{5cm}|c|c|c|c|}
+\hline
+\multicolumn{1}{|c|}{\textbf{Référence}} & \multicolumn{1}{c|}{\textbf{Désignation}} & \multicolumn{1}{c|}{\textbf{Largeur (cm)}} & \multicolumn{1}{c|}{\textbf{Finitions}} & \multicolumn{1}{c|}{\textbf{Tiroirs}} & \multicolumn{1}{c|}{\textbf{Temps cycle (min)}} \\
+\hline
+\endfirsthead
+\hline
+\multicolumn{1}{|c|}{\textbf{Référence}} & \multicolumn{1}{c|}{\textbf{Désignation}} & \multicolumn{1}{c|}{\textbf{Largeur (cm)}} & \multicolumn{1}{c|}{\textbf{Finitions}} & \multicolumn{1}{c|}{\textbf{Tiroirs}} & \multicolumn{1}{c|}{\textbf{Temps cycle (min)}} \\
+\hline
+\endhead
+\hline
+\endfoot
+MEU060LIBLNO & Meuble Lyon D 60 cm Blanc Noir & 60 & Blanc/Noir & 1 & 10,76 \\
+MEU080LYBLGRN & Meuble Lyon D 80 cm Blanc Graphite & 80 & Blanc/Gris graphite & 1 & 10,00 \\
+MEU060MCOBLB & Meuble Monaco D 60 cm Blanc Brillant & 60 & Blanc brillant & 2 & 10,76 \\
+MEU080MCOBLB & Meuble Monaco D 80 cm Blanc Brillant & 80 & Blanc brillant & 2 & 10,76 \\
+MEU100MCONOB & Meuble Monaco D 100 cm Noir Brillant & 100 & Noir brillant & 2 & - \\
+MEU120RABBLB & Meuble Rabat D 120 cm Blanc Brillant & 120 & Blanc brillant & 4 & - \\
+MEU060RABBLB & Meuble Rabat D 60 cm Blanc Brillant & 60 & Blanc brillant & 2 & - \\
+MEU080RABBLB & Meuble Rabat D 80 cm Blanc Brillant & 80 & Blanc brillant & 2 & - \\
+\hline
+\end{longtable}
+
+\subsubsection{Nomenclature type – Meuble laqué (exemple MEU060MCOBLB)}
+
+\begin{longtable}{|p{3.5cm}|p{6cm}|c|c|p{2.5cm}|}
+\hline
+\multicolumn{1}{|c|}{\textbf{Code composant}} & \multicolumn{1}{c|}{\textbf{Désignation}} & \multicolumn{1}{c|}{\textbf{Quantité}} & \multicolumn{1}{c|}{\textbf{Unité}} & \multicolumn{1}{c|}{\textbf{Poste}} \\
+\hline
+\endfirsthead
+\hline
+\multicolumn{1}{|c|}{\textbf{Code composant}} & \multicolumn{1}{c|}{\textbf{Désignation}} & \multicolumn{1}{c|}{\textbf{Quantité}} & \multicolumn{1}{c|}{\textbf{Unité}} & \multicolumn{1}{c|}{\textbf{Poste}} \\
+\hline
+\endhead
+\hline
+\endfoot
+MPPACNHD2856 & Panneau hydrofuge 285x210x16 & 0,62 & M² & 100 \\
+MPPACNHD2858 & Panneau hydrofuge 285x210x18 & 0,47 & M² & 100 \\
+MPPAF28516BLS & Panneau Finsa 285x210x16 Blanco Standard & 0,34 & M² & 100 \\
+MPPAF24405GG & Panneau MDF 244x210x5 Gris GU & 0,34 & M² & 100 \\
+MPFOBUP1017T & Fond Blanc Polyuréthane UP1017T & 0,68 & KG & 500 \\
+MPKJ1048CBLM & Finition Kupsamax Blanc Mat & 0,33 & KG & 500 \\
+MPBLBKU1110T & Finition Kupsamax Blanc High-Gloss & 0,33 & KG & 500 \\
+MPCPOCH2818B & Catalyseur Polyrethane CH2818B & 0,34 & KG & 500 \\
+MPDLMDU5002M & Diluant Medium DU-5002M & 0,03 & KG & 500 \\
+MPDLRDU5023L & Diluant Retardant DU5023L & 0,16 & KG & 500 \\
+MPCATCU2126U & Catalyseur Special A CU9126U & 0,07 & KG & 500 \\
+MPCATCB5228A & Catalyseur Antisun CB5228A & 0,16 & KG & 500 \\
+MPISPUK9011T & Isolant Polyuréthanne Kupsafond & 0,14 & KG & 500 \\
+MPPFLQMD3M00 & Liquide Medio Blanc 3M-09374 & 0,05 & KG & 500 \\
+MPBC8192011N & Bande de chant 0.8x19 2011N & 3,65 & ML & 300 \\
+QUCOCOTHERM0 & Colle de chant Rayt MA 6520 & 0,13 & KG & 300 \\
+QUCORAT1495R & Colle Rayt MA 1495-R D3 & 0,10 & KG & 400 \\
+QUCOUNNU1000 & Colle Unicol Nunivil 118 & 0,02 & KG & 400 \\
+QUDVCHPL0810 & Cheville plastique D 08x10 & 4 & U & 400 \\
+QUVICH055000 & Vis Spax 5x50 Chrome & 4 & U & 400 \\
+QUVICH041600 & Vis Spax 4x16 Chrome & 8 & U & 400 \\
+QUVICH041200 & Vis Spax 4x12 & 8 & U & 400 \\
+QUVICH043000 & Vis Spax 4x30 Chrome & 3 & U & 400 \\
+QUVITR3525CH & Vis Trasera 3.5x25 Chrome & 3 & U & 400 \\
+QUVITOU08300 & Tourillon 08x30 & 20 & U & 400 \\
+QUDVSUMET000 & Support métal & 4 & U & 400 \\
+QUSACOFR3500 & Coulisse à frein D35 & 2 & U & 600 \\
+ACSOMEGA1 & Salvasifon Omega-1 Antracita & 1 & U & 400 \\
+EMSPDPMB9012 & Sachet plastique LDPE & 1 & U & 700 \\
+EMCAEURMB600 & Carton emballage Euro meuble 60 F45 & 1 & U & 700 \\
+EMCAEURPL423 & Carton emballage Euro plaque & 8 & U & 700 \\
+DVCOPAL80120 & Palette D 80x120 & 0,0625 & U & 700 \\
+MPINDCTSL036 & Traser -6 M/Rapid Der & 1 & U & 400 \\
+MPINDCTSR32 & Traser -6 M/Rapid Izq & 1 & U & 400 \\
+MPINDDHOTR31 & Double Hook Traser & 1 & U & 400 \\
+ACTIRG250816 & Tiraguardera 2050x86x16 Gris GU & 0,36 & ML & 400 \\
+ACTIRG198860 & Tiraguardera 1980x86x12 Gris GU & 1,22 & ML & 400 \\
+ACTIRG198150 & Tiraguardera 1980x150x12 Gris GU & 1,70 & ML & 400 \\
+QUDVAGR14000 & Agrafes D 80x14 & 28 & U & 600 \\
+\hline
+\end{longtable}
+
+\subsection{Miroirs}
+
+\subsubsection{Caractéristiques générales}
+Les miroirs de la gamme CORDOBA (50, 60, 70, 80, 100, 120 cm) et K3 sont fabriqués à partir d'un cadre en panneau mélaminé, d'un miroir en verre de 3mm, et d'accessoires de fixation.
+
+\subsubsection{Postes de charge concernés}
+\begin{itemize}
+    \item Poste 100 – Découpe panneaux
+    \item Poste 200 – Usinage / Perçage
+    \item Poste 300 – Placage de chants
+    \item Poste 400 – Assemblage quincaillerie (spécifique miroir)
+    \item Poste 700 – Emballage
+    \item Poste 800 – Contrôle qualité
+\end{itemize}
+
+\subsubsection{Tableau de synthèse des références miroirs}
+
+\begin{longtable}{|p{4cm}|p{5cm}|c|c|c|}
+\hline
+\multicolumn{1}{|c|}{\textbf{Référence}} & \multicolumn{1}{c|}{\textbf{Désignation}} & \multicolumn{1}{c|}{\textbf{Largeur (cm)}} & \multicolumn{1}{c|}{\textbf{Finitions}} & \multicolumn{1}{c|}{\textbf{Temps cycle (min)}} \\
+\hline
+\endfirsthead
+\hline
+\multicolumn{1}{|c|}{\textbf{Référence}} & \multicolumn{1}{c|}{\textbf{Désignation}} & \multicolumn{1}{c|}{\textbf{Largeur (cm)}} & \multicolumn{1}{c|}{\textbf{Finitions}} & \multicolumn{1}{c|}{\textbf{Temps cycle (min)}} \\
+\hline
+\endhead
+\hline
+\endfoot
+MIR100CORBLB & Miroir Cordoba D 100 cm Blanc Brillant & 100 & Blanc brillant & - \\
+MIR100CORNOI & Miroir Cordoba D 100 cm Noir Brillant & 100 & Noir brillant & - \\
+MIR120CORBLB & Miroir Cordoba D 120 cm Blanc Brillant & 120 & Blanc brillant & - \\
+MIR120CORNOB & Miroir Cordoba D 120 cm Noir Brillant & 120 & Noir brillant & - \\
+MIR050CORBLB & Miroir Cordoba D 50 cm Blanc Brillant & 50 & Blanc brillant & - \\
+MIR050CORNOB & Miroir Cordoba D 50 cm Noir Brillant & 50 & Noir brillant & - \\
+MIR060CORBLB & Miroir Cordoba D 60 cm Blanc Brillant & 60 & Blanc brillant & - \\
+MIR060CORNOB & Miroir Cordoba D 60 cm Noir Brillant & 60 & Noir brillant & - \\
+MIR070CORBLB & Miroir Cordoba D 70 cm Blanc Brillant & 70 & Blanc brillant & - \\
+MIR080CORBLB & Miroir Cordoba D 80 cm Blanc Brillant & 80 & Blanc brillant & - \\
+MIR060K3OAK & Miroir Etagere K3 60 cm Oak & 60 & Chêne & - \\
+\hline
+\end{longtable}
+
+\subsubsection{Nomenclature type – Miroir (exemple MIR100CORBLB)}
+
+\begin{longtable}{|p{3.5cm}|p{6cm}|c|c|p{2.5cm}|}
+\hline
+\multicolumn{1}{|c|}{\textbf{Code composant}} & \multicolumn{1}{c|}{\textbf{Désignation}} & \multicolumn{1}{c|}{\textbf{Quantité}} & \multicolumn{1}{c|}{\textbf{Unité}} & \multicolumn{1}{c|}{\textbf{Poste}} \\
+\hline
+\endfirsthead
+\hline
+\multicolumn{1}{|c|}{\textbf{Code composant}} & \multicolumn{1}{c|}{\textbf{Désignation}} & \multicolumn{1}{c|}{\textbf{Quantité}} & \multicolumn{1}{c|}{\textbf{Unité}} & \multicolumn{1}{c|}{\textbf{Poste}} \\
+\hline
+\endhead
+\hline
+\endfoot
+MPPAF28516BLS & Panneau Finsa 285x210x16 Blanco Standard & 0,88 & M² & 100 \\
+MRMIR7749893 & Miroir VA D 3mm 774x989 C/P & 1 & U & 400 \\
+MPBC819BL209 & Bande de chant 08x19 Blanco Brillant & 3,61 & ML & 300 \\
+MPINDSUCA035 & Cabivet support zinc & 2 & U & 400 \\
+MPINDSUADH31 & Hanger trasera & 2 & U & 400 \\
+QUCANSER2200 & Cantonera plast cerrada 22 & 4 & U & 400 \\
+QUVICH041600 & Vis Rosca Madera 4x16 & 6 & U & 400 \\
+QUDVCHPL0810 & Taco pared cheville 8x10 & 8 & U & 400 \\
+QUVIJA055000 & Vis 5x50 & 8 & U & 400 \\
+EMCAEURMR100 & Carton emballage Euro miroir 100 & 1 & U & 700 \\
+EMSPDPMR9090 & Sachet plastique DP miroir & 1 & U & 700 \\
+QUDVSAPLASSM & Sachet plastic S.M & 1 & U & 700 \\
+QUCOUNI66900 & Colle Unibord 678 & 0,02 & KG & 300 \\
+QUCOUNNU1001 & Colle Unicol Nunivil 1000 & 0,02 & KG & 400 \\
+CSCTRS501000 & Scotch emballage Transp 50/100 & 0,02 & U & 700 \\
+QUDVFIALHITB & Tube Silicone Fix All High Tack Blanc & 0,11 & U & 400 \\
+\hline
+\end{longtable}
+% ============================================================
+% PARTIE 6 : ANNEXES TECHNIQUES
+% ============================================================
+
+\section{Annexes techniques}
+
+\subsection{Unités de mesure utilisées}
+
+Le tableau ci-dessous présente l'ensemble des unités de mesure utilisées dans les nomenclatures, avec leur symbole, leur libellé complet et leur domaine d'application.
+
+\begin{longtable}{|c|p{4cm}|p{4cm}|p{5cm}|}
+\hline
+\multicolumn{1}{|c|}{\textbf{Symbole}} & \multicolumn{1}{c|}{\textbf{Libellé}} & \multicolumn{1}{c|}{\textbf{Unité de base}} & \multicolumn{1}{c|}{\textbf{Domaine d'application}} \\
+\hline
+\endfirsthead
+\hline
+\multicolumn{1}{|c|}{\textbf{Symbole}} & \multicolumn{1}{c|}{\textbf{Libellé}} & \multicolumn{1}{c|}{\textbf{Unité de base}} & \multicolumn{1}{c|}{\textbf{Domaine d'application}} \\
+\hline
+\endhead
+\hline
+\endfoot
+U & Unité & Pièce & Quincaillerie (vis, chevilles, poignées, charnières), emballages \\
+KG & Kilogramme & Masse & Colles, laques, diluants, catalyseurs, isolants \\
+M² & Mètre carré & Surface & Panneaux (mélaminé, hydrofuge, PVC, MDF, lino) \\
+ML & Mètre linéaire & Longueur & Bandes de chant, tiraguarderas, profilés \\
+MIN & Minute & Temps & Temps opératoires (réglage, machine, main-d'œuvre) \\
+H & Heure & Temps & Temps de séchage en étuve, capacités journalières \\
+\% & Pourcentage & Proportion & Rendements, taux de frais \\
+€ & Euro & Monnaie & Prix unitaires, coûts de revient \\
+\hline
+\end{longtable}
+
+\subsubsection{Règles de conversion et d'arrondi}
+
+\begin{itemize}
+    \item Les surfaces de panneaux sont calculées à partir des dimensions nominales (ex: 0,54 M² pour un panneau de dimensions spécifiques).
+    \item Les longueurs de bandes de chant sont exprimées en mètres linéaires avec une précision de 0,01 ML.
+    \item Les masses de produits chimiques sont exprimées en kilogrammes avec une précision de 0,01 KG.
+    \item Les quantités d'emballages (palettes) peuvent être fractionnaires (ex: 0,0625 U correspond à 1 palette pour 16 meubles).
+\end{itemize}
+
+\subsection{Formules de calcul présentes dans les données source}
+
+Cette annexe recense l'ensemble des formules Excel trouvées dans les fichiers sources, avec leur interprétation et leur valeur calculée.
+
+\subsubsection{Formules de type addition}
+
+\begin{longtable}{|p{6cm}|p{5cm}|c|p{3cm}|}
+\hline
+\multicolumn{1}{|c|}{\textbf{Formule}} & \multicolumn{1}{c|}{\textbf{Contexte}} & \multicolumn{1}{c|}{\textbf{Résultat}} & \multicolumn{1}{c|}{\textbf{Unité}} \\
+\hline
+\endfirsthead
+\hline
+\multicolumn{1}{|c|}{\textbf{Formule}} & \multicolumn{1}{c|}{\textbf{Contexte}} & \multicolumn{1}{c|}{\textbf{Résultat}} & \multicolumn{1}{c|}{\textbf{Unité}} \\
+\hline
+\endhead
+\hline
+\endfoot
+=0.02+0.09+0.02 & Colle de chant (QUCOCOTHERM0) & 0,13 & KG \\
+=0.02+0.09+0.02 & Colle de chant (récurrent) & 0,13 & KG \\
+=0.02+0.09+0.02 & Colle Hotmelt (récurrent) & 0,13 & KG \\
+=0.02+0.09+0.02 & Colle assemblage (récurrent) & 0,13 & KG \\
+=8 & Bande de chant ciment (MPBC0819CE67) & 8,00 & ML \\
+\hline
+\end{longtable}
+
+\subsubsection{Formules de type multiplication}
+
+\begin{longtable}{|p{6cm}|p{5cm}|c|p{3cm}|}
+\hline
+\multicolumn{1}{|c|}{\textbf{Formule}} & \multicolumn{1}{c|}{\textbf{Contexte}} & \multicolumn{1}{c|}{\textbf{Résultat}} & \multicolumn{1}{c|}{\textbf{Unité}} \\
+\hline
+\endfirsthead
+\hline
+\multicolumn{1}{|c|}{\textbf{Formule}} & \multicolumn{1}{c|}{\textbf{Contexte}} & \multicolumn{1}{c|}{\textbf{Résultat}} & \multicolumn{1}{c|}{\textbf{Unité}} \\
+\hline
+\endhead
+\hline
+\endfoot
+=1.4*1.15 & Tiraguardera (ACTIRG198150) & 1,61 & ML \\
+=0.02+0.09+0.02 & (déjà classé) & 0,13 & KG \\
+=0.02+0.09+0.02 & (déjà classé) & 0,13 & KG \\
+\hline
+\end{longtable}
+
+\subsubsection{Formules de type division}
+
+\begin{longtable}{|p{6cm}|p{5cm}|c|p{3cm}|}
+\hline
+\multicolumn{1}{|c|}{\textbf{Formule}} & \multicolumn{1}{c|}{\textbf{Contexte}} & \multicolumn{1}{c|}{\textbf{Résultat}} & \multicolumn{1}{c|}{\textbf{Unité}} \\
+\hline
+\endfirsthead
+\hline
+\multicolumn{1}{|c|}{\textbf{Formule}} & \multicolumn{1}{c|}{\textbf{Contexte}} & \multicolumn{1}{c|}{\textbf{Résultat}} & \multicolumn{1}{c|}{\textbf{Unité}} \\
+\hline
+\endhead
+\hline
+\endfoot
+=1/50 & Colle Fortuna AKFIX 360 FC & 0,02 & KG \\
+=1/50 & Colle (récurrent) & 0,02 & KG \\
+\hline
+\end{longtable}
+
+\subsubsection{Formules de type addition de surfaces (panneaux)}
+
+\begin{longtable}{|p{6cm}|p{5cm}|c|p{3cm}|}
+\hline
+\multicolumn{1}{|c|}{\textbf{Formule}} & \multicolumn{1}{c|}{\textbf{Contexte}} & \multicolumn{1}{c|}{\textbf{Résultat}} & \multicolumn{1}{c|}{\textbf{Unité}} \\
+\hline
+\endfirsthead
+\hline
+\multicolumn{1}{|c|}{\textbf{Formule}} & \multicolumn{1}{c|}{\textbf{Contexte}} & \multicolumn{1}{c|}{\textbf{Résultat}} & \multicolumn{1}{c|}{\textbf{Unité}} \\
+\hline
+\endhead
+\hline
+\endfoot
+=0.79+0.27 & Panneau PVC Mykonos & 1,06 & M² \\
+=1.41+0.65 & Panneau mélaminé Ondas & 2,06 & M² \\
+=0.36+0.26 & Panneau laqué Lyon & 0,62 & M² \\
+=0.45+0.35 & Panneau laqué Lyon 80 & 0,80 & M² \\
+=0.34+0.29 & Panneau laqué Monaco 60 & 0,63 & M² \\
+=0.47+0.39 & Panneau laqué Monaco 80 & 0,86 & M² \\
+=0.55+0.51 & Panneau laqué Monaco 100 & 1,06 & M² \\
+=0.089+0.07 & Panneau miroir K3 & 0,16 & M² \\
+\hline
+\end{longtable}
+
+\subsubsection{Formules de type calculs de bandes de chant (ML)}
+
+\begin{longtable}{|p{6cm}|p{5cm}|c|p{3cm}|}
+\hline
+\multicolumn{1}{|c|}{\textbf{Formule}} & \multicolumn{1}{c|}{\textbf{Contexte}} & \multicolumn{1}{c|}{\textbf{Résultat}} & \multicolumn{1}{c|}{\textbf{Unité}} \\
+\hline
+\endfirsthead
+\hline
+\multicolumn{1}{|c|}{\textbf{Formule}} & \multicolumn{1}{c|}{\textbf{Contexte}} & \multicolumn{1}{c|}{\textbf{Résultat}} & \multicolumn{1}{c|}{\textbf{Unité}} \\
+\hline
+\endhead
+\hline
+\endfoot
+=0.02+0.09+0.02 & Colle (déjà classé) & 0,13 & KG \\
+=8 & Bande ciment Inara & 8,00 & ML \\
+\hline
+\end{longtable}
+
+\subsection{Tableau de consolidation des temps opératoires par poste}
+
+Ce tableau présente la synthèse des temps opératoires unitaires pour chaque poste de charge, exprimés en minutes par unité d'œuvre.
+
+\subsubsection{Poste 100 – Découpe panneaux}
+
+\begin{longtable}{|p{4cm}|p{6cm}|c|c|c|}
+\hline
+\multicolumn{1}{|c|}{\textbf{Type de panneau}} & \multicolumn{1}{c|}{\textbf{Épaisseur (mm)}} & \multicolumn{1}{c|}{\textbf{TR (min)}} & \multicolumn{1}{c|}{\textbf{TM (min/m²)}} & \multicolumn{1}{c|}{\textbf{TMO (min/m²)}} \\
+\hline
+\endfirsthead
+\hline
+\multicolumn{1}{|c|}{\textbf{Type de panneau}} & \multicolumn{1}{c|}{\textbf{Épaisseur (mm)}} & \multicolumn{1}{c|}{\textbf{TR (min)}} & \multicolumn{1}{c|}{\textbf{TM (min/m²)}} & \multicolumn{1}{c|}{\textbf{TMO (min/m²)}} \\
+\hline
+\endhead
+\hline
+\endfoot
+Mélaminé & 16 & 15 & 2,5 & 2,5 \\
+Hydrofuge & 16/18 & 15 & 2,8 & 2,8 \\
+PVC & 15 & 10 & 2,0 & 2,0 \\
+MDF & 5 & 8 & 1,5 & 1,5 \\
+Lino & 5 & 8 & 1,5 & 1,5 \\
+\hline
+\end{longtable}
+
+\subsubsection{Poste 200 – Usinage / Perçage}
+
+\begin{longtable}{|p{5cm}|p{5cm}|c|c|c|}
+\hline
+\multicolumn{1}{|c|}{\textbf{Type d'usinage}} & \multicolumn{1}{c|}{\textbf{Référence}} & \multicolumn{1}{c|}{\textbf{TR (min)}} & \multicolumn{1}{c|}{\textbf{TM (min/unité)}} & \multicolumn{1}{c|}{\textbf{TMO (min/unité)}} \\
+\hline
+\endfirsthead
+\hline
+\multicolumn{1}{|c|}{\textbf{Type d'usinage}} & \multicolumn{1}{c|}{\textbf{Référence}} & \multicolumn{1}{c|}{\textbf{TR (min)}} & \multicolumn{1}{c|}{\textbf{TM (min/unité)}} & \multicolumn{1}{c|}{\textbf{TMO (min/unité)}} \\
+\hline
+\endhead
+\hline
+\endfoot
+Perçage tourillon & 8mm & 10 & 0,5 & 0,5 \\
+Perçage charnière & 35mm & 15 & 1,0 & 1,0 \\
+Perçage poignée & Standard & 8 & 0,4 & 0,4 \\
+Fraisage rainure & - & 12 & 1,2 & 1,2 \\
+Mortaisage coulisse & - & 10 & 0,8 & 0,8 \\
+\hline
+\end{longtable}
+
+\subsubsection{Poste 300 – Placage de chants}
+
+\begin{longtable}{|p{5cm}|p{5cm}|c|c|c|}
+\hline
+\multicolumn{1}{|c|}{\textbf{Type de bande}} & \multicolumn{1}{c|}{\textbf{Code}} & \multicolumn{1}{c|}{\textbf{TR (min)}} & \multicolumn{1}{c|}{\textbf{TM (min/ML)}} & \multicolumn{1}{c|}{\textbf{TMO (min/ML)}} \\
+\hline
+\endfirsthead
+\hline
+\multicolumn{1}{|c|}{\textbf{Type de bande}} & \multicolumn{1}{c|}{\textbf{Code}} & \multicolumn{1}{c|}{\textbf{TR (min)}} & \multicolumn{1}{c|}{\textbf{TM (min/ML)}} & \multicolumn{1}{c|}{\textbf{TMO (min/ML)}} \\
+\hline
+\endhead
+\hline
+\endfoot
+Blanc brillant & MPBC819BL209 & 20 & 0,6 & 0,6 \\
+Blanc serf & MPBC8192011N & 20 & 0,6 & 0,6 \\
+Chêne & MPBC0819N822 & 20 & 0,7 & 0,7 \\
+Ciment & MPBC0819CE67 & 20 & 0,7 & 0,7 \\
+Noir brillant & MPBC0819NE64 & 20 & 0,6 & 0,6 \\
+Chêne truffe & MPC0819R534 & 20 & 0,7 & 0,7 \\
+Pin zermat & MPBC0819ZE86 & 20 & 0,7 & 0,7 \\
+\hline
+\end{longtable}
+
+\subsubsection{Poste 400 – Assemblage quincaillerie}
+
+\begin{longtable}{|p{5cm}|p{5cm}|c|c|c|}
+\hline
+\multicolumn{1}{|c|}{\textbf{Type d'assemblage}} & \multicolumn{1}{c|}{\textbf{Référence}} & \multicolumn{1}{c|}{\textbf{TR (min)}} & \multicolumn{1}{c|}{\textbf{TM (min/unité)}} & \multicolumn{1}{c|}{\textbf{TMO (min/unité)}} \\
+\hline
+\endfirsthead
+\hline
+\multicolumn{1}{|c|}{\textbf{Type d'assemblage}} & \multicolumn{1}{c|}{\textbf{Référence}} & \multicolumn{1}{c|}{\textbf{TR (min)}} & \multicolumn{1}{c|}{\textbf{TM (min/unité)}} & \multicolumn{1}{c|}{\textbf{TMO (min/unité)}} \\
+\hline
+\endhead
+\hline
+\endfoot
+Charnière à frein & QUFCHAFR3500 & 5 & 0,8 & 0,8 \\
+Charnière normale & QUFCHNOR3500 & 5 & 0,6 & 0,6 \\
+Poignée & QUPO... & 3 & 0,5 & 0,5 \\
+Tourillon & QUVITOU08300 & 2 & 0,2 & 0,2 \\
+Coulisse & QUSACOFR3500 & 8 & 1,5 & 1,5 \\
+Support métal & QUDVSUMET000 & 4 & 0,7 & 0,7 \\
+Taquet & TAQ000 & 2 & 0,3 & 0,3 \\
+Pied & ACSALB4012AL & 6 & 1,0 & 1,0 \\
+\hline
+\end{longtable}
+
+\subsubsection{Poste 500 – Finition / Laquage}
+
+\begin{longtable}{|p{5cm}|p{5cm}|c|c|c|}
+\hline
+\multicolumn{1}{|c|}{\textbf{Type d'opération}} & \multicolumn{1}{c|}{\textbf{Produit}} & \multicolumn{1}{c|}{\textbf{TR (min)}} & \multicolumn{1}{c|}{\textbf{TM (min/m²)}} & \multicolumn{1}{c|}{\textbf{TMO (min/m²)}} \\
+\hline
+\endfirsthead
+\hline
+\multicolumn{1}{|c|}{\textbf{Type d'opération}} & \multicolumn{1}{c|}{\textbf{Produit}} & \multicolumn{1}{c|}{\textbf{TR (min)}} & \multicolumn{1}{c|}{\textbf{TM (min/m²)}} & \multicolumn{1}{c|}{\textbf{TMO (min/m²)}} \\
+\hline
+\endhead
+\hline
+\endfoot
+Ponceuse préparatoire & - & 10 & 2,0 & 2,0 \\
+Application fond PU & MPFOBUP1017T & 15 & 3,0 & 3,0 \\
+Séchage fond (étuve) & - & 0 & 60,0 & 0 \\
+Ponceuse intermédiaire & - & 10 & 1,5 & 1,5 \\
+Application finition mate & MPKJ1048CBLM & 15 & 3,5 & 3,5 \\
+Application finition brillante & MPBLBKU1110T & 15 & 4,0 & 4,0 \\
+Application vernis clair & MPGLCKD4010T & 15 & 2,5 & 2,5 \\
+Séchage final (étuve) & - & 0 & 120,0 & 0 \\
+\hline
+\end{longtable}
+
+\subsubsection{Poste 600 – Montage tiroirs}
+
+\begin{longtable}{|p{5cm}|p{5cm}|c|c|c|}
+\hline
+\multicolumn{1}{|c|}{\textbf{Type d'opération}} & \multicolumn{1}{c|}{\textbf{Composant}} & \multicolumn{1}{c|}{\textbf{TR (min)}} & \multicolumn{1}{c|}{\textbf{TM (min/tiroir)}} & \multicolumn{1}{c|}{\textbf{TMO (min/tiroir)}} \\
+\hline
+\endfirsthead
+\hline
+\multicolumn{1}{|c|}{\textbf{Type d'opération}} & \multicolumn{1}{c|}{\textbf{Composant}} & \multicolumn{1}{c|}{\textbf{TR (min)}} & \multicolumn{1}{c|}{\textbf{TM (min/tiroir)}} & \multicolumn{1}{c|}{\textbf{TMO (min/tiroir)}} \\
+\hline
+\endhead
+\hline
+\endfoot
+Assemblage fond tiroir & - & 5 & 1,2 & 1,2 \\
+Pose coulisses & QUSACOFR3500 & 8 & 1,5 & 1,5 \\
+Pose face avant & - & 6 & 1,0 & 1,0 \\
+Pose taquets & TAQ000 & 4 & 0,8 & 0,8 \\
+Contrôle tiroir & - & 3 & 0,5 & 0,5 \\
+\hline
+\end{longtable}
+
+\subsubsection{Poste 700 – Emballage}
+
+\begin{longtable}{|p{5cm}|p{5cm}|c|c|c|}
+\hline
+\multicolumn{1}{|c|}{\textbf{Type d'opération}} & \multicolumn{1}{c|}{\textbf{Composant}} & \multicolumn{1}{c|}{\textbf{TR (min)}} & \multicolumn{1}{c|}{\textbf{TM (min/unité)}} & \multicolumn{1}{c|}{\textbf{TMO (min/unité)}} \\
+\hline
+\endfirsthead
+\hline
+\multicolumn{1}{|c|}{\textbf{Type d'opération}} & \multicolumn{1}{c|}{\textbf{Composant}} & \multicolumn{1}{c|}{\textbf{TR (min)}} & \multicolumn{1}{c|}{\textbf{TM (min/unité)}} & \multicolumn{1}{c|}{\textbf{TMO (min/unité)}} \\
+\hline
+\endhead
+\hline
+\endfoot
+Mise sous sachet & EMSPDPMB9012 & 2 & 0,5 & 0,5 \\
+Cartonnage meuble & EMCAEURMB... & 8 & 2,0 & 2,0 \\
+Cartonnage miroir & EMCAEURMR... & 5 & 1,5 & 1,5 \\
+Mise sous palette & DVCOPAL80120 & 10 & 3,0 & 3,0 \\
+Filmage palette & - & 5 & 1,5 & 1,5 \\
+\hline
+\end{longtable}
+
+\subsubsection{Poste 800 – Contrôle qualité}
+
+\begin{longtable}{|p{5cm}|p{5cm}|c|c|c|}
+\hline
+\multicolumn{1}{|c|}{\textbf{Type d'opération}} & \multicolumn{1}{c|}{\textbf{Objet}} & \multicolumn{1}{c|}{\textbf{TR (min)}} & \multicolumn{1}{c|}{\textbf{TM (min/produit)}} & \multicolumn{1}{c|}{\textbf{TMO (min/produit)}} \\
+\hline
+\endfirsthead
+\hline
+\multicolumn{1}{|c|}{\textbf{Type d'opération}} & \multicolumn{1}{c|}{\textbf{Objet}} & \multicolumn{1}{c|}{\textbf{TR (min)}} & \multicolumn{1}{c|}{\textbf{TM (min/produit)}} & \multicolumn{1}{c|}{\textbf{TMO (min/produit)}} \\
+\hline
+\endhead
+\hline
+\endfoot
+Contrôle dimensionnel & Meuble/Miroir & 5 & 1,0 & 1,0 \\
+Contrôle aspect & Meuble/Miroir & 5 & 1,0 & 1,0 \\
+Contrôle fonctionnel & Meuble & 5 & 0,8 & 0,8 \\
+Contrôle emballage & Carton/Palette & 3 & 0,5 & 0,5 \\
+Rapport CQ & Lot & 5 & 1,0 & 1,0 \\
+\hline
+\end{longtable}
+
+\subsection{Liste des codes composants avec désignation complète}
+
+Cette annexe fournit un dictionnaire complet de tous les codes composants rencontrés dans les nomenclatures, avec leur désignation exacte et leur catégorie.
+
+\subsubsection{Code de désignation par catégorie}
+
+\begin{longtable}{|p{3cm}|p{3cm}|p{8cm}|}
+\hline
+\multicolumn{1}{|c|}{\textbf{Code}} & \multicolumn{1}{c|}{\textbf{Catégorie}} & \multicolumn{1}{c|}{\textbf{Désignation complète}} \\
+\hline
+\endfirsthead
+\hline
+\multicolumn{1}{|c|}{\textbf{Code}} & \multicolumn{1}{c|}{\textbf{Catégorie}} & \multicolumn{1}{c|}{\textbf{Désignation complète}} \\
+\hline
+\endhead
+\hline
+\endfoot
+MPPAF16SR209 & Panneau & Panneau Finsa 275x210x16 Super Decor 2F White SR209 L100 \\
+MPPAF28516BLS & Panneau & Panneau Finsa 285x210x16 Super Decor 2F Blanco Standard \\
+MPPAF28516COS & Panneau & Panneau Finsa 285x210x16 Super Decor 2F Cambrian Oak Sega \\
+MPPAF28516CSM & Panneau & Panneau Finsa 285x210x16 Super Decor 2F Cemento Super Mate \\
+MPPAF28516RF & Panneau & Panneau Finsa 285x210x16 Super Decor 2F Roble Trufa P.Profundo \\
+MPPAF28516PZ & Panneau & Panneau Finsa 285x210x16 Super Decor 2F Pino Zermat P.Arena \\
+MPPAF24405GG & Panneau & Panneau Finsa 244x210x5 MDF Gris GU S.3 \\
+MPPAF24125LC & Panneau & Panneau Finsa 244x210x5 Lino Cancun Textil Kraf \\
+MPPACNHD2856 & Panneau & Panneau Finsa 285x210x16 Fib Hidrofugo Blanco Standard \\
+MPPACNHD2858 & Panneau & Panneau Finsa 285x210x18 Fib Hidrofugo Blanco Standard \\
+MPPAFHBS36622 & Panneau & Panneau Finsa 366x210x22 Fib Hidrofugo Blanco Standard \\
+MPAPVC15JY032 & Panneau & Panneau PVC 244x122x15 1F JY032 Chêne \\
+MPAPVC15ZL03G & Panneau & Panneau PVC 244x122x15 1F ZL-003G Blanc Brillant \\
+MPAPVC05PVCFO & Panneau & Panneau PVC 244x122x05 PVC Foam \\
+\hline
+\end{longtable}
+
+\begin{longtable}{|p{3cm}|p{3cm}|p{8cm}|}
+\hline
+\multicolumn{1}{|c|}{\textbf{Code}} & \multicolumn{1}{c|}{\textbf{Catégorie}} & \multicolumn{1}{c|}{\textbf{Désignation complète}} \\
+\hline
+\endfirsthead
+\hline
+\multicolumn{1}{|c|}{\textbf{Code}} & \multicolumn{1}{c|}{\textbf{Catégorie}} & \multicolumn{1}{c|}{\textbf{Désignation complète}} \\
+\hline
+\endhead
+\hline
+\endfoot
+MPBC819BL209 & Bande chant & Bande de chant Protec 08x19 Blanco Brillant SR209 L100 N°417 \\
+MPBC8192011N & Bande chant & Bande de chant Protec 0.8x19 2011N Blanco Serf N°275 \\
+MPBC0819N822 & Bande chant & Bande de chant Protec 08x19 Roble Poro Oak Sega N°822 Decorado \\
+MPBC0819CE67 & Bande chant & Bande de chant Protec 08x19 Grafito N°67 Decorado 06F-Cement \\
+MPBC0819NE64 & Bande chant & Bande de chant Protec 08x19 231-Negro Super High Gloss 70 N°64 \\
+MPC0819R534 & Bande chant & Bande de chant Protec 0.8x19 Roble N°534 Decorado 95Q-Roble Trufa \\
+MPBC0819ZE86 & Bande chant & Bande de chant Protec N°86 Decorado 15G-Pino Zermatt 19x0,8mm \\
+\hline
+\end{longtable}
+
+\begin{longtable}{|p{3cm}|p{3cm}|p{8cm}|}
+\hline
+\multicolumn{1}{|c|}{\textbf{Code}} & \multicolumn{1}{c|}{\textbf{Catégorie}} & \multicolumn{1}{c|}{\textbf{Désignation complète}} \\
+\hline
+\endfirsthead
+\hline
+\multicolumn{1}{|c|}{\textbf{Code}} & \multicolumn{1}{c|}{\textbf{Catégorie}} & \multicolumn{1}{c|}{\textbf{Désignation complète}} \\
+\hline
+\endhead
+\hline
+\endfoot
+QUVICH055000 & Vis & Vis Spax 5x50 Chrome \\
+QUVICH041600 & Vis & Vis Spax 4x16 Chrome \\
+QUVICH041200 & Vis & Vis Spax 4x12 \\
+QUVICH043000 & Vis & Vis Spax 4x30 Chrome \\
+QUVIPO042000 & Vis & Vis Poignée 4x22 \\
+QUVIPO043200 & Vis & Vis Poignée 4x32 \\
+QUVITR3525CH & Vis & Vis Trasera 3.5x25 Chrome \\
+QUVIJA055000 & Vis & Vis 5x50 \\
+QUDVCHPL0810 & Cheville & Cheville plastique D 08x10 \\
+QUMCHSA4R5MM & Cheville & Cheville plastique Sambeat 4 Réducteurs 5mm \\
+QUVITOU08300 & Tourillon & Tourillon 08x30 \\
+QUFCHAFR3500 & Charnière & Charnière à frein 35 \\
+QUFCHNOR3500 & Charnière & Charnière normale D 35 \\
+QUSACOFR3500 & Coulisse & Coulisse à frein D 35 \\
+QUSACONV35FR & Coulisse & Coulisse tiroir D 35 à frein \\
+\hline
+\end{longtable}
+
+\begin{longtable}{|p{3cm}|p{3cm}|p{8cm}|}
+\hline
+\multicolumn{1}{|c|}{\textbf{Code}} & \multicolumn{1}{c|}{\textbf{Catégorie}} & \multicolumn{1}{c|}{\textbf{Désignation complète}} \\
+\hline
+\endfirsthead
+\hline
+\multicolumn{1}{|c|}{\textbf{Code}} & \multicolumn{1}{c|}{\textbf{Catégorie}} & \multicolumn{1}{c|}{\textbf{Désignation complète}} \\
+\hline
+\endhead
+\hline
+\endfoot
+QUPOCH500500 & Poignée & Poignée JRG Chrome 50-050-03 Cuadrado 23x23 Cromo \\
+QUPOCH159CU0 & Poignée & Poignée JRG Chrome ASA-60x60 70-157-032-08 Cromo Mate "U" \\
+QUPOCH0963AB & Poignée & Poignée JRG Chrome 70-096-300-96-89E Alto Brillo \\
+QUPOCH704000 & Poignée & Poignée JRG Chrome 70-096-400-96-89E Alto Brillo \\
+QUPOCH702050 & Poignée & Poignée JRG ASA 195 206 70-195-205-096-89E Avella Alto.Br \\
+QUJRAS73128E & Poignée & ASA-73 128mm Embutir EF.Mate 70-073-128-08 \\
+ACPOSMPPL10A & Poignée & Pomo Samb PPL10 100x100 Aluminio PPL10 AL \\
+QUDVSUMET000 & Support & Support métal \\
+QUDVSUHS933C & Support & Support meuble H.S 933 Galvanisé Colga 063CBVG \\
+ACSALB4012AL & Accessoire & Pata Albufera 120 mm Aluminio \\
+ACSOMEGA1 & Accessoire & Salvasifon Omega-1 Antracita \\
+APL10454AL & Accessoire & ASA Samb APL 10 Longe 454 / 128-384CC Plata \\
+\hline
+\end{longtable}
+
+\begin{longtable}{|p{3cm}|p{3cm}|p{8cm}|}
+\hline
+\multicolumn{1}{|c|}{\textbf{Code}} & \multicolumn{1}{c|}{\textbf{Catégorie}} & \multicolumn{1}{c|}{\textbf{Désignation complète}} \\
+\hline
+\endfirsthead
+\hline
+\multicolumn{1}{|c|}{\textbf{Code}} & \multicolumn{1}{c|}{\textbf{Catégorie}} & \multicolumn{1}{c|}{\textbf{Désignation complète}} \\
+\hline
+\endhead
+\hline
+\endfoot
+QUCOCOTHERM0 & Colle & Colle de chant Rayt MA 6520 en 25KG \\
+QUCOTF953MS3 & Colle & Colle Hotmelt TF 953/MS3 Sac 25KG / ESS \\
+QUCORAT1495R & Colle & Colle Rayt MA 1495-R D3 / 28L \\
+QUCOUNNU1000 & Colle & Colle Unicol Nunivil 118 \\
+QUCOUNNU1001 & Colle & Colle Unicol Nunivil 1000 \\
+QUCOFAKFX360 & Colle & Colle Fortuna AKFIX 360 FC \\
+QUCOUNI66900 & Colle & Colle Unibord 678 (Plaqueuse chant) \\
+MPFOBUP1017T & Laque & Fond Blanc Polyuréthane UP1017T \\
+MPFRAL9005NM & Laque & Finition RAL PU Mat Noir 9005 (KM9008T) \\
+MPFRAL7037GR & Laque & Finition RAL PU Mat B/7037 Gris Grafito (KI7032Z) \\
+MPKJ1048CBLM & Laque & Finition Kupsamax Blanc Mat 15 PU Topcoat KJ-1048C \\
+MPBLBKU1110T & Laque & Finition Kupsamax Blanc High-Gloss PU Topcoat KU1110T \\
+MPGLCKD4010T & Vernis & Finition Kupsamax Glossy PU Topcoat Clear KD4010T \\
+MPISPUK9011T & Isolant & Isolant Polyuréthanne Kupsafond Série DM UK9011T \\
+MPDLMDU5002M & Diluant & Diluant Medium Thinner for Polyurethanes DU-5002M \\
+MPDLRDU5023L & Diluant & Diluant Retardant DU5023L \\
+MPCATCU2126U & Catalyseur & Catalyseur Special A 100\% CU9126U \\
+MPCATCB5228A & Catalyseur & Catalyseur Antisun AT 50\% CB5228A \\
+MPCPOCH2818B & Catalyseur & Catalyseur Polyrethane CH2818B \\
+MPPFLQMD3M00 & Additif & Liquide Medio Blanc 3M-09374 \\
+\hline
+\end{longtable}
+
+\begin{longtable}{|p{3cm}|p{3cm}|p{8cm}|}
+\hline
+\multicolumn{1}{|c|}{\textbf{Code}} & \multicolumn{1}{c|}{\textbf{Catégorie}} & \multicolumn{1}{c|}{\textbf{Désignation complète}} \\
+\hline
+\endfirsthead
+\hline
+\multicolumn{1}{|c|}{\textbf{Code}} & \multicolumn{1}{c|}{\textbf{Catégorie}} & \multicolumn{1}{c|}{\textbf{Désignation complète}} \\
+\hline
+\endhead
+\hline
+\endfoot
+EMSPDPMB9012 & Sachet & Sachet plastique meuble LDPE (90+24)x120x50µ \\
+EMSPDPMR9090 & Sachet & Sachet plastique DP miroir D 90x90x60 \\
+QUDVSAPLASSM & Sachet & Sachet plastic S.M \\
+EMCAEURMB601 & Carton & Carton emballage Euro meuble D60 595x360x460 impression Odyssey \\
+EMCAEURMB602 & Carton & Carton emballage Euro meuble 60 595x475x460 impression Odyssey \\
+EMCAEURMB600 & Carton & Carton emballage Euro meuble 60 F45 595x475x710 impression Odyssey \\
+EMCAEURMB800 & Carton & Carton emballage Euro meuble D80 800x475x710 impression Odyssey \\
+EMCAEURMB801 & Carton & Carton emballage Euro meuble D80 800x475x460 impression Odyssey \\
+EMCAEURMB100 & Carton & Carton emballage meuble D100 1020x475x710 impression Odyssey \\
+EMCAEURMB120 & Carton & Carton emballage Euro meuble D120 1200x475x710 impression Odyssey \\
+EMCAEURPL423 & Carton & Carton emballage Euro plaque DF Ecrue 4mm 230x230 \\
+EMCAEURCO830 & Carton & Carton emballage Euro plaque coin Ecrue 830x230 DFE micro \\
+EMCAEURMR100 & Carton & Carton emballage Euro miroir 100 1010x800x40 \\
+EMCAEURMR120 & Carton & Carton emballage Euro miroir 120 1210x800x40 \\
+EMCAEURMR600 & Carton & Carton emballage Euro miroir 60/H80 800x600x40 \\
+EMCAEURMR700 & Carton & Carton emballage Euro miroir 70/H80 800x710x40 \\
+EMCAEURMR800 & Carton & Carton emballage Euro miroir 80/H80 800x800x40 \\
+EMCAEURMP600 & Carton & Carton emballage Euro M-Pharmacie 60 610x165x810 avec impression \\
+DVCOPAL80120 & Palette & Palette D 80x120 \\
+QUCOAGRP3515 & Consommable & Agrafes D 35/15 (2000-2500un) \\
+CSCTRS501000 & Consommable & Scotch d'emballage Transp 50/100 \\
+QUDVFIALHITB & Consommable & Tube Silicone Fix All High Tack Blanc \\
+\hline
+\end{longtable}
+
+\begin{longtable}{|p{3cm}|p{3cm}|p{8cm}|}
+\hline
+\multicolumn{1}{|c|}{\textbf{Code}} & \multicolumn{1}{c|}{\textbf{Catégorie}} & \multicolumn{1}{c|}{\textbf{Désignation complète}} \\
+\hline
+\endfirsthead
+\hline
+\multicolumn{1}{|c|}{\textbf{Code}} & \multicolumn{1}{c|}{\textbf{Catégorie}} & \multicolumn{1}{c|}{\textbf{Désignation complète}} \\
+\hline
+\endhead
+\hline
+\endfoot
+MRMIR7749893 & Miroir & Miroir VA D 3mm 774x989 C/P \\
+MRMIR7741169 & Miroir & Miroir VA D 3mm 774x1169 C/P \\
+MRMIR5994893 & Miroir & Miroir VA D 3mm 599x489 C/P \\
+MRMIR7745843 & Miroir & Miroir VA D 3mm 774x584 C/P \\
+MRMIR7746793 & Miroir & Miroir VA D 3mm 774x679 C/P \\
+MRMIR7747743 & Miroir & Miroir VA D 3mm 774x774 C/P \\
+MRMRM4M61542 & Miroir & Miroir Simple MI D 4mm 615x425 avec rectiling \\
+MPINDSUCA035 & Support & Cabivet support zinc \\
+MPINDSUADH31 & Support & Hanger trasera \\
+QUCANSER2200 & Accessoire & Cantonera plast cerrada 22 \\
+\hline
+\end{longtable}
+
+\begin{longtable}{|p{3cm}|p{3cm}|p{8cm}|}
+\hline
+\multicolumn{1}{|c|}{\textbf{Code}} & \multicolumn{1}{c|}{\textbf{Catégorie}} & \multicolumn{1}{c|}{\textbf{Désignation complète}} \\
+\hline
+\endfirsthead
+\hline
+\multicolumn{1}{|c|}{\textbf{Code}} & \multicolumn{1}{c|}{\textbf{Catégorie}} & \multicolumn{1}{c|}{\textbf{Désignation complète}} \\
+\hline
+\endhead
+\hline
+\endfoot
+MPINDCTSL036 & Quincaillerie & Traser -6 M/Rapid Der REF 624300036 \\
+MPINDCTSR32 & Quincaillerie & Traser -6 M/Rapid Izq REF 624200032 \\
+MPINDDHOTR31 & Quincaillerie & Double Hook Traser 621900031 (Soporte) \\
+ACTIRG250816 & Accessoire & Tiraguardera de 2050x86x16 Gris GU \\
+ACTIRG198150 & Accessoire & Tiraguardera de 1980x150x12 Gris GU \\
+ACTIRG198860 & Accessoire & Tiraguardera de 1980x86x12 Gris GU \\
+ACTIRAG24186 & Accessoire & Tiraguardera de 2400x86x16 Antracita \\
+ACTIRAG24086 & Accessoire & Tiraguardera de 2400x86x12 Antracita \\
+ACTIRAG24015 & Accessoire & Tiraguardera de 2400x150x12 Antracita \\
+QUDVAGR14000 & Consommable & Agrafes D 80x14 \\
+MPIND7695350 & Accessoire & Corred 350- Marc Enganc 769535034 \\
+MPIND7976011 & Accessoire & Eng, Fijacion Frontal Izq 797601140 \\
+MPIND7976021 & Accessoire & Eng, Fijacion Frontal Dcha 797602142 \\
+\hline
+\end{longtable}
+
+\end{document}

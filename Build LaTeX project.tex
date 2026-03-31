@@ -1,0 +1,519 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[french]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\usepackage{array}
+\usepackage{xcolor}
+\usepackage{colortbl}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{tcolorbox}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{amssymb}  % AJOUTÉ - fournit \square
+
+% ==================== CONFIGURATION PAGE ====================
+\geometry{a4paper, margin=2cm, top=2.5cm, bottom=2cm}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.3\baselineskip}
+\setlength{\headheight}{15pt}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\textcolor{blue!60}{\textbf{Système de Gestion du Temps}}}
+\fancyhead[R]{\textcolor{blue!60}{\textbf{Stage Ynion}}}
+\fancyfoot[C]{\thepage}
+
+% ==================== COULEURS ====================
+\definecolor{stageblue}{RGB}{41,128,185}
+\definecolor{formgreen}{RGB}{39,174,96}
+\definecolor{langorange}{RGB}{243,156,18}
+\definecolor{praypurple}{RGB}{142,68,173}
+\definecolor{restgray}{RGB}{127,140,141}
+\definecolor{riskred}{RGB}{192,57,43}
+\definecolor{successgreen}{RGB}{46,204,113}
+
+% ==================== COMMANDES ====================
+\newcommand{\stage}[1]{\textcolor{stageblue}{\textbf{#1}}}
+\newcommand{\formation}[1]{\textcolor{formgreen}{\textbf{#1}}}
+\newcommand{\langue}[1]{\textcolor{langorange}{\textbf{#1}}}
+\newcommand{\priere}[1]{\textcolor{praypurple}{\textbf{#1}}}
+\newcommand{\repos}[1]{\textcolor{restgray}{\textbf{#1}}}
+
+% ==================== BOÎTES ====================
+\newtcolorbox{infobox}[1]{
+    colback=#1!10,
+    colframe=#1!70,
+    rounded corners,
+    boxrule=0.8pt,
+    left=5pt,
+    right=5pt,
+    top=3pt,
+    bottom=3pt
+}
+
+\newtcolorbox{warningbox}{
+    colback=riskred!5,
+    colframe=riskred!70,
+    title=\textbf{[ALERTE]},
+    rounded corners
+}
+
+% ==================== DÉBUT DOCUMENT ====================
+\begin{document}
+
+% ==================== PAGE DE GARDE ====================
+\begin{titlepage}
+    \centering
+    \vspace*{2cm}
+    
+    {\Huge \textbf{SYSTÈME DE GESTION}}\\[0.3cm]
+    {\Huge \textbf{DU TEMPS}}\\[0.8cm]
+    
+    {\Large Planning Intégré}\\[0.3cm]
+    {\Large Stage \& Développement Personnel}\\[1cm]
+    
+    \rule{0.6\textwidth}{0.5pt}\\[0.5cm]
+    
+    {\large Stage Ynion \textbar{} 8 Semaines}\\[0.3cm]
+    {\large Version Opérationnelle}\\[1cm]
+    
+    \begin{minipage}{0.8\textwidth}
+        \centering
+        \repos{[Stage] 6h-18h} \quad | \quad
+        \priere{[Prieres] quotidiennes} \quad | \quad
+        \repos{[Cuisine] 1h30} \quad | \quad
+        \repos{[Coucher] 00h30}
+    \end{minipage}
+    
+    \vfill
+    
+    {\small Conçu selon les principes du Lean Management et du Project Management}
+\end{titlepage}
+
+\newpage
+\tableofcontents
+\newpage
+
+% ==================== SECTION 1 : PRIORISATION ====================
+\section{Priorisation des Compétences}
+
+\begin{infobox}{stageblue}
+\textbf{Méthode RICE :} Reach × Impact × Confiance / Effort
+\end{infobox}
+
+\vspace{0.5cm}
+
+\begin{table}[h]
+\centering
+\caption{Matrice de priorisation des compétences}
+\begin{tabular}{|l|c|c|c|c|c|}
+\hline
+\rowcolor{gray!20}
+\textbf{Compétence} & \textbf{Reach} & \textbf{Impact} & \textbf{Confiance} & \textbf{Effort} & \textbf{Score} \\
+\hline
+\textbf{Excel Avancé} & 100\% & 5 & 100\% & 2 & \textbf{250} \\
+\textbf{Anglais Technique} & 100\% & 4 & 100\% & 2 & \textbf{200} \\
+\textbf{IA \& Prompt} & 70\% & 4 & 80\% & 2 & 112 \\
+\textbf{Python} & 80\% & 5 & 90\% & 4 & 90 \\
+\textbf{Git/GitHub} & 50\% & 3 & 90\% & 2 & 68 \\
+\textbf{SAP} & 60\% & 5 & 70\% & 5 & 42 \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{infobox}{formgreen}
+\centering
+\textbf{Priorité absolue :} Excel Avancé puis Anglais Technique \\
+SAP sera abordé en fin de stage si le temps le permet.
+\end{infobox}
+
+\newpage
+
+% ==================== SECTION 2 : PLANNING QUOTIDIEN ====================
+\section{Planning Quotidien Type}
+
+\begin{table}[h]
+\centering
+\small
+\begin{tabularx}{\textwidth}{|>{\hsize=0.7\hsize}X|>{\hsize=2.3\hsize}X|>{\hsize=1.5\hsize}X|}
+\hline
+\rowcolor{gray!20}
+\textbf{Horaire} & \textbf{Activité} & \textbf{Détail} \\
+\hline
+\multicolumn{3}{|c|}{\cellcolor{gray!10}\textbf{MATINEE}} \\
+\hline
+06:00-06:30 & Priere Fajr & Reveil, priere, petit-dejeuner \\
+06:30-07:00 & Preparation & Sac, documents, feuilles de collecte \\
+07:00-07:15 & Objectifs & Definir les 3 priorites du jour \\
+\hline
+\multicolumn{3}{|c|}{\cellcolor{gray!10}\textbf{STAGE}} \\
+\hline
+07:15-12:00 & \textbf{Stage - Terrain} & Chronometrages, observations, collecte \\
+12:00-12:30 & Priere Dohr & Priere du midi \\
+12:30-13:30 & Dejeuner & Repas, pause \\
+13:30-18:00 & \textbf{Stage - Analyse} & Traitement donnees, calculs, livrables \\
+\hline
+\multicolumn{3}{|c|}{\cellcolor{gray!10}\textbf{SOIREE}} \\
+\hline
+18:00-18:30 & Priere Maghreb & Priere, retour domicile \\
+18:30-19:30 & Pause & Relaxation, famille \\
+19:30-21:00 & Cuisine + Diner & Preparation et repas (1h30) \\
+21:00-21:15 & Priere Icha & Priere du soir \\
+\hline
+\multicolumn{3}{|c|}{\cellcolor{gray!10}\textbf{DEVELOPPEMENT}} \\
+\hline
+21:15-22:00 & \textbf{Consolidation Stage} & Traitement final, mise a jour livrables \\
+22:00-22:15 & Pause & Hydratation, etirements \\
+22:15-23:15 & \textbf{Formation} & Voir planning hebdomadaire \\
+23:15-23:30 & \textbf{Langues} & Anglais (vocabulaire technique) \\
+23:30-23:45 & \textbf{Lecture} & Lean / Code / Cyber / Veille \\
+\hline
+\multicolumn{3}{|c|}{\cellcolor{gray!10}\textbf{CLOTURE}} \\
+\hline
+23:45-00:15 & Preparation coucher & Toilette, journal de bord \\
+00:15-00:30 & Invocations & Invocations du soir \\
+00:30 & \textbf{Coucher} & Sommeil (5h30-6h) \\
+\hline
+\end{tabularx}
+\end{table}
+
+\subsection*{Indicateurs de Performance Quotidiens}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|l|c|c|}
+\hline
+\rowcolor{gray!20}
+\textbf{Indicateur} & \textbf{Cible} & \textbf{Alerte} \\
+\hline
+Taux completion stage & $\ge$ 85\% & $<$ 70\% \\
+Temps formation effectif & $\ge$ 55 min & $<$ 45 min \\
+Qualite sommeil & 5h30 - 6h & $<$ 5h \\
+Respect planning & $\ge$ 80\% & $<$ 60\% \\
+\hline
+\end{tabular}
+\end{table}
+
+\newpage
+
+% ==================== SECTION 3 : FORMATIONS ====================
+\section{Planning des Formations - 8 Semaines}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|c|p{3.2cm}|p{5.5cm}|c|}
+\hline
+\rowcolor{gray!20}
+\textbf{Semaine} & \textbf{Module} & \textbf{Contenu} & \textbf{Charge} \\
+\hline
+\textbf{S1} & Excel Avance & TCD, RECHERCHEX, INDEX-EQUIV, SI & 5h \\
+\textbf{S2} & Excel Avance & Power Query, Graphiques, Macros VBA & 5h \\
+\textbf{S3} & Python & Installation, Jupyter, variables, boucles & 5h \\
+\textbf{S4} & Python Pandas & CSV, nettoyage, groupby, statistiques & 5h \\
+\textbf{S5} & IA Generative & Prompt engineering, ChatGPT, Claude & 5h \\
+\textbf{S6} & Git/GitHub & Commits, branches, pull requests & 5h \\
+\textbf{S7} & SAP & Architecture, modules MM/PP & 5h \\
+\textbf{S8} & SAP & Approfondissement, synthese & 5h \\
+\hline
+\multicolumn{3}{|r|}{\textbf{TOTAL}} & \textbf{40h} \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsection*{Repartition Hebdomadaire du Temps}
+
+\begin{table}[h]
+\centering
+\small
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|}
+\hline
+\rowcolor{gray!20}
+\textbf{Activité} & \textbf{S1} & \textbf{S2} & \textbf{S3} & \textbf{S4} & \textbf{S5} & \textbf{S6} & \textbf{S7} & \textbf{S8} \\
+\hline
+Stage Terrain & 35h & 35h & 35h & 35h & 35h & 35h & 35h & 30h \\
+Consolidation & 5h & 5h & 5h & 5h & 5h & 5h & 5h & 5h \\
+Formation & 5h & 5h & 5h & 5h & 5h & 5h & 5h & 5h \\
+Langues & 1.75h & 1.75h & 1.75h & 1.75h & 1.75h & 1.75h & 1.75h & 1.75h \\
+Lectures & 1.75h & 1.75h & 1.75h & 1.75h & 1.75h & 1.75h & 1.75h & 1.75h \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{infobox}{formgreen}
+\centering
+Charge totale : 43,5h à 48,5h/semaine. Soutenable sur 8 semaines.
+\end{infobox}
+
+\newpage
+
+% ==================== SECTION 4 : LANGUES ====================
+\section{Programme Langues}
+
+\subsection*{Planning Hebdomadaire (15 min/jour)}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|c|p{10cm}|}
+\hline
+\rowcolor{gray!20}
+\textbf{Jour} & \textbf{Activité} \\
+\hline
+Lundi & 10 mots techniques + 1 phrase (Lean, Supply Chain) \\
+Mardi & Podcast technique (5 min) \\
+Mercredi & Article court sur l'industrie 4.0 \\
+Jeudi & Oral : se presenter en anglais \\
+Vendredi & Resume de la semaine en anglais \\
+Samedi & Revision des bases (Espagnol, optionnel) \\
+Dimanche & Revision des acquis de la semaine \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsection*{Vocabulaire Technique Prioritaire}
+
+\begin{table}[h]
+\centering
+\small
+\begin{tabular}{|l|p{7cm}|}
+\hline
+\rowcolor{gray!20}
+\textbf{Thème} & \textbf{Mots Cles} \\
+\hline
+Lean Manufacturing & Kaizen, Kanban, JIT, Andon, Heijunka, Poka-Yoke, Gemba \\
+Production & Throughput, Bottleneck, Takt Time, Lead Time, WIP, OEE \\
+Maintenance & MTBF, MTTR, Predictive, Preventive, TPM, SMED \\
+Data Analysis & Dashboard, KPI, Outlier, Standard Deviation, Sample \\
+\hline
+\end{tabular}
+\end{table}
+
+\newpage
+
+% ==================== SECTION 5 : LECTURES ====================
+\section{Programme Lectures (23h30-23h45)}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|c|p{10cm}|}
+\hline
+\rowcolor{gray!20}
+\textbf{Jour} & \textbf{Sujet} \\
+\hline
+Lundi & Lean Manufacturing : 9 Mudas, VSM, Kaizen, equilibrage \\
+Mardi & Code du travail : duree travail, pause, conges \\
+Mercredi & Cyber securite : mots de passe, phishing, protection donnees \\
+Jeudi & Developpement Web : HTML/CSS (vue d'ensemble) \\
+Vendredi & Veille industrielle : industrie automobile, aeronautique au Maroc \\
+Samedi & Lean / Qualite : SMED, TPM, AMDEC, 5S \\
+Dimanche & Revision des notes, planification de la semaine \\
+\hline
+\end{tabular}
+\end{table}
+
+\newpage
+
+% ==================== SECTION 6 : GESTION DES RISQUES ====================
+\section{Gestion des Risques}
+
+\begin{table}[h]
+\centering
+\small
+\begin{tabular}{|c|p{4cm}|c|c|p{3.5cm}|}
+\hline
+\rowcolor{gray!20}
+\textbf{ID} & \textbf{Risque} & \textbf{Probabilite} & \textbf{Impact} & \textbf{Plan de Contingence} \\
+\hline
+R01 & Fatigue / Epuisement & Moyenne (40\%) & Eleve & Dormir 1h+ weekend, reduire charge formation \\
+R02 & Retard livrables stage & Faible (20\%) & Eleve & Reallocation temps formation vers stage \\
+R03 & Panne machine & Moyenne (30\%) & Moyen & Analyser donnees historiques en attendant \\
+R04 & Difficulté Python & Elevee (60\%) & Faible & Utiliser IA assistance, tutoriels video \\
+R05 & Motivation en baisse & Moyenne (40\%) & Moyen & Recompenses hebdomadaires, tracking visuel \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsection*{Indicateurs d'Alerte}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|l|l|}
+\hline
+\rowcolor{gray!20}
+\textbf{Symptome} & \textbf{Action Corrective} \\
+\hline
+Sommeil $<$ 5h pendant 2 jours & Reduire formation de 50\% \\
+Retard stage $>$ 2 jours & Annuler formation jusqu'a rattrapage \\
+Concentration $<$ 20 min & Pause 10 min, hydratation \\
+Non-respect planning $>$ 3 jours & Reviser objectifs SMART \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{warningbox}
+Si plusieurs alertes se declenchent dans la meme semaine, privilegier le repos et les livrables stage. La priorite absolue reste la reussite du stage.
+\end{warningbox}
+
+\newpage
+
+% ==================== SECTION 7 : OBJECTIFS SMART ====================
+\section{Objectifs SMART}
+
+\begin{table}[h]
+\centering
+\small
+\begin{tabular}{|c|p{11cm}|}
+\hline
+\rowcolor{gray!20}
+\textbf{Type} & \textbf{Objectif} \\
+\hline
+\textbf{Stage} & \textbf{S} : Realiser VSM + TRS + equilibrage famille MELAMINE 60x46 \\
+& \textbf{M} : 3 livrables valides par encadrant \\
+& \textbf{A} : Donnees accessibles, machines operationnelles \\
+& \textbf{R} : 8 semaines avec priorite terrain \\
+& \textbf{T} : Fin semaine 6 \\
+\hline
+\textbf{Formation} & \textbf{S} : Maitriser Excel avance pour traitement chronometrages \\
+& \textbf{M} : Creer dashboard fonctionnel \\
+& \textbf{A} : 5h/semaine pendant 2 semaines \\
+& \textbf{R} : Utilisable immediatement en stage \\
+& \textbf{T} : Fin semaine 2 \\
+\hline
+\textbf{Langues} & \textbf{S} : Atteindre 200 mots techniques anglais \\
+& \textbf{M} : Test hebdomadaire 20 mots \\
+& \textbf{A} : 15 min/jour \\
+& \textbf{R} : Vocabulaire directement utile \\
+& \textbf{T} : Fin semaine 8 \\
+\hline
+\end{tabular}
+\end{table}
+
+\newpage
+
+% ==================== SECTION 8 : OUTILS DE SUIVI ====================
+\section{Outils de Suivi}
+
+\subsection*{Journal de Bord Quotidien}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|p{3cm}|p{11cm}|}
+\hline
+\rowcolor{gray!20}
+\textbf{Champ} & \textbf{Contenu} \\
+\hline
+Date & \underline{\hspace{10cm}} \\
+\hline
+Objectifs du jour & 1. \underline{\hspace{8cm}} \\
+& 2. \underline{\hspace{8cm}} \\
+& 3. \underline{\hspace{8cm}} \\
+\hline
+Realisations & \underline{\hspace{11cm}} \\
+\hline
+Difficultes & \underline{\hspace{11cm}} \\
+\hline
+Demain & 1. \underline{\hspace{8cm}} \\
+& 2. \underline{\hspace{8cm}} \\
+\hline
+KPI & Stage 85\% \_\_\_\_ \quad Formation 55min \_\_\_\_ \quad Sommeil 5h30 \_\_\_\_ \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsection*{Revue Hebdomadaire}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|c|p{9cm}|c|}
+\hline
+\rowcolor{gray!20}
+\textbf{\#} & \textbf{Verification} & \textbf{Statut} \\
+\hline
+1 & Livrables stage de la semaine completes & $\square$ \\
+2 & Formation technique suivie (5h) & $\square$ \\
+3 & Anglais : 5 sessions (75 min) & $\square$ \\
+4 & Lecture : 5 sessions (75 min) & $\square$ \\
+5 & Planning respecte ($\ge$80\%) & $\square$ \\
+6 & Journal de bord rempli & $\square$ \\
+7 & Planification semaine suivante & $\square$ \\
+\hline
+\end{tabular}
+\end{table}
+
+\newpage
+
+% ==================== SECTION 9 : RÉCAPITULATIF ====================
+\section{Recapitulatif des 14 Objectifs}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|c|l|c|}
+\hline
+\rowcolor{gray!20}
+\textbf{\#} & \textbf{Objectif} & \textbf{Quand} \\
+\hline
+1 & Equilibrage des postes & Consolidation stage \\
+2 & Mesure du travail & Consolidation stage \\
+3 & VSM (Value Stream Mapping) & Consolidation stage \\
+4 & TRS (Taux de Rendement Synthetique) & Consolidation stage \\
+5 & Feuilles de controle & Consolidation stage \\
+6.1 & Excel avance & Formation S1-2 \\
+6.2 & Python & Formation S3-4 \\
+6.3 & IA generative & Formation S5 \\
+6.4 & Prompt engineering & Formation S5 \\
+6.5 & Git \& GitHub & Formation S6 \\
+6.6 & SAP & Formation S7-8 \\
+7 & Langues (anglais) & Quotidien 15 min \\
+8 & Planification & Weekend \\
+9-12 & Lectures (Lean, Code, Cyber, Web) & Quotidien 15 min \\
+\hline
+\end{tabular}
+\end{table}
+
+\newpage
+
+% ==================== SECTION 10 : RECOMMANDATIONS ====================
+\section{Recommandations pour l'Execution}
+
+\begin{enumerate}[leftmargin=*, label=\textbf{\arabic*.}]
+    \item \textbf{Theorie des Contraintes :} Le stage est le \textcolor{riskred}{goulot}. Priorite absolue aux livrables terrain.
+    
+    \item \textbf{Principe de Pareto (80/20) :} 80\% de la valeur viendra de 20\% des activites (VSM, TRS, equilibrage).
+    
+    \item \textbf{Amelioration Continue (PDCA) :}
+    \begin{itemize}
+        \item \textbf{Plan :} Planning hebdomadaire (dimanche soir)
+        \item \textbf{Do :} Execution quotidienne
+        \item \textbf{Check :} Revue quotidienne (23h45)
+        \item \textbf{Act :} Ajustements pour J+1
+    \end{itemize}
+    
+    \item \textbf{SMED personnel :} Reduire les temps de transition entre activites (max 5 min).
+    
+    \item \textbf{Kanban visuel :} Utiliser un tableau Trello ou un tableau physique pour visualiser l'avancement.
+    
+    \item \textbf{Journal de bord :} Remplir chaque soir en 5 minutes. C'est votre memoire de stage en construction.
+\end{enumerate}
+
+\vspace{0.8cm}
+
+\begin{center}
+\begin{tcolorbox}[colback=successgreen!10, colframe=successgreen!70, width=0.85\textwidth, rounded corners]
+    \centering
+    \textbf{\Large Conclusion}\\[0.3cm]
+    Ce planning integre l'ensemble des contraintes (prieres, repas, sommeil) \\
+    et priorise les actions pour maximiser la valeur ajoutee du stage \\
+    tout en developpant un profil hybride competitif.
+\end{tcolorbox}
+\end{center}
+
+\vspace{0.5cm}
+
+\begin{center}
+\textbf{Version :} Operationnelle 2.0 \quad | \quad \textbf{Statut :} Pret pour execution \quad | \quad \textbf{Debut :} Semaine 1
+\end{center}
+
+\end{document}

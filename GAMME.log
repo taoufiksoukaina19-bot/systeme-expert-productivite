@@ -1,0 +1,3636 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.3.25)  26 MAR 2026 22:46
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex
+(c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex
+LaTeX2e <2025-11-01>
+L3 programming layer <2025-12-24>
+(C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
+Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
+(C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/base\size10.clo
+File: size10.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count275
+\c@section=\count276
+\c@subsection=\count277
+\c@subsubsection=\count278
+\c@paragraph=\count279
+\c@subparagraph=\count280
+\c@figure=\count281
+\c@table=\count282
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\bibindent=\dimen148
+) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
+Package: babel 2025/12/11 v25.17 The multilingual framework for LuaLaTeX, pdfLaTeX and XeLaTeX
+\babel@savecnt=\count283
+LaTeX Encoding Info:    Redeclaring text command \ij (encoding OT1) on input line 2068.
+LaTeX Encoding Info:    Redeclaring text command \IJ (encoding OT1) on input line 2070.
+LaTeX Encoding Info:    Redeclaring text command \ij (encoding T1) on input line 2072.
+LaTeX Encoding Info:    Redeclaring text command \IJ (encoding T1) on input line 2073.
+LaTeX Encoding Info:    Ignoring declaration for text command \ij (encoding ?) on input line 2074.
+LaTeX Encoding Info:    Ignoring declaration for text command \IJ (encoding ?) on input line 2076.
+LaTeX Encoding Info:    Ignoring declaration for text command \SS (encoding ?) on input line 2101.
+\U@D=\dimen149
+\l@unhyphenated=\language79
+ (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
+\bbl@readstream=\read2
+\bbl@dirlevel=\count284
+Package babel Info: Configuration files are deprecated, as
+(babel)             they can break document portability.
+(babel)             Reported on input line 4196.
+
+*************************************
+* Local config file bblopts.cfg used
+*
+(C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of babel
+) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/fr\babel-french.tex)
+Package babel Info: Importing font and identification data for french
+(babel)             from babel-fr.ini. Reported on input line 4320.
+ (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/generic/babel-french\french.ldf
+Language: french 2025-08-15 v4.0e French support from the babel system
+ (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/generic/babel-french\french3.ldf
+Language: french 2025-08-15 v3.7e French support from the babel system
+\FB@stdchar=\count285
+Package babel Info: Making : an active character on input line 273.
+Package babel Info: Making ; an active character on input line 274.
+Package babel Info: Making ! an active character on input line 275.
+Package babel Info: Making ? an active character on input line 276.
+\FBguill@level=\count286
+\FBold@everypar=\toks17
+\FB@Mht=\dimen150
+\mc@charclass=\count287
+\mc@charfam=\count288
+\mc@charslot=\count289
+\std@mcc=\count290
+\dec@mcc=\count291
+\FB@pardim=\dimen151
+\listindentFB=\dimen152
+\descindentFB=\dimen153
+\labelindentFB=\dimen154
+\labelwidthFB=\dimen155
+\leftmarginFB=\dimen156
+\parindentFFN=\dimen157
+\FBfnindent=\dimen158
+))) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/carlisle\scalefnt.sty) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
+) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/lm\lmodern.sty
+Package: lmodern 2015/05/01 v1.6.1 Latin Modern Fonts
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/lmm/m/it on input line 23.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/lmsy/m/n on input line 24.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 25.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 26.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/lmm/b/it on input line 27.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/lmsy/b/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 29.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 31.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 32.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/lmr/m/it on input line 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/lmss/bx/n on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 37.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
+) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
+Package: geometry 2026/03/07 v6.0 Page Geometry
+ (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks18
+) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+ (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+Package: iftex 2024/12/12 v1.0g TeX engine tests
+))
+\Gm@cnth=\count292
+\Gm@cntv=\count293
+\c@Gm@tempcnt=\count294
+\Gm@bindingoffset=\dimen159
+\Gm@wd@mp=\dimen160
+\Gm@odd@mp=\dimen161
+\Gm@even@mp=\dimen162
+\Gm@layoutwidth=\dimen163
+\Gm@layoutheight=\dimen164
+\Gm@layouthoffset=\dimen165
+\Gm@layoutvoffset=\dimen166
+\Gm@dimlist=\toks19
+ (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg)) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+Package: amsmath 2025/07/09 v2.17z AMS math features
+\@mathmargin=\skip51
+
+For additional information on amsmath, use the `?' option.
+(C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+Package: amstext 2024/11/17 v2.01 AMS text
+ (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks20
+\ex@=\dimen167
+)) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen168
+) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count295
+LaTeX Info: Redefining \frac on input line 233.
+\uproot@=\count296
+\leftroot@=\count297
+LaTeX Info: Redefining \overline on input line 398.
+LaTeX Info: Redefining \colon on input line 409.
+\classnum@=\count298
+\DOTSCASE@=\count299
+LaTeX Info: Redefining \ldots on input line 495.
+LaTeX Info: Redefining \dots on input line 498.
+LaTeX Info: Redefining \cdots on input line 619.
+\Mathstrutbox@=\box53
+\strutbox@=\box54
+LaTeX Info: Redefining \big on input line 721.
+LaTeX Info: Redefining \Big on input line 722.
+LaTeX Info: Redefining \bigg on input line 723.
+LaTeX Info: Redefining \Bigg on input line 724.
+\big@size=\dimen169
+LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
+\macc@depth=\count300
+LaTeX Info: Redefining \bmod on input line 904.
+LaTeX Info: Redefining \pmod on input line 909.
+LaTeX Info: Redefining \smash on input line 939.
+LaTeX Info: Redefining \relbar on input line 969.
+LaTeX Info: Redefining \Relbar on input line 970.
+\c@MaxMatrixCols=\count301
+\dotsspace@=\muskip17
+\c@parentequation=\count302
+\dspbrk@lvl=\count303
+\tag@help=\toks21
+\row@=\count304
+\column@=\count305
+\maxfields@=\count306
+\andhelp@=\toks22
+\eqnshift@=\dimen170
+\alignsep@=\dimen171
+\tagshift@=\dimen172
+\tagwidth@=\dimen173
+\totwidth@=\dimen174
+\lineht@=\dimen175
+\@envbody=\toks23
+\multlinegap=\skip52
+\multlinetaggap=\skip53
+\mathdisplay@stack=\toks24
+LaTeX Info: Redefining \[ on input line 2950.
+LaTeX Info: Redefining \] on input line 2951.
+) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/enumitem\enumitem.sty
+Package: enumitem 2025/02/06 v3.11 Customized lists
+\labelindent=\skip54
+\enit@outerparindent=\dimen176
+\enit@toks=\toks25
+\enit@inbox=\box55
+\enit@count@id=\count307
+\enitdp@description=\count308
+) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/titlesec\titlesec.sty
+Package: titlesec 2025/01/04 v2.17 Sectioning titles
+\ttl@box=\box56
+\beforetitleunit=\skip55
+\aftertitleunit=\skip56
+\ttl@plus=\dimen177
+\ttl@minus=\dimen178
+\ttl@toksa=\toks26
+\titlewidth=\dimen179
+\titlewidthlast=\dimen180
+\titlewidthfirst=\dimen181
+) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
+ (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 274.
+ (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
+) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
+Package xcolor Info: Model `RGB' extended on input line 1365.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
+) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcolorbox.sty
+Package: tcolorbox 2025/11/28 version 6.9.0 text color boxes
+ (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlayer\tikz.sty (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfrcs.sty (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil-common.tex
+\pgfutil@everybye=\toks27
+\pgfutil@tempdima=\dimen182
+\pgfutil@tempdimb=\dimen183
+) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil-latex.def
+\pgfutil@abb=\box57
+) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfrcs.code.tex (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/generic/pgf\pgf.revision.tex)
+Package: pgfrcs 2025-08-29 v3.1.11a (3.1.11a)
+))
+Package: pgf 2025-08-29 v3.1.11a (3.1.11a)
+ (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgfcore.sty (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
+ (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+ (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 106.
+)
+\Gin@req@height=\dimen184
+\Gin@req@width=\dimen185
+) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/pgf/systemlayer\pgfsys.sty (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsys.code.tex
+Package: pgfsys 2025-08-29 v3.1.11a (3.1.11a)
+ (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks28
+\pgfkeys@temptoks=\toks29
+ (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeyslibraryfiltered.code.tex
+\pgfkeys@tmptoks=\toks30
+))
+\pgf@x=\dimen186
+\pgf@y=\dimen187
+\pgf@xa=\dimen188
+\pgf@ya=\dimen189
+\pgf@xb=\dimen190
+\pgf@yb=\dimen191
+\pgf@xc=\dimen192
+\pgf@yc=\dimen193
+\pgf@xd=\dimen194
+\pgf@yd=\dimen195
+\w@pgf@writea=\write3
+\r@pgf@reada=\read3
+\c@pgf@counta=\count309
+\c@pgf@countb=\count310
+\c@pgf@countc=\count311
+\c@pgf@countd=\count312
+\t@pgf@toka=\toks31
+\t@pgf@tokb=\toks32
+\t@pgf@tokc=\toks33
+\pgf@sys@id@count=\count313
+ (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf.cfg
+File: pgf.cfg 2025-08-29 v3.1.11a (3.1.11a)
+)
+Driver file for pgf: pgfsys-pdftex.def
+ (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2025-08-29 v3.1.11a (3.1.11a)
+ (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2025-08-29 v3.1.11a (3.1.11a)
+))) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfsyssoftpath@smallbuffer@items=\count314
+\pgfsyssoftpath@bigbuffer@items=\count315
+) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcore.code.tex
+Package: pgfcore 2025-08-29 v3.1.11a (3.1.11a)
+ (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathutil.code.tex) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathparser.code.tex
+\pgfmath@dimen=\dimen196
+\pgfmath@count=\count316
+\pgfmath@box=\box58
+\pgfmath@toks=\toks34
+\pgfmath@stack@operand=\toks35
+\pgfmath@stack@operation=\toks36
+) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.code.tex) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.basic.code.tex) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.trigonometric.code.tex) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.random.code.tex) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.comparison.code.tex) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.base.code.tex) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.round.code.tex) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.misc.code.tex) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.integerarithmetics.code.tex) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathcalc.code.tex) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count317
+)) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.code.tex) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@picminx=\dimen197
+\pgf@picmaxx=\dimen198
+\pgf@picminy=\dimen199
+\pgf@picmaxy=\dimen256
+\pgf@pathminx=\dimen257
+\pgf@pathmaxx=\dimen258
+\pgf@pathminy=\dimen259
+\pgf@pathmaxy=\dimen260
+\pgf@xx=\dimen261
+\pgf@xy=\dimen262
+\pgf@yx=\dimen263
+\pgf@yy=\dimen264
+\pgf@zx=\dimen265
+\pgf@zy=\dimen266
+) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@path@lastx=\dimen267
+\pgf@path@lasty=\dimen268
+) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@shorten@end@additional=\dimen269
+\pgf@shorten@start@additional=\dimen270
+) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfpic=\box59
+\pgf@hbox=\box60
+\pgf@layerbox@main=\box61
+\pgf@picture@serial@count=\count318
+) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoregraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgflinewidth=\dimen271
+) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoretransformations.code.tex
+File: pgfcoretransformations.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@pt@x=\dimen272
+\pgf@pt@y=\dimen273
+\pgf@pt@temp=\dimen274
+) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfarrowsep=\dimen275
+) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@max=\dimen276
+\pgf@sys@shading@range@num=\count319
+\pgf@shadingcount=\count320
+) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfexternal@startupbox=\box62
+) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoretransparency.code.tex
+File: pgfcoretransparency.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+))) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfnodeparttextbox=\box63
+) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@nodesepstart=\dimen277
+\pgf@nodesepend=\dimen278
+) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2025-08-29 v3.1.11a (3.1.11a)
+)) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgffor.sty (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfkeys.sty (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys.code.tex)) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/pgf/math\pgfmath.sty (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex)) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgffor.code.tex
+Package: pgffor 2025-08-29 v3.1.11a (3.1.11a)
+\pgffor@iter=\dimen279
+\pgffor@skip=\dimen280
+\pgffor@stack=\toks37
+\pgffor@toks=\toks38
+)) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz\tikz.code.tex
+Package: tikz 2025-08-29 v3.1.11a (3.1.11a)
+ (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@plot@mark@count=\count321
+\pgfplotmarksize=\dimen281
+)
+\tikz@lastx=\dimen282
+\tikz@lasty=\dimen283
+\tikz@lastxsaved=\dimen284
+\tikz@lastysaved=\dimen285
+\tikz@lastmovetox=\dimen286
+\tikz@lastmovetoy=\dimen287
+\tikzleveldistance=\dimen288
+\tikzsiblingdistance=\dimen289
+\tikz@figbox=\box64
+\tikz@figbox@bg=\box65
+\tikz@tempbox=\box66
+\tikz@tempbox@bg=\box67
+\tikztreelevel=\count322
+\tikznumberofchildren=\count323
+\tikznumberofcurrentchild=\count324
+\tikz@fig@count=\count325
+ (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfmatrixcurrentrow=\count326
+\pgfmatrixcurrentcolumn=\count327
+\pgf@matrix@numberofcolumns=\count328
+)
+\tikz@expandcount=\count329
+ (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+))) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/tools\verbatim.sty
+Package: verbatim 2024-01-22 v1.5x LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks39
+\verbatim@line=\toks40
+\verbatim@in@stream=\read4
+) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/environ\environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+ (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/trimspaces\trimspaces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+)) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count330
+)
+\tcb@titlebox=\box68
+\tcb@upperbox=\box69
+\tcb@lowerbox=\box70
+\tcb@phantombox=\box71
+\c@tcbbreakpart=\count331
+\c@tcblayer=\count332
+\c@tcolorbox@number=\count333
+\l__tcobox_tmpa_box=\box72
+\l__tcobox_tmpa_dim=\dimen290
+\tcb@temp=\box73
+\tcb@temp=\box74
+\tcb@temp=\box75
+\tcb@temp=\box76
+)
+Package french3.ldf Info: Setting StandardItemizeEnv=true for
+(french3.ldf)             compatibility with enumitem package,
+(french3.ldf)             reported on input line 21.
+Package french3.ldf Info: Setting StandardEnumerateEnv=true for
+(french3.ldf)             compatibility with enumitem package,
+(french3.ldf)             reported on input line 21.
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 21.
+ (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmr.fd
+File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count334
+)
+No file GAMME.aux.
+\openout1 = `GAMME.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+Package babel Info: 'french' activates 'french' shorthands.
+(babel)             Reported on input line 21.
+LaTeX Info: Redefining \degres on input line 21.
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(71.13188pt, 455.24411pt, 71.13188pt)
+* v-part:(T,H,B)=(71.13188pt, 702.78308pt, 71.13188pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=455.24411pt
+* \textheight=702.78308pt
+* \oddsidemargin=-1.1381pt
+* \evensidemargin=-1.1381pt
+* \topmargin=-38.1381pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count335
+\scratchdimen=\dimen291
+\scratchbox=\box77
+\nofMPsegments=\count336
+\nofMParguments=\count337
+\everyMPshowfont=\toks41
+\MPscratchCnt=\count338
+\MPscratchDim=\dimen292
+\MPnumerator=\count339
+\makeMPintoPDFobject=\count340
+\everyMPtoPDFconversion=\toks42
+) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+)) [1
+
+{C:/Users/pc/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}]
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 115.
+ (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmr.fd
+File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 115.
+ (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/lm\omllmm.fd
+File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 115.
+ (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/lm\omslmsy.fd
+File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 115.
+ (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/lm\omxlmex.fd
+File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 115.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 115.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 115.
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+[]\T1/lmr/bx/n/10 Nomenclature multi-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--125
+[]\T1/lmr/bx/n/10 Nomenclature mono-
+ []
+
+
+Overfull \hbox (1.23639pt too wide) in paragraph at lines 115--130
+[][] 
+ []
+
+[2] [3] [4]
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 256.
+ (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
+File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+Overfull \hbox (2.80786pt too wide) in paragraph at lines 242--259
+[][] 
+ []
+
+[5{C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}]
+Overfull \hbox (1.23639pt too wide) in paragraph at lines 315--328
+[][] 
+ []
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 334.
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 339.
+
+
+LaTeX Warning: Command \^ invalid in math mode on input line 339.
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 339.
+
+[6{C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}]
+Overfull \hbox (1.24333pt too wide) in paragraph at lines 391--408
+[][] 
+ []
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 414.
+
+[7]
+
+LaTeX Warning: Command \^ invalid in math mode on input line 442.
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 442.
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 442.
+
+
+LaTeX Warning: Command \^ invalid in math mode on input line 442.
+
+
+LaTeX Warning: Command \` invalid in math mode on input line 442.
+
+
+LaTeX Warning: Command \^ invalid in math mode on input line 442.
+
+
+Underfull \hbox (badness 2245) in paragraph at lines 494--495
+[]\T1/lmr/m/n/10 Détermine le nombre de passes ra-diales et la stra-té-gie
+ []
+
+
+Overfull \hbox (1.24333pt too wide) in paragraph at lines 482--499
+[][] 
+ []
+
+[8{C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}] [9] [10] [11]
+Overfull \hbox (66.71844pt too wide) detected at line 719
+\OMS/lmsy/m/n/10 9\OML/lmm/m/it/10 j \OMS/lmsy/m/n/10 2 f\OML/lmm/m/it/10 n; [] ; Nb[]\OMS/lmsy/m/n/10 g[] []
+ []
+
+[12] [13] [14] [15] [16]
+Overfull \hbox (1.23639pt too wide) in paragraph at lines 984--995
+[][] 
+ []
+
+
+Overfull \hbox (15.84499pt too wide) in paragraph at lines 1013--1028
+ [] 
+ []
+
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1039: Package xcolor Error: Undefined color `blueclair'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1039 ... title=CaractÃ©ristiques de la Classe B]
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[17]
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1064: Package xcolor Error: Undefined color `vertclair'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1064 ...0!black, title=Principes de la Classe B]
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1079: Package xcolor Error: Undefined color `grisclair'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1079 ...tructure d'une nomenclature gÃ©nÃ©rique]
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[18]
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1118: Package xcolor Error: Undefined color `orangeclair'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1118 ...title=Exemple de rÃ¨gles de composition]
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[19]
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1168: Package xcolor Error: Undefined color `blueclair'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1168 ...black, title=Processus de configuration]
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1206: Package xcolor Error: Undefined color `grisclair'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1206 ... title=Objectifs du sÃ©quencement mixte]
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[20]
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1235: Package xcolor Error: Undefined color `vertclair'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1235 ...ent d'une ligne d'assemblage automobile]
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1236: LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1236 \begin{table}[h]
+                       
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1236: Undefined control sequence.
+\@xfloat ...@fltovf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.1236 \begin{table}[h]
+                       
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1236: Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.1236 \begin{table}[h]
+                       
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1289: Package xcolor Error: Undefined color `blueclair'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1289 ...ue!70!black, title=SynthÃ¨se : Classe B]
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[21]
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1306: Package xcolor Error: Undefined color `blueclair'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1306 ... title=CaractÃ©ristiques de la Classe C]
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1333: Package xcolor Error: Undefined color `vertclair'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1333 ...0!black, title=Principes de la Classe C]
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[22]
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1349: Package xcolor Error: Undefined color `grisclair'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1349 ...!black, title=Structure d'un projet PCS]
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (1.24333pt too wide) in paragraph at lines 1386--1396
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[23]
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1425: Package xcolor Error: Undefined color `orangeclair'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1425 ...e spÃ©cifique pour piÃ¨ce aÃ©ronautique]
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (1.24333pt too wide) in paragraph at lines 1450--1462
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1468: Package xcolor Error: Undefined color `blueclair'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1468 ..., title=Calcul de la flexion de l'outil]
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[24]
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1508: Undefined control sequence.
+\endtcolorbox ->\tcb@insert@after@part 
+                                       \end {tcb@savebox}\UseTaggingSocket {...
+l.1508 \end{tcolorbox}
+                      
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (1.23639pt too wide) in paragraph at lines 1498--1508
+ [][] 
+ []
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1508: Missing } inserted.
+<inserted text> 
+                }
+l.1508 \end{tcolorbox}
+                      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1508: Undefined control sequence.
+\endtcb@savebox ...pandafter \@iiiparbox \@mpargs 
+                                                  {\unvbox \@tempboxa }
+l.1508 \end{tcolorbox}
+                      
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1513: Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.1513 \begin{center}
+                     
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1513: Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.1513 \begin{center}
+                     
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1513: Missing number, treated as zero.
+<to be read again> 
+                   \def 
+l.1513 \begin{center}
+                     
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1513: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \def 
+l.1513 \begin{center}
+                     
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1513: LaTeX Error: Environment \relax  undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1513 \begin{center}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (26.4169pt too wide) in paragraph at lines 1513--1513
+[]\T1/lmr/m/n/10 center 
+ []
+
+Runaway argument?
+{\@checkend {tcb@savebox}\endgroup \UseHook {env/tcb@savebox/after}\if@ignore \ETC.
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1513: Paragraph ended before \setlength was complete.
+<to be read again> 
+                   \par 
+l.1513 \begin{center}
+                     
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1513: Extra }, or forgotten \endgroup.
+<recently read> }
+                 
+l.1513 \begin{center}
+                     
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+LaTeX Warning: Unexpected alignment colback=grisclair, colframe=gray!70!black, title=Matrice de criticitÃ© on input line 1513.
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1520: Undefined control sequence.
+<recently read> \multirow 
+                          
+l.1520 \multirow
+                {4}{*}{\rotatebox{90}{\textbf{ProbabilitÃ©}}} & TrÃ¨s faible...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1529: LaTeX Error: \begin{tcb@savebox} on input line 1513 ended by \end{center}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1529 \end{center}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1529: Missing } inserted.
+<inserted text> 
+                }
+l.1529 \end{center}
+                   
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1531: Extra }, or forgotten \endgroup.
+\endtcb@savebox ...efalse \color@endgroup \egroup 
+                                                  \expandafter \@iiiparbox \...
+l.1531 \end{tcolorbox}
+                      
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1531: Undefined control sequence.
+\endtcb@savebox ...pandafter \@iiiparbox \@mpargs 
+                                                  {\unvbox \@tempboxa }
+l.1531 \end{tcolorbox}
+                      
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1540: Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.1540 \begin{enumerate}
+                        
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1540: Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.1540 \begin{enumerate}
+                        
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1540: Missing number, treated as zero.
+<to be read again> 
+                   \def 
+l.1540 \begin{enumerate}
+                        
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1540: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \def 
+l.1540 \begin{enumerate}
+                        
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1540: LaTeX Error: Environment \relax  undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1540 \begin{enumerate}
+                        
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (45.30539pt too wide) in paragraph at lines 1540--1540
+[]\T1/lmr/m/n/10 enumerate 
+ []
+
+Runaway argument?
+{\@checkend {tcb@savebox}\endgroup \UseHook {env/tcb@savebox/after}\if@ignore \ETC.
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1540: Paragraph ended before \setlength was complete.
+<to be read again> 
+                   \par 
+l.1540 \begin{enumerate}
+                        
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1540: Extra }, or forgotten \endgroup.
+<recently read> }
+                 
+l.1540 \begin{enumerate}
+                        
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+LaTeX Warning: Unexpected alignment colback=vertclair, colframe=green!50!black, title=La mÃ©thode des 5 Ã©tapes (Goldratt) on input line 1540.
+
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1541: LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1541     \item \textbf
+                        {Identifier} la contrainte du systÃ¨me
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 1541
+[][]
+ []
+
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1542: LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1542     \item \textbf
+                        {Exploiter} la contrainte (maximiser son utilisation)
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 1542
+[][]
+ []
+
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1543: LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1543     \item \textbf
+                        {Subordonner} toutes les autres ressources Ã  la con...
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 1543
+[][]
+ []
+
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1544: LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1544     \item \textbf
+                        {Ã‰lever} la contrainte (augmenter sa capacitÃ©)
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 1544
+[][]
+ []
+
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1545: LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1545     \item \textbf
+                        {RÃ©pÃ©ter} le processus (la contrainte s'est dÃ©pla...
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 1545
+[][]
+ []
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1546: Undefined control sequence.
+\enit@endenumerate ->\enit@after 
+                                 \endlist \ifx \enit@series \relax \else \if...
+l.1546 \end{enumerate}
+                      
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1546: Undefined control sequence.
+\enit@endenumerate ...\else \ifnum \enit@resuming 
+                                                  =\@ne \enit@setresumekeys ...
+l.1546 \end{enumerate}
+                      
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1546: Missing number, treated as zero.
+<to be read again> 
+                   =
+l.1546 \end{enumerate}
+                      
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1546: Undefined control sequence.
+\enit@setresumekeys ...xpandafter {\enit@savekeys 
+                                                  }\xdef \enit@afterlist {#2...
+l.1546 \end{enumerate}
+                      
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1546: Undefined control sequence.
+\enit@setresumekeys ...it@toks }\ifnum \enit@type 
+                                                  =\z@ #3\def \enit@noexcs {...
+l.1546 \end{enumerate}
+                      
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1546: Missing number, treated as zero.
+<to be read again> 
+                   =
+l.1546 \end{enumerate}
+                      
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1546: Undefined control sequence.
+<argument> enit@resume@series@\enit@series 
+                                           
+l.1546 \end{enumerate}
+                      
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1546: Undefined control sequence.
+\enit@setresumekeys ...me@#1}{\csname c@\@listctr 
+                                                  \endcsname \the \csname c@...
+l.1546 \end{enumerate}
+                      
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1546: Undefined control sequence.
+\enit@setresumekeys ...e \the \csname c@\@listctr 
+                                                  \endcsname }\fi }
+l.1546 \end{enumerate}
+                      
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1546: You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.1546 \end{enumerate}
+                      
+I'm forgetting what you said and using zero instead.
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1546: Undefined control sequence.
+\enit@endenumerate ...t \fi \ifnum \enit@resuming 
+                                                  =\thr@@ \enit@setresumekey...
+l.1546 \end{enumerate}
+                      
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1546: Missing number, treated as zero.
+<to be read again> 
+                   =
+l.1546 \end{enumerate}
+                      
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1546: Undefined control sequence.
+\enit@setresumekeys ...xpandafter {\enit@savekeys 
+                                                  }\xdef \enit@afterlist {#2...
+l.1546 \end{enumerate}
+                      
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1546: Undefined control sequence.
+\enit@setresumekeys ...it@toks }\ifnum \enit@type 
+                                                  =\z@ #3\def \enit@noexcs {...
+l.1546 \end{enumerate}
+                      
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1546: Missing number, treated as zero.
+<to be read again> 
+                   =
+l.1546 \end{enumerate}
+                      
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1546: Undefined control sequence.
+\enit@setresumekeys ...me@#1}{\csname c@\@listctr 
+                                                  \endcsname \the \csname c@...
+l.1546 \end{enumerate}
+                      
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1546: Undefined control sequence.
+\enit@setresumekeys ...e \the \csname c@\@listctr 
+                                                  \endcsname }\fi }
+l.1546 \end{enumerate}
+                      
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1546: You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.1546 \end{enumerate}
+                      
+I'm forgetting what you said and using zero instead.
+
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1546: LaTeX Error: \begin{tcb@savebox} on input line 1540 ended by \end{enumerate}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1546 \end{enumerate}
+                      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1546: Missing } inserted.
+<inserted text> 
+                }
+l.1546 \end{enumerate}
+                      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1547: Extra }, or forgotten \endgroup.
+\endtcb@savebox ...efalse \color@endgroup \egroup 
+                                                  \expandafter \@iiiparbox \...
+l.1547 \end{tcolorbox}
+                      
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1547: Undefined control sequence.
+\endtcb@savebox ...pandafter \@iiiparbox \@mpargs 
+                                                  {\unvbox \@tempboxa }
+l.1547 \end{tcolorbox}
+                      
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1564: Missing number, treated as zero.
+<to be read again> 
+                   \protect 
+l.1564 \begin
+             {tabular}{|l|l|}
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1564: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \protect 
+l.1564 \begin
+             {tabular}{|l|l|}
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1564: Missing \endcsname inserted.
+<to be read again> 
+                   \scan_stop: 
+l.1564 \begin
+             {tabular}{|l|l|}
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1564: Missing \endcsname inserted.
+<to be read again> 
+                   \scan_stop: 
+l.1564 \begin
+             {tabular}{|l|l|}
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1564: LaTeX Error: Environment \@@par  undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1564 \begin
+             {tabular}{|l|l|}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1564: Extra }, or forgotten \endgroup.
+\@begin@tempboxa ...begingroup #2\color@endgroup }
+                                                  \def \width {\wd \@tempbox...
+l.1564 \begin
+             {tabular}{|l|l|}
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+Runaway argument?
+{\@checkend {tcb@savebox}\endgroup \UseHook {env/tcb@savebox/after}\if@ignore \ETC.
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1564: Paragraph ended before \setlength was complete.
+<to be read again> 
+                   \par 
+l.1564 \begin
+             {tabular}{|l|l|}
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+
+Overfull \hbox (101.79144pt too wide) in paragraph at lines 1564--1564
+|[]\T1/lmr/bx/n/10 Identification
+ []
+
+
+Overfull \hbox (51.33495pt too wide) in paragraph at lines 1564--1564
+\T1/lmr/bx/n/10 des
+ []
+
+
+Overfull \hbox (56.86125pt too wide) in paragraph at lines 1564--1564
+\T1/lmr/bx/n/10 gou-
+ []
+
+
+Overfull \hbox (53.09142pt too wide) in paragraph at lines 1564--1564
+\T1/lmr/bx/n/10 lots
+ []
+
+
+Overfull \hbox (58.72238pt too wide) in paragraph at lines 1564--1564
+\T1/lmr/bx/n/10 pour
+ []
+
+
+Overfull \hbox (43.92345pt too wide) in paragraph at lines 1564--1564
+\T1/lmr/bx/n/10 la
+ []
+
+
+Overfull \hbox (66.57242pt too wide) in paragraph at lines 1564--1564
+\T1/lmr/bx/n/10 Classe
+ []
+
+
+Overfull \hbox (43.44493pt too wide) in paragraph at lines 1564--1564
+\T1/lmr/bx/n/10 C| 
+ []
+
+
+Overfull \hbox (22.13899pt too wide) in paragraph at lines 1564--1564
+[]\T1/lmr/m/n/10 Dans
+ []
+
+
+Overfull \hbox (11.111pt too wide) in paragraph at lines 1564--1564
+\T1/lmr/m/n/10 un
+ []
+
+
+Overfull \hbox (36.66722pt too wide) in paragraph at lines 1564--1564
+\T1/lmr/m/n/10 contexte
+ []
+
+
+Overfull \hbox (10.0pt too wide) in paragraph at lines 1564--1564
+\T1/lmr/m/n/10 de
+ []
+
+
+Overfull \hbox (17.8055pt too wide) in paragraph at lines 1564--1564
+\T1/lmr/m/n/10 pro-
+ []
+
+
+Overfull \hbox (18.88882pt too wide) in paragraph at lines 1564--1564
+\T1/lmr/m/n/10 duc-
+ []
+
+
+Overfull \hbox (17.22226pt too wide) in paragraph at lines 1564--1564
+\T1/lmr/m/n/10 tion
+ []
+
+
+Overfull \hbox (17.22208pt too wide) in paragraph at lines 1564--1564
+\T1/lmr/m/n/10 uni-
+ []
+
+
+Overfull \hbox (22.8057pt too wide) in paragraph at lines 1564--1564
+\T1/lmr/m/n/10 taire,
+ []
+
+
+Overfull \hbox (11.16675pt too wide) in paragraph at lines 1564--1564
+\T1/lmr/m/n/10 les
+ []
+
+
+Overfull \hbox (18.88882pt too wide) in paragraph at lines 1564--1564
+\T1/lmr/m/n/10 gou-
+ []
+
+
+Overfull \hbox (15.61125pt too wide) in paragraph at lines 1564--1564
+\T1/lmr/m/n/10 lots
+ []
+
+
+Overfull \hbox (18.1112pt too wide) in paragraph at lines 1564--1564
+\T1/lmr/m/n/10 sont
+ []
+
+
+Overfull \hbox (17.83331pt too wide) in paragraph at lines 1564--1564
+\T1/lmr/m/n/10 sou-
+ []
+
+
+Overfull \hbox (23.61139pt too wide) in paragraph at lines 1564--1564
+\T1/lmr/m/n/10 vent : 
+ []
+
+
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 1564--1564
+[]
+ []
+
+
+Overfull \hbox (39.63902pt too wide) in paragraph at lines 1564--1564
+\T1/lmr/m/n/10 Les
+ []
+
+
+Overfull \hbox (41.66635pt too wide) in paragraph at lines 1564--1564
+\T1/lmr/m/n/10 ma-
+ []
+
+
+Overfull \hbox (51.44449pt too wide) in paragraph at lines 1564--1564
+\T1/lmr/m/n/10 chines
+ []
+
+
+Overfull \hbox (42.55563pt too wide) in paragraph at lines 1564--1564
+\T1/lmr/m/n/10 spé-
+ []
+
+
+Overfull \hbox (35.55562pt too wide) in paragraph at lines 1564--1564
+\T1/lmr/m/n/10 ci-
+ []
+
+
+Overfull \hbox (49.778pt too wide) in paragraph at lines 1564--1564
+\T1/lmr/m/n/10 fiques
+ []
+
+
+Overfull \hbox (46.97229pt too wide) in paragraph at lines 1564--1564
+\T1/lmr/m/n/10 (frai-
+ []
+
+
+Overfull \hbox (47.33351pt too wide) in paragraph at lines 1564--1564
+\T1/lmr/m/n/10 seuse
+ []
+
+
+Overfull \hbox (30.00003pt too wide) in paragraph at lines 1564--1564
+\T1/lmr/m/n/10 5
+ []
+
+
+Overfull \hbox (46.44476pt too wide) in paragraph at lines 1564--1564
+\T1/lmr/m/n/10 axes,
+ []
+
+
+Overfull \hbox (51.41693pt too wide) in paragraph at lines 1564--1564
+\T1/lmr/m/n/10 centre
+ []
+
+
+Overfull \hbox (48.94435pt too wide) in paragraph at lines 1564--1564
+\T1/lmr/m/n/10 d'usi-
+ []
+
+
+Overfull \hbox (45.00003pt too wide) in paragraph at lines 1564--1564
+\T1/lmr/m/n/10 nage
+ []
+
+
+Overfull \hbox (54.4722pt too wide) in paragraph at lines 1564--1564
+\T1/lmr/m/n/10 grande
+ []
+
+
+Overfull \hbox (36.66661pt too wide) in paragraph at lines 1564--1564
+\T1/lmr/m/n/10 di-
+ []
+
+
+Overfull \hbox (46.66635pt too wide) in paragraph at lines 1564--1564
+\T1/lmr/m/n/10 men-
+ []
+
+
+Overfull \hbox (46.16678pt too wide) in paragraph at lines 1564--1564
+\T1/lmr/m/n/10 sion) 
+ []
+
+
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 1564--1564
+[]
+ []
+
+
+Overfull \hbox (39.63902pt too wide) in paragraph at lines 1564--1564
+\T1/lmr/m/n/10 Les
+ []
+
+
+Overfull \hbox (43.61115pt too wide) in paragraph at lines 1564--1564
+\T1/lmr/m/n/10 opé-
+ []
+
+
+Overfull \hbox (37.25003pt too wide) in paragraph at lines 1564--1564
+\T1/lmr/m/n/10 ra-
+ []
+
+
+Overfull \hbox (46.7502pt too wide) in paragraph at lines 1564--1564
+\T1/lmr/m/n/10 teurs
+ []
+
+
+Overfull \hbox (44.44435pt too wide) in paragraph at lines 1564--1564
+\T1/lmr/m/n/10 hau-
+ []
+
+
+Overfull \hbox (36.66687pt too wide) in paragraph at lines 1564--1564
+\T1/lmr/m/n/10 te-
+ []
+
+
+Overfull \hbox (46.94424pt too wide) in paragraph at lines 1564--1564
+\T1/lmr/m/n/10 ment
+ []
+
+
+Overfull \hbox (44.16684pt too wide) in paragraph at lines 1564--1564
+\T1/lmr/m/n/10 qua-
+ []
+
+
+Overfull \hbox (33.88887pt too wide) in paragraph at lines 1564--1564
+\T1/lmr/m/n/10 li-
+ []
+
+
+Overfull \hbox (38.94452pt too wide) in paragraph at lines 1564--1564
+\T1/lmr/m/n/10 fiés
+ []
+
+
+Overfull \hbox (40.58354pt too wide) in paragraph at lines 1564--1564
+\T1/lmr/m/n/10 (ré-
+ []
+
+
+Overfull \hbox (50.00005pt too wide) in paragraph at lines 1564--1564
+\T1/lmr/m/n/10 glage,
+ []
+
+
+Overfull \hbox (42.80553pt too wide) in paragraph at lines 1564--1564
+\T1/lmr/m/n/10 pro-
+ []
+
+
+Overfull \hbox (50.58302pt too wide) in paragraph at lines 1564--1564
+\T1/lmr/m/n/10 gram-
+ []
+
+
+Overfull \hbox (41.66635pt too wide) in paragraph at lines 1564--1564
+\T1/lmr/m/n/10 ma-
+ []
+
+
+Overfull \hbox (46.1113pt too wide) in paragraph at lines 1564--1564
+\T1/lmr/m/n/10 tion) 
+ []
+
+
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 1564--1564
+[]
+ []
+
+
+Overfull \hbox (39.63902pt too wide) in paragraph at lines 1564--1564
+\T1/lmr/m/n/10 Les
+ []
+
+
+Overfull \hbox (38.88885pt too wide) in paragraph at lines 1564--1564
+\T1/lmr/m/n/10 ou-
+ []
+
+
+Overfull \hbox (38.38904pt too wide) in paragraph at lines 1564--1564
+\T1/lmr/m/n/10 tils
+ []
+
+
+Overfull \hbox (35.00003pt too wide) in paragraph at lines 1564--1564
+\T1/lmr/m/n/10 de
+ []
+
+
+Overfull \hbox (41.11086pt too wide) in paragraph at lines 1564--1564
+\T1/lmr/m/n/10 me-
+ []
+
+
+Overfull \hbox (42.86119pt too wide) in paragraph at lines 1564--1564
+\T1/lmr/m/n/10 sure
+ []
+
+
+Overfull \hbox (57.22278pt too wide) in paragraph at lines 1564--1564
+\T1/lmr/m/n/10 (MMT,
+ []
+
+
+Overfull \hbox (63.69467pt too wide) in paragraph at lines 1564--1564
+\T1/lmr/m/n/10 contrôles
+ []
+
+
+Overfull \hbox (41.11102pt too wide) in paragraph at lines 1564--1564
+\T1/lmr/m/n/10 non
+ []
+
+
+Overfull \hbox (42.27785pt too wide) in paragraph at lines 1564--1564
+\T1/lmr/m/n/10 des-
+ []
+
+
+Overfull \hbox (46.13904pt too wide) in paragraph at lines 1564--1564
+\T1/lmr/m/n/10 truc-
+ []
+
+
+Overfull \hbox (42.55579pt too wide) in paragraph at lines 1564--1564
+\T1/lmr/m/n/10 tifs) 
+ []
+
+
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 1564--1564
+[]
+ []
+
+
+Overfull \hbox (39.63902pt too wide) in paragraph at lines 1564--1564
+\T1/lmr/m/n/10 Les
+ []
+
+
+Overfull \hbox (38.88885pt too wide) in paragraph at lines 1564--1564
+\T1/lmr/m/n/10 ap-
+ []
+
+
+Overfull \hbox (42.80553pt too wide) in paragraph at lines 1564--1564
+\T1/lmr/m/n/10 pro-
+ []
+
+
+Overfull \hbox (36.3891pt too wide) in paragraph at lines 1564--1564
+\T1/lmr/m/n/10 vi-
+ []
+
+
+Overfull \hbox (45.6111pt too wide) in paragraph at lines 1564--1564
+\T1/lmr/m/n/10 sion-
+ []
+
+
+Overfull \hbox (38.33336pt too wide) in paragraph at lines 1564--1564
+\T1/lmr/m/n/10 ne-
+ []
+
+
+Overfull \hbox (50.88873pt too wide) in paragraph at lines 1564--1564
+\T1/lmr/m/n/10 ments
+ []
+
+
+Overfull \hbox (41.66635pt too wide) in paragraph at lines 1564--1564
+\T1/lmr/m/n/10 ma-
+ []
+
+
+Overfull \hbox (48.41696pt too wide) in paragraph at lines 1564--1564
+\T1/lmr/m/n/10 tières
+ []
+
+
+Overfull \hbox (42.22237pt too wide) in paragraph at lines 1564--1564
+\T1/lmr/m/n/10 (dé-
+ []
+
+
+Overfull \hbox (39.50003pt too wide) in paragraph at lines 1564--1564
+\T1/lmr/m/n/10 lais
+ []
+
+
+Overfull \hbox (51.16678pt too wide) in paragraph at lines 1564--1564
+\T1/lmr/m/n/10 longs) 
+ []
+
+
+Overfull \hbox (73.79341pt too wide) in paragraph at lines 1564--1564
+|[]\T1/lmr/bx/n/10 Gestion
+ []
+
+
+Overfull \hbox (51.33495pt too wide) in paragraph at lines 1564--1564
+\T1/lmr/bx/n/10 des
+ []
+
+
+Overfull \hbox (90.41049pt too wide) in paragraph at lines 1564--1564
+\T1/lmr/bx/n/10 contraintes
+ []
+
+
+Overfull \hbox (46.79895pt too wide) in paragraph at lines 1564--1564
+\T1/lmr/bx/n/10 de
+ []
+
+
+Overfull \hbox (49.67325pt too wide) in paragraph at lines 1564--1564
+\T1/lmr/bx/n/10 ca-
+ []
+
+
+Overfull \hbox (50.95128pt too wide) in paragraph at lines 1564--1564
+\T1/lmr/bx/n/10 pa-
+ []
+
+
+Overfull \hbox (53.18741pt too wide) in paragraph at lines 1564--1564
+\T1/lmr/bx/n/10 cité| 
+ []
+
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1564: LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1564 \begin
+             {tabular}{|l|l|}
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: Unexpected alignment h on input line 1564.
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1565: Misplaced \noalign.
+\hline ->\noalign 
+                  {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
+l.1565 \hline
+             
+I expect to see \noalign only after the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+
+Overfull \hbox (51.1387pt too wide) in paragraph at lines 1564--1565
+[]\T1/lmr/m/n/10 b[][]tabular|l|l| 
+ []
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1566: Misplaced alignment tab character &.
+l.1566 \textbf{Type de contrainte} &
+                                     \textbf{Action} \\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1567: Misplaced \noalign.
+\hline ->\noalign 
+                  {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
+l.1567 \hline
+             
+I expect to see \noalign only after the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+
+Overfull \hbox (25.7295pt too wide) in paragraph at lines 1566--1567
+[]\T1/lmr/bx/n/10 Type
+ []
+
+
+Overfull \hbox (11.66pt too wide) in paragraph at lines 1566--1567
+\T1/lmr/bx/n/10 de
+ []
+
+
+Overfull \hbox (50.73555pt too wide) in paragraph at lines 1566--1567
+\T1/lmr/bx/n/10 contrainte
+ []
+
+
+Overfull \hbox (17.31886pt too wide) in paragraph at lines 1566--1567
+\T1/lmr/bx/n/10 Ac-
+ []
+
+
+Overfull \hbox (19.84436pt too wide) in paragraph at lines 1566--1567
+\T1/lmr/bx/n/10 tion 
+ []
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1568: Misplaced alignment tab character &.
+l.1568 Contrainte machine &
+                            Planifier en prioritÃ©, amortir les alÃ©as, prÃ©...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1569: Misplaced alignment tab character &.
+l.1569 Contrainte opÃ©rateur &
+                               Anticiper les disponibilitÃ©s, former des pol...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1570: Misplaced alignment tab character &.
+l.1570 Contrainte outil &
+                          GÃ©rer le stock, prÃ©voir les outils frÃ¨res \\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1571: Misplaced alignment tab character &.
+l.1571 Contrainte matiÃ¨re &
+                             Anticiper les commandes, gÃ©rer les stocks de s...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1572: Misplaced \noalign.
+\hline ->\noalign 
+                  {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
+l.1572 \hline
+             
+I expect to see \noalign only after the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+
+Overfull \hbox (46.69437pt too wide) in paragraph at lines 1568--1572
+[]\T1/lmr/m/n/10 Contrainte
+ []
+
+
+Overfull \hbox (16.66632pt too wide) in paragraph at lines 1568--1572
+\T1/lmr/m/n/10 ma-
+ []
+
+
+Overfull \hbox (22.49997pt too wide) in paragraph at lines 1568--1572
+\T1/lmr/m/n/10 chine
+ []
+
+
+Overfull \hbox (17.91658pt too wide) in paragraph at lines 1568--1572
+\T1/lmr/m/n/10 Pla-
+ []
+
+
+Overfull \hbox (11.66658pt too wide) in paragraph at lines 1568--1572
+\T1/lmr/m/n/10 ni-
+ []
+
+
+Overfull \hbox (13.91667pt too wide) in paragraph at lines 1568--1572
+\T1/lmr/m/n/10 fier
+ []
+
+
+Overfull \hbox (10.0pt too wide) in paragraph at lines 1568--1572
+\T1/lmr/m/n/10 en
+ []
+
+
+Overfull \hbox (20.58325pt too wide) in paragraph at lines 1568--1572
+\T1/lmr/m/n/10 prio-
+ []
+
+
+Overfull \hbox (17.8057pt too wide) in paragraph at lines 1568--1572
+\T1/lmr/m/n/10 rité,
+ []
+
+
+Overfull \hbox (25.583pt too wide) in paragraph at lines 1568--1572
+\T1/lmr/m/n/10 amor-
+ []
+
+
+Overfull \hbox (10.58344pt too wide) in paragraph at lines 1568--1572
+\T1/lmr/m/n/10 tir
+ []
+
+
+Overfull \hbox (11.16675pt too wide) in paragraph at lines 1568--1572
+\T1/lmr/m/n/10 les
+ []
+
+
+Overfull \hbox (23.9445pt too wide) in paragraph at lines 1568--1572
+\T1/lmr/m/n/10 aléas,
+ []
+
+
+Overfull \hbox (17.25pt too wide) in paragraph at lines 1568--1572
+\T1/lmr/m/n/10 pré-
+ []
+
+
+Overfull \hbox (13.88882pt too wide) in paragraph at lines 1568--1572
+\T1/lmr/m/n/10 pa-
+ []
+
+
+Overfull \hbox (12.27785pt too wide) in paragraph at lines 1568--1572
+\T1/lmr/m/n/10 rer
+ []
+
+
+Overfull \hbox (11.16675pt too wide) in paragraph at lines 1568--1572
+\T1/lmr/m/n/10 les
+ []
+
+
+Overfull \hbox (13.88882pt too wide) in paragraph at lines 1568--1572
+\T1/lmr/m/n/10 ou-
+ []
+
+
+Overfull \hbox (13.389pt too wide) in paragraph at lines 1568--1572
+\T1/lmr/m/n/10 tils 
+ []
+
+
+Overfull \hbox (46.69437pt too wide) in paragraph at lines 1568--1572
+\T1/lmr/m/n/10 Contrainte
+ []
+
+
+Overfull \hbox (18.61111pt too wide) in paragraph at lines 1568--1572
+\T1/lmr/m/n/10 opé-
+ []
+
+
+Overfull \hbox (12.25pt too wide) in paragraph at lines 1568--1572
+\T1/lmr/m/n/10 ra-
+ []
+
+
+Overfull \hbox (17.80568pt too wide) in paragraph at lines 1568--1572
+\T1/lmr/m/n/10 teur
+ []
+
+
+Overfull \hbox (16.38882pt too wide) in paragraph at lines 1568--1572
+\T1/lmr/m/n/10 An-
+ []
+
+
+Overfull \hbox (10.00009pt too wide) in paragraph at lines 1568--1572
+\T1/lmr/m/n/10 ti-
+ []
+
+
+Overfull \hbox (10.55559pt too wide) in paragraph at lines 1568--1572
+\T1/lmr/m/n/10 ci-
+ []
+
+
+Overfull \hbox (14.19446pt too wide) in paragraph at lines 1568--1572
+\T1/lmr/m/n/10 per
+ []
+
+
+Overfull \hbox (11.16675pt too wide) in paragraph at lines 1568--1572
+\T1/lmr/m/n/10 les
+ []
+
+
+Overfull \hbox (15.61107pt too wide) in paragraph at lines 1568--1572
+\T1/lmr/m/n/10 dis-
+ []
+
+
+Overfull \hbox (14.16661pt too wide) in paragraph at lines 1568--1572
+\T1/lmr/m/n/10 po-
+ []
+
+
+Overfull \hbox (11.66658pt too wide) in paragraph at lines 1568--1572
+\T1/lmr/m/n/10 ni-
+ []
+
+
+Overfull \hbox (11.66658pt too wide) in paragraph at lines 1568--1572
+\T1/lmr/m/n/10 bi-
+ []
+
+
+Overfull \hbox (8.88884pt too wide) in paragraph at lines 1568--1572
+\T1/lmr/m/n/10 li-
+ []
+
+
+Overfull \hbox (15.05576pt too wide) in paragraph at lines 1568--1572
+\T1/lmr/m/n/10 tés,
+ []
+
+
+Overfull \hbox (15.3055pt too wide) in paragraph at lines 1568--1572
+\T1/lmr/m/n/10 for-
+ []
+
+
+Overfull \hbox (16.69417pt too wide) in paragraph at lines 1568--1572
+\T1/lmr/m/n/10 mer
+ []
+
+
+Overfull \hbox (13.94449pt too wide) in paragraph at lines 1568--1572
+\T1/lmr/m/n/10 des
+ []
+
+
+Overfull \hbox (14.16661pt too wide) in paragraph at lines 1568--1572
+\T1/lmr/m/n/10 po-
+ []
+
+
+Overfull \hbox (11.38907pt too wide) in paragraph at lines 1568--1572
+\T1/lmr/m/n/10 ly-
+ []
+
+
+Overfull \hbox (13.05576pt too wide) in paragraph at lines 1568--1572
+\T1/lmr/m/n/10 va-
+ []
+
+
+Overfull \hbox (20.33347pt too wide) in paragraph at lines 1568--1572
+\T1/lmr/m/n/10 lents 
+ []
+
+
+Overfull \hbox (46.69437pt too wide) in paragraph at lines 1568--1572
+\T1/lmr/m/n/10 Contrainte
+ []
+
+
+Overfull \hbox (13.88882pt too wide) in paragraph at lines 1568--1572
+\T1/lmr/m/n/10 ou-
+ []
+
+
+Overfull \hbox (9.44452pt too wide) in paragraph at lines 1568--1572
+\T1/lmr/m/n/10 til
+ []
+
+
+Overfull \hbox (15.62483pt too wide) in paragraph at lines 1568--1572
+\T1/lmr/m/n/10 Gé-
+ []
+
+
+Overfull \hbox (12.27785pt too wide) in paragraph at lines 1568--1572
+\T1/lmr/m/n/10 rer
+ []
+
+
+Overfull \hbox (7.22226pt too wide) in paragraph at lines 1568--1572
+\T1/lmr/m/n/10 le
+ []
+
+
+Overfull \hbox (25.33374pt too wide) in paragraph at lines 1568--1572
+\T1/lmr/m/n/10 stock,
+ []
+
+
+Overfull \hbox (17.25pt too wide) in paragraph at lines 1568--1572
+\T1/lmr/m/n/10 pré-
+ []
+
+
+Overfull \hbox (16.69463pt too wide) in paragraph at lines 1568--1572
+\T1/lmr/m/n/10 voir
+ []
+
+
+Overfull \hbox (11.16675pt too wide) in paragraph at lines 1568--1572
+\T1/lmr/m/n/10 les
+ []
+
+
+Overfull \hbox (13.88882pt too wide) in paragraph at lines 1568--1572
+\T1/lmr/m/n/10 ou-
+ []
+
+
+Overfull \hbox (13.389pt too wide) in paragraph at lines 1568--1572
+\T1/lmr/m/n/10 tils
+ []
+
+
+Overfull \hbox (23.72234pt too wide) in paragraph at lines 1568--1572
+\T1/lmr/m/n/10 frères 
+ []
+
+
+Overfull \hbox (46.69437pt too wide) in paragraph at lines 1568--1572
+\T1/lmr/m/n/10 Contrainte
+ []
+
+
+Overfull \hbox (16.66632pt too wide) in paragraph at lines 1568--1572
+\T1/lmr/m/n/10 ma-
+ []
+
+
+Overfull \hbox (19.47244pt too wide) in paragraph at lines 1568--1572
+\T1/lmr/m/n/10 tière
+ []
+
+
+Overfull \hbox (16.38882pt too wide) in paragraph at lines 1568--1572
+\T1/lmr/m/n/10 An-
+ []
+
+
+Overfull \hbox (10.00009pt too wide) in paragraph at lines 1568--1572
+\T1/lmr/m/n/10 ti-
+ []
+
+
+Overfull \hbox (10.55559pt too wide) in paragraph at lines 1568--1572
+\T1/lmr/m/n/10 ci-
+ []
+
+
+Overfull \hbox (14.19446pt too wide) in paragraph at lines 1568--1572
+\T1/lmr/m/n/10 per
+ []
+
+
+Overfull \hbox (11.16675pt too wide) in paragraph at lines 1568--1572
+\T1/lmr/m/n/10 les
+ []
+
+
+Overfull \hbox (21.11082pt too wide) in paragraph at lines 1568--1572
+\T1/lmr/m/n/10 com-
+ []
+
+
+Overfull \hbox (35.61073pt too wide) in paragraph at lines 1568--1572
+\T1/lmr/m/n/10 mandes,
+ []
+
+
+Overfull \hbox (12.77783pt too wide) in paragraph at lines 1568--1572
+\T1/lmr/m/n/10 gé-
+ []
+
+
+Overfull \hbox (12.27785pt too wide) in paragraph at lines 1568--1572
+\T1/lmr/m/n/10 rer
+ []
+
+
+Overfull \hbox (11.16675pt too wide) in paragraph at lines 1568--1572
+\T1/lmr/m/n/10 les
+ []
+
+
+Overfull \hbox (26.50047pt too wide) in paragraph at lines 1568--1572
+\T1/lmr/m/n/10 stocks
+ []
+
+
+Overfull \hbox (10.0pt too wide) in paragraph at lines 1568--1572
+\T1/lmr/m/n/10 de
+ []
+
+
+Overfull \hbox (11.72232pt too wide) in paragraph at lines 1568--1572
+\T1/lmr/m/n/10 sé-
+ []
+
+
+Overfull \hbox (13.33333pt too wide) in paragraph at lines 1568--1572
+\T1/lmr/m/n/10 cu-
+ []
+
+
+Overfull \hbox (15.02794pt too wide) in paragraph at lines 1568--1572
+\T1/lmr/m/n/10 rité 
+ []
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1573: Misplaced \crcr.
+\endtabular ->\crcr 
+                    \egroup \egroup $\egroup 
+l.1573 \end{tabular}
+                    
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1573: Extra }, or forgotten \endgroup.
+\endtabular ->\crcr \egroup \egroup 
+                                    $\egroup 
+l.1573 \end{tabular}
+                    
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1573: Extra }, or forgotten $.
+<recently read> \egroup 
+                        
+l.1573 \end{tabular}
+                    
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1573: LaTeX Error: \begin{table} on input line 1564 ended by \end{tabular}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1573 \end{tabular}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1573: Missing $ inserted.
+<inserted text> 
+                $
+l.1573 \end{tabular}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1574: Extra }, or forgotten \endgroup.
+\@endfloatbox ...pagefalse \outer@nobreak \egroup 
+                                                  \color@endbox 
+l.1574 \end{table}
+                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+LaTeX Warning: Float too large for page by 250.79613pt on input line 1574.
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1574: Improper \prevdepth.
+<recently read> \prevdepth 
+                           
+l.1574 \end{table}
+                  
+You can refer to \spacefactor only in horizontal mode;
+you can refer to \prevdepth only in vertical mode; and
+neither of these is meaningful inside \write. So
+I'm forgetting what you said and using zero instead.
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1574: You can't use `\prevdepth' in horizontal mode.
+\end@float ...pdima \prevdepth \vbox {}\prevdepth 
+                                                  \@tempdima \penalty \@floa...
+l.1574 \end{table}
+                  
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1574: Missing number, treated as zero.
+<to be read again> 
+                   \penalty 
+l.1574 \end{table}
+                  
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1574: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \penalty 
+l.1574 \end{table}
+                  
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+[25]
+Underfull \hbox (badness 10000) in paragraph at lines 1576--1576
+|[]\T1/lmr/bx/n/10 Planification ré-seau de pro-jet|
+ []
+
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1580: Package xcolor Error: Undefined color `blueclair'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1580 ... title=Exemple de planification rÃ©seau]
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (76.1871pt too wide) in paragraph at lines 1582--1593
+ [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1597--1597
+|[]\T1/lmr/bx/n/10 Indicateurs de pi-lo-tage pour la Classe C|
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1614--1614
+|[]\T1/lmr/bx/n/10 Gestion des mo-di-fi-ca-tions et des aléas|
+ []
+
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1623: Package xcolor Error: Undefined color `blueclair'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1623 ...ue!70!black, title=SynthÃ¨se : Classe C]
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1640--1640
+|\T1/lmr/bx/n/12 Introduction|
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1650--1650
+\T1/lmr/bx/n/12 sources)|
+ []
+
+[26]
+Underfull \hbox (badness 10000) in paragraph at lines 1654--1654
+|[]\T1/lmr/bx/n/10 Données Ar-ticles|
+ []
+
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1656: Package xcolor Error: Undefined color `blueclair'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1656 ...=Structure type d'une fiche article ERP]
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1674--1674
+|[]\T1/lmr/bx/n/10 Données No-men-cla-tures|
+ []
+
+
+Overfull \hbox (1.23639pt too wide) in paragraph at lines 1678--1691
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1693: Package xcolor Error: Undefined color `grisclair'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1693 ...: Nomenclature de production - Brouette]
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1698: Undefined control sequence.
+<recently read> \multirow 
+                          
+l.1698 \multirow
+                {5}{*}{BROUETTE-001} & SUPPORT-001 & 1 \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1707--1707
+|[]\T1/lmr/bx/n/10 Données Gammes|
+ []
+
+
+Overfull \hbox (1.23639pt too wide) in paragraph at lines 1711--1726
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1728: Package xcolor Error: Undefined color `vertclair'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1728 ...le=Exemple : Gamme d'usinage - Fraisage]
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1741--1741
+|[]\T1/lmr/bx/n/10 Données Res-sources|
+ []
+
+
+Overfull \hbox (1.23639pt too wide) in paragraph at lines 1745--1757
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1759--1759
+| \T1/lmr/bx/n/12 Ges-tion des ré-vi-sions et des mo-di-fi-ca-tions tech-niques (ECN)|
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1761--1761
+|[]\T1/lmr/bx/n/10 Principe de la ges-tion des ré-vi-sions|
+ []
+
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1765: Package xcolor Error: Undefined color `blueclair'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1765 ...ack, title=Cycle de vie d'une rÃ©vision]
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[27]
+Underfull \hbox (badness 10000) in paragraph at lines 1771--1771
+|[]\T1/lmr/bx/n/10 Structure d'une ré-vi-sion|
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1790--1790
+|[]\T1/lmr/bx/n/10 Processus de mo-di-fi-ca-tion tech-nique (ECN)|
+ []
+
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1801: Package xcolor Error: Undefined color `orangeclair'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1801 ...ple : Modification technique d'un outil]
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1816--1816
+|[]\T1/lmr/bx/n/10 Gestion des mo-di-fi-ca-tions dans la no-men-cla-ture|
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1826--1826
+| \T1/lmr/bx/n/12 Sai-sie des don-nées dans les fiches ERP (exemples concrets)|
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1828--1828
+|[]\T1/lmr/bx/n/10 Fiche Ar-ticle : Fraise to-rique dia-mètre 10 mm|
+ []
+
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1830: Package xcolor Error: Undefined color `grisclair'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1830 ...le : Fiche article ERP - Fraise torique]
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[28]
+Underfull \hbox (badness 10000) in paragraph at lines 1853--1853
+|[]\T1/lmr/bx/n/10 Fiche Ar-ticle : Car-ter mo-teur fa-bri-qué|
+ []
+
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1855: Package xcolor Error: Undefined color `vertclair'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1855 ...ple : Fiche article ERP - Carter moteur]
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1875--1875
+|[]\T1/lmr/bx/n/10 Fiche No-men-cla-ture - Ni-veau 1|
+ []
+
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1877: Package xcolor Error: Undefined color `blueclair'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1877 ...mple : Nomenclature - Carter moteur M12]
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1890--1890
+|[]\T1/lmr/bx/n/10 Fiche Gamme - Car-ter mo-teur M12|
+ []
+
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1892: Package xcolor Error: Undefined color `grisclair'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1892 ...amme de fabrication - Carter moteur M12]
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[29]
+Underfull \hbox (badness 10000) in paragraph at lines 1908--1908
+|[]\T1/lmr/bx/n/10 Fiche Poste de Charge|
+ []
+
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1910: Package xcolor Error: Undefined color `orangeclair'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1910 ...le : Fiche poste de charge - FRAISE-5AX]
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1929--1929
+|[]\T1/lmr/bx/n/10 Fiche Ou-til|
+ []
+
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1931: Package xcolor Error: Undefined color `vertclair'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1931 ...=Exemple : Fiche outil - Fraise torique]
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1954--1954
+|[]\T1/lmr/bx/n/10 Saisie des don-nées : Bonnes pra-tiques|
+ []
+
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1956: Package xcolor Error: Undefined color `blueclair'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1956 ...itle=Recommandations pour la saisie ERP]
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[30]
+Underfull \hbox (badness 10000) in paragraph at lines 1984--1984
+\T1/lmr/bx/n/12 ca-cité)|
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1988--1988
+|[]\T1/lmr/bx/n/10 Temps à Va-leur Ajou-tée (VA)|
+ []
+
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:1992: Package xcolor Error: Undefined color `blueclair'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1992 ...blue!70!black, title=Calcul du temps VA]
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2004--2004
+|[]\T1/lmr/bx/n/10 Temps à Non-Valeur Ajou-tée (NVA)|
+ []
+
+
+Overfull \hbox (1.23639pt too wide) in paragraph at lines 2010--2020
+ [][] 
+ []
+
+[31]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2022--2022
+|[]\T1/lmr/bx/n/10 Coût ou-til (coût car-bure)|
+ []
+
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:2026: Package xcolor Error: Undefined color `grisclair'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2026 ...y!70!black, title=Calcul du coÃ»t outil]
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2038--2038
+|[]\T1/lmr/bx/n/10 Efficacité|
+ []
+
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:2042: Package xcolor Error: Undefined color `vertclair'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2042 ...50!black, title=Calcul de l'efficacitÃ©]
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2048--2048
+|[]\T1/lmr/bx/n/10 Indice de risque tech-nique|
+ []
+
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:2052: Package xcolor Error: Undefined color `orangeclair'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2052 ...ack, title=Calcul de l'indice de risque]
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 1509) in paragraph at lines 2067--2067
+| \T1/lmr/bx/n/12 Ap-proche Al-go-rith-mique pour la Classe C (Al-go-rithmes gé-né-tiques)|
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2069--2069
+|[]\T1/lmr/bx/n/10 Principe de l'al-go-rithme gé-né-tique|
+ []
+
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:2073: Package xcolor Error: Undefined color `blueclair'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2073 ...e=Analogies de l'algorithme gÃ©nÃ©tique]
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[32]
+Underfull \hbox (badness 10000) in paragraph at lines 2090--2090
+|[]\T1/lmr/bx/n/10 Structure de l'al-go-rithme|
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2129--2129
+|[]\T1/lmr/bx/n/10 Paramètres de l'al-go-rithme|
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2149--2149
+|[]\T1/lmr/bx/n/10 Exemple de ré-sul-tats d'op-ti-mi-sa-tion|
+ []
+
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:2151: Package xcolor Error: Undefined color `grisclair'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2151 ...Ã©sultats pour une piÃ¨ce aÃ©ronautique]
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2165--2165
+| \T1/lmr/bx/n/12 Ap-proche par Si-mu-la-tion pour les Classes A et B|
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2167--2167
+|[]\T1/lmr/bx/n/10 Principe de la si-mu-la-tion|
+ []
+
+[33]
+Underfull \hbox (badness 10000) in paragraph at lines 2171--2171
+|[]\T1/lmr/bx/n/10 Simulation de flux (Classe A)|
+ []
+
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:2173: Package xcolor Error: Undefined color `vertclair'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2173 ...itle=Objectifs de la simulation de flux]
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2183--2183
+|[]\T1/lmr/bx/n/10 Équilibrage de ligne|
+ []
+
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:2187: Package xcolor Error: Undefined color `blueclair'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2187 ...ck, title=Calcul du taux d'Ã©quilibrage]
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2199--2199
+|[]\T1/lmr/bx/n/10 Simulation de sé-quen-ce-ment (Classe B)|
+ []
+
+
+Overfull \hbox (1.24333pt too wide) in paragraph at lines 2205--2215
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2217--2217
+|[]\T1/lmr/bx/n/10 Outils de si-mu-la-tion ERP|
+ []
+
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:2221: Package xcolor Error: Undefined color `orangeclair'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2221 ...itle=FonctionnalitÃ©s de simulation ERP]
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2231--2231
+|[]\T1/lmr/bx/n/10 Indicateurs de per-for-mance si-mu-lés|
+ []
+
+[34]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2248--2248
+|[]\T1/lmr/bx/n/10 Exemple de si-mu-la-tion pour une ligne d'as-sem-blage mixte|
+ []
+
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:2250: Package xcolor Error: Undefined color `grisclair'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2250 ...ion de sÃ©quencement - Ligne automobile]
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2251--2266
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2268--2268
+|[]\T1/lmr/bx/n/10 Optimisation ité-ra-tive|
+ []
+
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:2279: Package xcolor Error: Undefined color `blueclair'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2279 ...tle=SynthÃ¨se : Optimisation des Gammes]
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2300--2300
+|[]\T1/lmr/bx/n/10 Le Plan In-dus-triel et Com-mer-cial (PIC)|
+ []
+
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:2302: Package xcolor Error: Undefined color `blueclair'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2302 ...blue!70!black, title=DÃ©finition du PIC]
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[35]
+Overfull \hbox (1.23639pt too wide) in paragraph at lines 2308--2319
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2321--2321
+|[]\T1/lmr/bx/n/10 Les stra-té-gies de pla-ni-fi-ca-tion du PIC|
+ []
+
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:2323: Package xcolor Error: Undefined color `grisclair'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2323 ...ack, title=StratÃ©gies de planification]
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2331--2331
+|[]\T1/lmr/bx/n/10 Du PIC au PDP|
+ []
+
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:2335: Package xcolor Error: Undefined color `vertclair'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2335 ...!50!black, title=Articulation PIC - PDP]
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2345--2345
+|[]\T1/lmr/bx/n/10 Calcul du PDP|
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2366--2366
+| \T1/lmr/bx/n/12 Du PDP aux Ordres de Fa-bri-ca-tion (OF) sug-gé-rés|
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2368--2368
+|[]\T1/lmr/bx/n/10 Planification des Be-soins en Com-po-sants (MRP)|
+ []
+
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:2372: Package xcolor Error: Undefined color `blueclair'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2372 ...!70!black, title=Principe du calcul MRP]
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2381--2381
+|[]\T1/lmr/bx/n/10 Algorithme de cal-cul des be-soins nets|
+ []
+
+[36]
+Underfull \hbox (badness 10000) in paragraph at lines 2391--2391
+|[]\T1/lmr/bx/n/10 Règles de re-grou-pe-ment (lo-tis-se-ment)|
+ []
+
+
+Overfull \hbox (1.24333pt too wide) in paragraph at lines 2395--2405
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2407--2407
+|[]\T1/lmr/bx/n/10 Transformation en Ordres de Fa-bri-ca-tion|
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2416--2416
+| \T1/lmr/bx/n/12 Ja-lon-ne-ments, af-fer-mis-se-ment et lan-ce-ment des OF|
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2418--2418
+|[]\T1/lmr/bx/n/10 Jalonnement des ordres de fa-bri-ca-tion|
+ []
+
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:2422: Package xcolor Error: Undefined color `grisclair'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2422 ...!70!black, title=Ã‰tapes du jalonnement]
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2431--2431
+|[]\T1/lmr/bx/n/10 Affermissement des ordres|
+ []
+
+
+Overfull \hbox (1.24333pt too wide) in paragraph at lines 2437--2449
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2451--2451
+|[]\T1/lmr/bx/n/10 Lancement des ordres de fa-bri-ca-tion|
+ []
+
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:2453: Package xcolor Error: Undefined color `vertclair'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2453 ...black, title=ContrÃ´les avant lancement]
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2465--2465
+|[]\T1/lmr/bx/n/10 Les dif-fé-rents sta-tuts de l'ordre de fa-bri-ca-tion|
+ []
+
+[37]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2485--2485
+| \T1/lmr/bx/n/12 Re-tour d'ex-pé-rience et boucle d'amé-lio-ra-tion conti-nue|
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2487--2487
+|[]\T1/lmr/bx/n/10 Calcul des coûts réels|
+ []
+
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:2491: Package xcolor Error: Undefined color `blueclair'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2491 ...ck, title=Composantes des coÃ»ts rÃ©els]
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2503--2503
+|[]\T1/lmr/bx/n/10 Analyse des écarts|
+ []
+
+
+Overfull \hbox (1.24333pt too wide) in paragraph at lines 2507--2518
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2520--2520
+|[]\T1/lmr/bx/n/10 Boucle d'amé-lio-ra-tion conti-nue|
+ []
+
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:2522: Package xcolor Error: Undefined color `orangeclair'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2522 ...e=Cycle PDCA d'amÃ©lioration des gammes]
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2531--2531
+|[]\T1/lmr/bx/n/10 Capitalisation des re-tours d'ex-pé-rience|
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2541--2541
+|[]\T1/lmr/bx/n/10 Indicateurs de pi-lo-tage|
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2558--2558
+|[]\T1/lmr/bx/n/10 Flux d'in-for-ma-tion com-plet|
+ []
+
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:2560: Package xcolor Error: Undefined color `grisclair'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2560 ...ck, title=SynthÃ¨se du flux de donnÃ©es]
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[38]
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:2582: Package xcolor Error: Undefined color `blueclair'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2582 ...Ã¨se : IntÃ©gration et Flux de DonnÃ©es]
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2600--2600
+|\T1/lmr/bx/n/12 Récapitulatif des ap-proches par classe|
+ []
+
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:2604: Package xcolor Error: Undefined color `blueclair'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2604 ...lack, title=SynthÃ¨se des trois classes]
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[39]
+Underfull \hbox (badness 10000) in paragraph at lines 2621--2621
+|[]\T1/lmr/bx/n/10 Classe A : L'ex-cel-lence opé-ra-tion-nelle|
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2631--2631
+|[]\T1/lmr/bx/n/10 Classe B : L'agi-lité maî-tri-sée|
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2641--2641
+|[]\T1/lmr/bx/n/10 Classe C : La fia-bi-lité pro-jet|
+ []
+
+
+Underfull \hbox (badness 1748) in paragraph at lines 2651--2651
+|\T1/lmr/bx/n/12 Importance de la ca-pi-ta-li-sa-tion du savoir-faire et de la col-la-bo-ra-tion|
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2653--2653
+|[]\T1/lmr/bx/n/10 La ca-pi-ta-li-sa-tion du savoir-faire|
+ []
+
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:2663: Package xcolor Error: Undefined color `grisclair'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2663 ...utils de capitalisation du savoir-faire]
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[40]
+Underfull \hbox (badness 10000) in paragraph at lines 2673--2673
+|[]\T1/lmr/bx/n/10 La col-la-bo-ra-tion entre mé-tiers|
+ []
+
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:2677: Package xcolor Error: Undefined color `vertclair'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2677 ...ion conception - mÃ©thodes - production]
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2693--2693
+\T1/lmr/bx/n/12 adap-ta-tives|
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2695--2695
+|[]\T1/lmr/bx/n/10 Du MES à la gamme adap-ta-tive|
+ []
+
+
+Overfull \hbox (1.24333pt too wide) in paragraph at lines 2701--2713
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2715--2715
+|[]\T1/lmr/bx/n/10 La gamme adap-ta-tive : un concept émergent|
+ []
+
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:2717: Package xcolor Error: Undefined color `orangeclair'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2717 ...range!70!black, title=Vers la gamme 4.0]
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2725--2725
+|[]\T1/lmr/bx/n/10 Les briques tech-no-lo-giques de la gamme adap-ta-tive|
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2735--2735
+|[]\T1/lmr/bx/n/10 Exemple : Op-ti-mi-sa-tion temps réel des condi-tions de coupe|
+ []
+
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:2737: Package xcolor Error: Undefined color `blueclair'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2737 ...tle=ScÃ©nario d'optimisation adaptative]
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[41]
+Underfull \hbox (badness 10000) in paragraph at lines 2748--2748
+|[]\T1/lmr/bx/n/10 Bénéfices at-ten-dus|
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2765--2765
+|[]\T1/lmr/bx/n/10 Feuille de route vers la gamme adap-ta-tive|
+ []
+
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:2767: Package xcolor Error: Undefined color `grisclair'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2767 ...=gray!70!black, title=Plan d'Ã©volution]
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:2781: Package xcolor Error: Undefined color `blueclair'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2781 ...e!70!black, title=Conclusion GÃ©nÃ©rale]
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[42]
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:2818: LaTeX Error: Float(s) lost.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2818 \end{document}
+                     
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[43] [44] [45] [46]
+
+c:/Users/pc/Documents/INFO/GitHub/SOUKAINA/GAMME.tex:2818: LaTeX Error: \begin{table} on input line 1496 ended by \end{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2818 \end{document}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+(GAMME.aux)
+ ***********
+LaTeX2e <2025-11-01>
+L3 programming layer <2025-12-24>
+ ***********
+ )
+(\end occurred inside a group at level 5)
+
+### semi simple group (level 5) entered at line 1540 (\begingroup)
+### semi simple group (level 4) entered at line 1540 (\begingroup)
+### semi simple group (level 3) entered at line 1513 (\begingroup)
+### semi simple group (level 2) entered at line 1513 (\begingroup)
+### semi simple group (level 1) entered at line 1496 (\begingroup)
+### bottom level 
+Here is how much of TeX's memory you used:
+ 18537 strings out of 467871
+ 381858 string characters out of 5419828
+ 818062 words of memory out of 5000000
+ 47117 multiletter control sequences out of 15000+600000
+ 670869 words of font info for 62 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 116i,17n,121p,528b,1245s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi5.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi7.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr5.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy7.pfb>
+Output written on GAMME.pdf (46 pages, 408048 bytes).
+PDF statistics:
+ 234 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+

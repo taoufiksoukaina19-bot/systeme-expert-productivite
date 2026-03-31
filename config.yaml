@@ -1,0 +1,10 @@
+credentials:
+  usernames:
+    admin:
+      email: admin@email.com
+      name: "Ton Nom"
+      password: "$2b$12$76p/re/F.u2hRTPy6X.Snu6kU.Fsh2l8MskGkK/k0hZ8U9y8B5XUe"
+cookie:
+  expiry_days: 30
+  key: "cle_secrete_123"
+  name: "productivite_cookie"

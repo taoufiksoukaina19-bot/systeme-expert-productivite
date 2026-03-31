@@ -1,0 +1,674 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{amsmath, amssymb, amsfonts}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{geometry}
+\geometry{margin=2.5cm}
+
+\begin{document}
+
+\title{Guide du Lean Manufacturing}
+\author{}
+\date{}
+\maketitle
+
+\tableofcontents
+\newpage
+
+\section{Comprendre le Lean - Fondamentaux et Philosophie}
+
+\subsection{Définition et Origines du Lean Manufacturing}
+
+Le \textbf{Lean Manufacturing}, ou production au plus juste, est une philosophie de gestion et une stratégie opérationnelle dont l'objectif est de maximiser la valeur pour le client tout en minimisant les gaspillages. Il s'agit d'optimiser les flux pour être plus réactif, plus agile et plus compétitif.
+
+\subsubsection{Définition}
+
+Le Lean Manufacturing est un système de gestion de la production qui consiste à identifier et à éliminer toutes les formes de gaspillage (en japonais, \textit{Muda}) dans un processus. Il permet de créer plus de valeur pour le client avec moins de ressources (temps, espace, capital, main-d'œuvre).
+
+Selon Taiichi Ohno, le créateur du système de production Toyota : \og Tout ce que nous faisons, c'est de surveiller le temps qui s'écoule entre le moment où le client passe sa commande jusqu'à celui où l'on encaisse l'argent. Nous réduisons ce temps en éliminant tout ce qui est gaspillage et n'apporte pas de valeur ajoutée. \fg
+
+\subsubsection{Origines et Contexte Historique}
+
+Le Lean Manufacturing trouve ses racines dans le \textbf{Système de Production de Toyota (TPS)}, développé après la Seconde Guerre mondiale. Dans un contexte de ressources limitées et de marché japonais exigeant une grande variété de produits en faibles volumes, Toyota a dû innover pour rattraper les géants américains de l'automobile.
+
+\begin{itemize}
+    \item \textbf{Années 1950-1960 :} Taiichi Ohno et Shigeo Shingo développent les concepts fondamentaux du TPS, inspirés des supermarchés américains (principe du flux tiré).
+    \item \textbf{Années 1970 :} Le TPS commence à être connu sous le nom de \og Juste-à-temps \fg{} (JAT) ou \og Lean \fg.
+    \item \textbf{Années 1980-1990 :} Les entreprises occidentales découvrent la supériorité du modèle japonais en termes de productivité et de qualité. Le terme \og Lean Manufacturing \fg{} est popularisé par l'étude du MIT \textit{« The Machine That Changed the World »}.
+\end{itemize}
+
+Le Lean s'oppose à la production de masse (fordisme) qui repose sur la production en grandes séries et les stocks tampons. Il se concentre sur la demande réelle du client et la réduction des délais.
+
+\subsubsection{Pourquoi le Lean est né au Japon ?}
+
+Le contexte d'après-guerre au Japon était marqué par :
+\begin{itemize}
+    \item Une pénurie de ressources naturelles et financières.
+    \item Un marché intérieur de petite taille avec une demande variée.
+    \item L'obligation de rattraper le niveau de productivité américain avec des moyens limités.
+\end{itemize}
+Ces contraintes ont forcé Toyota à repenser la production non pas en termes d'économies d'échelle, mais en termes de \textbf{fluidité des flux} et d'\textbf{élimination des gaspillages}.
+
+\subsection{Objectifs et Principes Fondamentaux}
+
+\subsubsection{Objectifs du Lean Manufacturing}
+
+Les objectifs du Lean sont souvent résumés par le triptyque \textbf{QCD} (Qualité, Coût, Délais) enrichi par la notion de flexibilité.
+
+\begin{itemize}
+    \item \textbf{Qualité :} Atteindre le \og zéro défaut \fg{} en produisant des produits conformes dès la première fois, sans avoir recours à des contrôles massifs.
+    \item \textbf{Délais :} Réduire drastiquement les délais de fabrication (\textit{Lead Time}) et les délais de livraison pour répondre plus rapidement aux clients.
+    \item \textbf{Coûts :} Diminuer les coûts de production et de revient en éliminant tous les gaspillages.
+    \item \textbf{Réactivité/Flexibilité :} Acquérir la capacité à s'adapter rapidement aux variations de la demande et à produire une grande variété de produits en petites quantités.
+\end{itemize}
+
+\subsubsection{Les 5 Principes du Lean Thinking}
+
+Selon James Womack et Daniel Jones, la mise en œuvre du Lean repose sur cinq principes fondamentaux :
+
+\begin{enumerate}
+    \item \textbf{Définir la valeur du point de vue du client :} La valeur est ce que le client est prêt à payer. Il est essentiel de comprendre ses besoins réels, et non ce que l'entreprise pense qu'il souhaite.
+    \item \textbf{Identifier la Chaîne de Valeur (Value Stream) :} Cartographier toutes les étapes nécessaires à la création du produit, de la matière première jusqu'au client, afin d'identifier et d'éliminer les étapes sans valeur ajoutée.
+    \item \textbf{Créer un Flux continu :} Organiser les étapes de production de manière à ce que le produit circule sans interruption, sans attente ni stock intermédiaire. On tend vers le flux pièce à pièce (\textit{one piece flow}).
+    \item \textbf{Tirer le Flux par la demande du client :} Ne produire que ce qui est commandé par le client (flux tiré), et non selon des prévisions (flux poussé). Cela évite la surproduction.
+    \item \textbf{Tendre vers la Perfection :} L'amélioration n'a pas de fin. Le \textit{Kaizen} (amélioration continue) est un processus permanent pour tendre vers l'idéal : zéro défaut, zéro panne, zéro stock.
+\end{enumerate}
+
+\subsection{La Notion de Valeur Ajoutée}
+
+Au cœur du Lean se trouve la distinction fondamentale entre ce qui apporte de la valeur et ce qui constitue du gaspillage.
+
+\subsubsection{Définition de la Valeur}
+
+La \textbf{valeur} est l'estimation du service ou du produit fourni par le client, tel qu'il le définit. Elle se mesure par la capacité à satisfaire son besoin à un prix et un moment donné.
+
+\subsubsection{Valeur Ajoutée (VA) et Non-Valeur Ajoutée (NVA)}
+
+\begin{description}
+    \item[Valeur Ajoutée (VA) :] Désigne toute activité qui transforme physiquement le produit ou le service et pour laquelle le client est prêt à payer. Exemples : usinage, assemblage, peinture.
+    \item[Non-Valeur Ajoutée (NVA) :] Désigne toute activité qui consomme des ressources (temps, espace, énergie) sans transformer le produit ni répondre à un besoin client. Ce sont les gaspillages (\textit{Muda}). Exemples : transport, stockage, attente, contrôles.
+\end{description}
+
+\subsubsection{Le Ratio d'Efficacité du Processus}
+
+Un indicateur clé du Lean est le \textbf{Ratio d'Efficacité} (ou \textit{Ratio de Tension des Flux}), qui mesure la part de valeur ajoutée dans le temps total de passage.
+
+\[
+\text{Ratio d'Efficacité} = \frac{\text{Temps de travail effectif (VA)}}{\text{Temps total (Lead Time)}} \times 100
+\]
+
+Dans une organisation traditionnelle, ce ratio est souvent inférieur à 5\%. Les produits passent plus de 95\% de leur temps à attendre (stocks, files d'attente) ou à être transportés.
+
+\begin{figure}[h!]
+\centering
+\begin{tikzpicture}
+    \draw[thick, green!70!black, fill=green!20] (0,0) rectangle (1,0.6);
+    \node at (0.5,0.3) {\small VA};
+    \draw[thick, red!70!black, fill=red!20] (1,0) rectangle (6,0.6);
+    \node at (3.5,0.3) {\small NVA (Attente, Transport, Stock)};
+    \draw[<->, thick] (0,-0.2) -- (6,-0.2);
+    \node at (3,-0.5) {\small Lead Time Total};
+\end{tikzpicture}
+\caption{Représentation du Lead Time : la valeur ajoutée (vert) ne représente qu'une infime partie du temps total (rouge).}
+\label{fig:ratio_efficacite}
+\end{figure}
+
+\subsubsection{Conséquence pour l'Entreprise}
+
+L'objectif du Lean n'est pas seulement de réduire les coûts, mais de \textbf{repenser le processus}. En réduisant la part de non-valeur ajoutée, on :
+\begin{itemize}
+    \item Diminue le \textit{Lead Time} de production.
+    \item Réduit les stocks et les en-cours.
+    \item Libère de l'espace et des ressources.
+    \item Améliore la trésorerie (les produits sont fabriqués et vendus plus vite).
+\end{itemize}
+\subsection{Les 3 Sources de Gaspillage (Muda, Mura, Muri)}
+
+Dans la philosophie Lean, le gaspillage ne se limite pas aux seules activités non productives. Le système de production Toyota distingue trois catégories de nuisances, souvent appelées les \textbf{3M}, qu'il faut combattre pour atteindre l'excellence opérationnelle.
+
+\subsubsection{Muda (無駄) - Le Gaspillage}
+
+\textit{Muda} signifie littéralement \og inutilité \fg{} ou \og futilité \fg. C'est la forme de gaspillage la plus connue. Il s'agit de toutes les activités qui consomment des ressources sans créer de valeur ajoutée pour le client.
+
+\begin{center}
+\fcolorbox{black}{gray!10}{
+\begin{minipage}{0.9\textwidth}
+\centering
+\textbf{Principe fondamental :} \og Toute activité pour laquelle le client n'est pas prêt à payer est un \textit{Muda} \fg.
+\end{minipage}
+}
+\end{center}
+
+Les \textit{Muda} se déclinent en 8 catégories principales qui seront détaillées dans la section suivante (1.5).
+
+\subsubsection{Mura (斑) - L'Irrégularité}
+
+\textit{Mura} signifie \og variation \fg, \og inégalité \fg{} ou \og irrégularité \fg. C'est l'absence de régularité dans le flux de production. Le \textit{Mura} se manifeste par des à-coups, des pics et des creux d'activité.
+
+\begin{itemize}
+    \item \textbf{Exemples de \textit{Mura} :}
+    \begin{itemize}
+        \item Production en grandes séries : on produit beaucoup un jour, puis rien le lendemain.
+        \item Flux de commandes irréguliers : un client commande 1000 pièces une semaine, puis 100 la suivante.
+        \item Cadences de production différentes entre les postes de travail.
+    \end{itemize}
+    \item \textbf{Conséquences :} Le \textit{Mura} génère du stress sur les équipes et les équipements. Pour y faire face, l'entreprise est obligée de constituer des stocks tampons, de faire des heures supplémentaires, ou de sous-traiter, ce qui crée à son tour du \textit{Muda}.
+\end{itemize}
+
+\subsubsection{Muri (無理) - La Surcharge}
+
+\textit{Muri} signifie \og excessif \fg, \og déraisonnable \fg{} ou \og surmenage \fg. C'est l'imposition d'un effort excessif aux opérateurs ou aux machines.
+
+\begin{itemize}
+    \item \textbf{Exemples de \textit{Muri} sur les opérateurs :}
+    \begin{itemize}
+        \item Cadences de travail trop élevées, non soutenables sur la durée.
+        \item Gestes répétitifs et dangereux (troubles musculo-squelettiques).
+        \item Manque de formation pour accomplir une tâche complexe.
+        \item Travail dans des conditions difficiles (chaleur, bruit, postures contraignantes).
+    \end{itemize}
+    \item \textbf{Exemples de \textit{Muri} sur les machines :}
+    \begin{itemize}
+        \item Utilisation d'une machine au-delà de sa capacité nominale.
+        \item Absence de maintenance préventive, conduisant à l'usure prématurée.
+        \item Faire fonctionner une machine sans pauses ni entretien.
+    \end{itemize}
+\end{itemize}
+
+\subsubsection{Interrelation des 3M}
+
+Les trois sources de gaspillage sont intimement liées :
+
+\begin{figure}[h!]
+\centering
+\begin{tikzpicture}
+    % Cercles
+    \draw[thick, blue!70!black, fill=blue!20] (0,0) circle (1.2);
+    \draw[thick, red!70!black, fill=red!20] (2.5,0) circle (1.2);
+    \draw[thick, green!70!black, fill=green!20] (1.25,-1.2) circle (1.2);
+    
+    % Texte
+    \node at (0,0) {\textbf{Muda}};
+    \node at (0,-0.7) {\small Gaspillage};
+    \node at (2.5,0) {\textbf{Mura}};
+    \node at (2.5,-0.7) {\small Irrégularité};
+    \node at (1.25,-1.2) {\textbf{Muri}};
+    \node at (1.25,-1.9) {\small Surcharge};
+    
+    % Flèches
+    \draw[->, thick, gray] (1.2,-0.3) -- (2.3,-0.3);
+    \draw[->, thick, gray] (0.5,-0.8) -- (1.1,-1.1);
+    \draw[->, thick, gray] (2,-0.8) -- (1.4,-1.1);
+    \node at (1.75,-0.5) {\small crée};
+    \node at (1.2,-1.5) {\small crée};
+\end{tikzpicture}
+\caption{Interdépendance des 3M : Le \textit{Mura} (irrégularité) crée du \textit{Muri} (surcharge) qui génère du \textit{Muda} (gaspillage).}
+\label{fig:3m}
+\end{figure}
+
+La démarche Lean consiste à agir en priorité sur le \textit{Mura} (lisser la production) pour éliminer le \textit{Muri}, ce qui permet ensuite de réduire naturellement le \textit{Muda}.
+
+
+\subsection{Les 8 Gaspillages (8 Mudas) à Éliminer}
+
+Taiichi Ohno a initialement identifié 7 formes de \textit{Muda}. Une huitième, relative au sous-emploi des talents, a été ajoutée par la suite pour tenir compte de l'importance du facteur humain.
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{|c|p{3cm}|p{4cm}|p{4cm}|}
+\hline
+\textbf{N°} & \textbf{Gaspillage} & \textbf{Définition} & \textbf{Exemples} \\
+\hline
+1 & Surproduction & Produire plus que nécessaire ou avant le besoin. & Produire un lot de 1000 pièces alors que la commande est de 500. \\
+\hline
+2 & Attente & Temps d'inactivité des opérateurs ou des machines. & Attente de pièces, attente de réparation, attente d'instructions. \\
+\hline
+3 & Transport & Déplacements inutiles de produits ou de matières. & Stocker les matières premières loin du poste d'utilisation. \\
+\hline
+4 & Surtraitement & Faire plus que ce qui est exigé par le client. & Usiner une pièce avec une tolérance trop serrée, ajouter des fonctionnalités non demandées. \\
+\hline
+5 & Stocks & Excès de matières premières, d'en-cours ou de produits finis. & Stocker pour \og parer aux pannes \fg{} ou aux retards fournisseurs. \\
+\hline
+6 & Mouvements & Déplacements inutiles des opérateurs. & Chercher un outil, se baisser pour attraper une pièce, marcher entre deux postes éloignés. \\
+\hline
+7 & Défauts & Production de pièces non conformes. & Rebuts, retouches, contrôles supplémentaires. \\
+\hline
+8 & Talents & Sous-utilisation des compétences et des idées des employés. & Ne pas impliquer les opérateurs dans la résolution de problèmes. \\
+\hline
+\end{tabular}
+\caption{Les 8 Muda du Lean Manufacturing}
+\label{tab:8muda}
+\end{table}
+
+\subsubsection{Détail des 8 Mudas}
+
+\begin{description}
+    \item[1. Surproduction] \hfill \\
+    C'est le plus grave des gaspillages car il génère tous les autres. Produire avant d'avoir une commande ferme crée des stocks, des transports inutiles et masque les problèmes de qualité.
+    
+    \item[2. Attente] \hfill \\
+    L'attente est un temps mort qui n'ajoute aucune valeur. Elle peut être due à des pannes, des ruptures d'approvisionnement, un déséquilibre des cadences ou une mauvaise planification.
+    
+    \item[3. Transport] \hfill \\
+    Chaque déplacement de matière est une source de coût et de risque. L'objectif est de minimiser les distances parcourues en rapprochant les postes de travail.
+    
+    \item[4. Surtraitement (Traitements inutiles)] \hfill \\
+    Faire des opérations superflues ou utiliser des équipements trop sophistiqués pour le besoin réel. Exemple : chauffer une pièce plus longtemps que nécessaire ou contrôler plusieurs fois les mêmes caractéristiques.
+    
+    \item[5. Stocks] \hfill \\
+    Les stocks immobilisent du capital et de l'espace. Ils masquent les problèmes comme les pannes, les temps de réglage longs et les défauts de qualité.
+    
+    \item[6. Mouvements] \hfill \\
+    À ne pas confondre avec le transport. Il s'agit des déplacements des opérateurs. Une mauvaise ergonomie du poste de travail entraîne des gestes inutiles, de la fatigue et des risques d'accident.
+    
+    \item[7. Défauts (Non-qualité)] \hfill \\
+    Produire un défaut, c'est gaspiller les matières, le temps de production et les ressources pour le contrôler et le retraiter. L'objectif est le \og zéro défaut \fg.
+    
+    \item[8. Talents (Intellect)] \hfill \\
+    Ne pas exploiter les idées, la créativité et l'intelligence des employés. Les opérateurs sont les mieux placés pour identifier les problèmes sur leur poste.
+\end{description}
+
+\begin{center}
+\fcolorbox{black}{yellow!10}{
+\begin{minipage}{0.85\textwidth}
+\centering
+\textbf{À retenir :} La chasse aux gaspillages est un processus continu. L'objectif n'est pas d'atteindre le \og zéro \fg{} du jour au lendemain, mais de progresser étape par étape en impliquant toutes les équipes.
+\end{minipage}
+}
+\end{center}
+
+
+\subsection{Ce que le Lean N'est Pas (Idées Reçues)}
+
+De nombreuses idées reçues circulent autour du Lean Manufacturing, souvent à cause d'implémentations mal comprises ou mal menées. Il est essentiel de clarifier ce que le Lean n'est pas pour éviter les écueils.
+
+\subsubsection{Idée reçue n°1 : Le Lean est une méthode de réduction du personnel}
+
+\begin{center}
+\fcolorbox{red}{red!5}{
+\begin{minipage}{0.9\textwidth}
+\centering
+\textbf{FAUX.} Le Lean n'est pas un outil de compression des effectifs.
+\end{minipage}
+}
+\end{center}
+
+\begin{itemize}
+    \item \textbf{Réalité :} L'objectif du Lean est d'éliminer les gaspillages, pas les personnes. Lorsque des gains de productivité sont réalisés, le temps libéré doit être réinvesti dans des activités à valeur ajoutée : amélioration continue, maintenance préventive, formation, ou développement de nouvelles compétences.
+    \item \textbf{Conséquence d'une mauvaise compréhension :} Si le Lean est perçu comme une menace pour l'emploi, il se heurtera à une résistance farouche des équipes et échouera inévitablement.
+\end{itemize}
+
+\subsubsection{Idée reçue n°2 : Le Lean vise à faire travailler plus vite ou plus durement}
+
+\begin{center}
+\fcolorbox{red}{red!5}{
+\begin{minipage}{0.9\textwidth}
+\centering
+\textbf{FAUX.} Le Lean vise à travailler \textit{mieux} et \textit{plus intelligemment}, pas plus vite.
+\end{minipage}
+}
+\end{center}
+
+\begin{itemize}
+    \item \textbf{Réalité :} Le Lean cherche à réduire la \textit{fatigue} et les \textit{mouvements inutiles} (Muri). Un opérateur qui passe son temps à chercher des outils ou à se déplacer est moins efficace et plus fatigué. En améliorant l'ergonomie et l'organisation, on travaille dans de meilleures conditions.
+    \item \textbf{Objectif :} Supprimer les temps morts, pas accélérer les gestes.
+\end{itemize}
+
+\subsubsection{Idée reçue n°3 : Le Lean est une méthode qui bouleverse les organisations existantes}
+
+\begin{center}
+\fcolorbox{red}{red!5}{
+\begin{minipage}{0.9\textwidth}
+\centering
+\textbf{FAUX.} Le Lean est une démarche d'amélioration continue, pas une révolution brutale.
+\end{minipage}
+}
+\end{center}
+
+\begin{itemize}
+    \item \textbf{Réalité :} L'implantation du Lean se fait progressivement, par petites étapes (\textit{Kaizen}). On commence par des zones pilotes, on forme les équipes, on expérimente, on ajuste.
+    \item \textbf{Principe :} Le changement est mené \textit{avec} les équipes, pas \textit{contre} elles. L'adhésion des collaborateurs est une condition de réussite.
+\end{itemize}
+
+\subsubsection{Idée reçue n°4 : Le Lean est une recette universelle applicable en copier-coller}
+
+\begin{center}
+\fcolorbox{red}{red!5}{
+\begin{minipage}{0.9\textwidth}
+\centering
+\textbf{FAUX.} Le Lean doit être adapté à la culture et au contexte de chaque entreprise.
+\end{minipage}
+}
+\end{center}
+
+\begin{itemize}
+    \item \textbf{Réalité :} Le Système de Production Toyota est un modèle, pas un catalogue d'outils à reproduire mécaniquement. Les outils Lean (5S, Kanban, SMED) sont des \textit{moyens}, pas une fin en soi.
+    \item \textbf{Démarche :} Il faut comprendre les principes, former les équipes, puis adapter les outils à la réalité de l'entreprise (taille, secteur, culture, produits).
+\end{itemize}
+
+\subsubsection{Idée reçue n°5 : Le Lean ne s'applique qu'à la production industrielle}
+
+\begin{center}
+\fcolorbox{red}{red!5}{
+\begin{minipage}{0.9\textwidth}
+\centering
+\textbf{FAUX.} Les principes du Lean s'appliquent à tous les secteurs.
+\end{minipage}
+}
+\end{center}
+
+\begin{itemize}
+    \item \textbf{Réalité :} Le Lean est aujourd'hui déployé dans les services (banques, assurances, administrations), la santé (hôpitaux, laboratoires), le développement logiciel (Lean Software Development) et la logistique.
+    \item \textbf{Principe :} Partout où il y a des processus, des flux et des clients, il y a des gaspillages à éliminer et de la valeur à créer.
+\end{itemize}
+
+\subsubsection{Tableau récapitulatif : Ce que le Lean EST et N'EST PAS}
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{|p{5cm}|p{5cm}|}
+\hline
+\textbf{Ce que le Lean EST} & \textbf{Ce que le Lean N'EST PAS} \\
+\hline
+Une philosophie d'amélioration continue & Une méthode de réduction du personnel \\
+\hline
+Une démarche participative et responsabilisante & Un moyen de faire travailler plus vite \\
+\hline
+Une approche progressive (\textit{Kaizen}) & Une révolution brutale \\
+\hline
+Un modèle à adapter à chaque entreprise & Une recette universelle \\
+\hline
+Applicable à tous les secteurs (industrie, services, santé) & Réservé à la production industrielle \\
+\hline
+Un moyen de révéler et d'exploiter les talents & Un outil de contrôle et de surveillance \\
+\hline
+\end{tabular}
+\caption{Le Lean : réalité vs idées reçues}
+\label{tab:lean_vs_fake}
+\end{table}
+
+\begin{center}
+\fcolorbox{green}{green!5}{
+\begin{minipage}{0.9\textwidth}
+\centering
+\textbf{En résumé :} Le Lean est avant tout un état d'esprit centré sur le client, la valeur et le respect des personnes. C'est un voyage d'amélioration continue, pas une destination.
+\end{minipage}
+}
+\end{center}
+\section{Implanter le Lean - Méthodologie et Outils}
+
+\subsection{La Méthodologie de Conduite de Projet : DMAIC}
+
+Le DMAIC (Définir, Mesurer, Analyser, Innover/Améliorer, Contrôler) est une méthodologie structurée de résolution de problèmes issue du Six Sigma. Elle est largement utilisée dans les projets Lean pour guider les équipes d'amélioration de manière rigoureuse et data-driven.
+
+\begin{center}
+\fcolorbox{blue}{blue!5}{
+\begin{minipage}{0.9\textwidth}
+\centering
+\textbf{Origine :} Le DMAIC a été développé par Motorola dans les années 1980 dans le cadre du déploiement du Six Sigma. Il a ensuite été adopté par General Electric sous la direction de Jack Welch et est devenu un standard de l'industrie pour les projets d'amélioration.
+\end{minipage}
+}
+\end{center}
+
+\begin{figure}[h!]
+\centering
+\begin{tikzpicture}[node distance=1.5cm, auto, thick]
+    % Définition des styles
+    \tikzstyle{phase} = [rectangle, draw, fill=blue!20, text width=2.2cm, text centered, minimum height=1cm, rounded corners]
+    \tikzstyle{arrow} = [thick, ->, >=stealth]
+    
+    % Nœuds
+    \node (define) [phase] {Définir \\ \small Define};
+    \node (measure) [phase, right of=define, xshift=2.5cm] {Mesurer \\ \small Measure};
+    \node (analyze) [phase, right of=measure, xshift=2.5cm] {Analyser \\ \small Analyze};
+    \node (improve) [phase, right of=analyze, xshift=2.5cm] {Améliorer \\ \small Improve};
+    \node (control) [phase, right of=improve, xshift=2.5cm] {Contrôler \\ \small Control};
+    
+    % Flèches
+    \draw[arrow] (define) -- (measure);
+    \draw[arrow] (measure) -- (analyze);
+    \draw[arrow] (analyze) -- (improve);
+    \draw[arrow] (improve) -- (control);
+    \draw[arrow, bend left=30] (control) to node[above] {Amélioration continue} (define);
+    
+    % Cercle extérieur
+    \draw[thick, gray, dashed] (-1.5,-1.8) rectangle (16,1.2);
+    \node at (0.5,1.5) {\textbf{Logique DMAIC}};
+\end{tikzpicture}
+\caption{Les 5 phases de la méthodologie DMAIC avec boucle d'amélioration continue}
+\label{fig:dmaic_cycle}
+\end{figure}
+
+\subsubsection{Définir (Define)}
+
+La phase \textbf{Définir} a pour objectif de poser clairement le problème, de délimiter le périmètre du projet et d'aligner l'équipe sur des objectifs communs.
+
+\begin{description}
+    \item[Objectifs de la phase :]
+    \begin{itemize}
+        \item Identifier le processus à améliorer.
+        \item Définir les besoins et attentes des clients (Voix du Client).
+        \item Établir une charte de projet claire.
+        \item Constituer l'équipe projet et définir les rôles.
+    \end{itemize}
+    
+    \item[Outils utilisés :]
+    \begin{itemize}
+        \item \textbf{Charte de projet :} Document officiel qui définit le périmètre, les objectifs, l'équipe et les délais.
+        \item \textbf{Diagramme SIPOC :} Cartographie de haut niveau (Fournisseurs, Entrées, Processus, Sorties, Clients).
+        \item \textbf{Arbre CTQ (Critical to Quality) :} Décompose les besoins clients en exigences mesurables.
+        \item \textbf{QQOQCCP :} Méthode de questionnement pour cerner tous les aspects du problème.
+    \end{itemize}
+\end{description}
+
+\begin{center}
+\fcolorbox{green}{green!5}{
+\begin{minipage}{0.9\textwidth}
+\textbf{Exemple concret - Cas réel : Entreprise automobile (NOVARES)}
+
+\vspace{0.2cm}
+\begin{tabular}{ll}
+\textbf{Problème :} & Taux de service client en chute (47\% en février)\\
+\textbf{Périmètre :} & Processus logistique interne (réception, stockage, alimentation)\\
+\textbf{Objectif :} & Améliorer le taux de service à 98\% en 4 mois\\
+\textbf{Équipe :} & Logisticiens, responsables production, caristes
+\end{tabular}
+\end{minipage}
+}
+\end{center}
+
+\subsubsection{Mesurer (Measure)}
+
+La phase \textbf{Mesurer} consiste à collecter des données objectives pour quantifier l'état actuel du processus et établir une base de référence.
+
+\begin{description}
+    \item[Objectifs de la phase :]
+    \begin{itemize}
+        \item Collecter des données fiables sur la performance actuelle.
+        \item Identifier les indicateurs clés de performance (KPI).
+        \item Établir une ligne de base (\textit{baseline}) pour mesurer les progrès.
+        \item Vérifier la fiabilité du système de mesure.
+    \end{itemize}
+    
+    \item[Outils utilisés :]
+    \begin{itemize}
+        \item \textbf{Chrono-analyse :} Mesure des temps opératoires avec jugement d'allure.
+        \item \textbf{Cartographie VSM (Value Stream Mapping) :} Visualisation de l'état actuel du flux.
+        \item \textbf{TRS (Taux de Rendement Synthétique) :} Indicateur global de performance des équipements.
+        \item \textbf{Diagramme de Pareto :} Identification des problèmes les plus fréquents.
+    \end{itemize}
+\end{description}
+
+\begin{center}
+\fcolorbox{blue}{blue!5}{
+\begin{minipage}{0.9\textwidth}
+\centering
+\textbf{Remarque méthodologique :} \\
+\og Ce que l'on ne mesure pas, on ne le connaît pas. Ce que l'on ne connaît pas, on ne peut pas le maîtriser. Ce que l'on ne maîtrise pas, on ne peut pas l'améliorer. \fg
+\end{minipage}
+}
+\end{center}
+
+\subsubsection{Analyser (Analyze)}
+
+La phase \textbf{Analyser} vise à identifier les causes racines des problèmes identifiés lors de la phase de mesure.
+
+\begin{description}
+    \item[Objectifs de la phase :]
+    \begin{itemize}
+        \item Identifier les causes profondes des dysfonctionnements.
+        \item Distinguer les causes des symptômes.
+        \item Valider les hypothèses par des données.
+        \item Prioriser les actions correctives.
+    \end{itemize}
+    
+    \item[Outils utilisés :]
+    \begin{itemize}
+        \item \textbf{Diagramme d'Ishikawa (5M) :} Analyse des causes par catégories (Matière, Matériel, Main-d'œuvre, Méthode, Milieu).
+        \item \textbf{Méthode des 5 Pourquoi :} Technique itérative pour remonter à la cause racine.
+        \item \textbf{Analyse Pareto :} Hiérarchisation des causes selon leur impact.
+        \item \textbf{Analyse des flux (Diagramme Spaghetti) :} Visualisation des déplacements.
+    \end{itemize}
+\end{description}
+
+\begin{center}
+\fcolorbox{orange}{orange!5}{
+\begin{minipage}{0.9\textwidth}
+\textbf{Cas réel - Analyse chez NOVARES :}
+\begin{itemize}
+    \item \textbf{Problème :} Temps d'arrêt logistique de 300h/mois
+    \item \textbf{5 Pourquoi :}
+    \begin{enumerate}
+        \item Pourquoi ? Manque de matière sur les lignes.
+        \item Pourquoi ? Alimentation non fiable.
+        \item Pourquoi ? Un seul distributeur pour toute la zone 1.
+        \item Pourquoi ? Charge de travail = 15h54 pour 7h35 disponibles.
+        \item Pourquoi ? Calcul du nombre optimal = 2 distributeurs nécessaires.
+    \end{enumerate}
+    \item \textbf{Cause racine :} Nombre de distributeurs insuffisant et mouvements inutiles (14 km/shift).
+\end{itemize}
+\end{minipage}
+}
+\end{center}
+
+\subsubsection{Innover / Améliorer (Improve)}
+
+La phase \textbf{Améliorer} consiste à générer, sélectionner et mettre en œuvre des solutions pour éliminer les causes racines.
+
+\begin{description}
+    \item[Objectifs de la phase :]
+    \begin{itemize}
+        \item Générer des solutions créatives.
+        \item Évaluer et sélectionner les meilleures solutions.
+        \item Mettre en œuvre les actions d'amélioration.
+        \item Tester et valider les solutions.
+    \end{itemize}
+    
+    \item[Outils utilisés :]
+    \begin{itemize}
+        \item \textbf{Brainstorming :} Génération d'idées en groupe.
+        \item \textbf{SMED :} Réduction des temps de changement de série.
+        \item \textbf{5S :} Organisation et standardisation des postes.
+        \item \textbf{Kanban :} Mise en place de flux tirés.
+        \item \textbf{Poka-Yoke :} Dispositifs anti-erreurs.
+    \end{itemize}
+\end{description}
+
+\begin{center}
+\fcolorbox{green}{green!5}{
+\begin{minipage}{0.9\textwidth}
+\textbf{Cas réel - Solutions apportées chez NOVARES :}
+\begin{itemize}
+    \item Standardisation du travail des distributeurs (chariots avec bacs étiquetés).
+    \item Réorganisation du magasin de stockage (adressage des références).
+    \item Implantation de conteneurs maritimes pour stockage extérieur.
+    \item Création d'une base de données des colisages pour la réservation transport.
+    \item Planning des arrivages pour maîtriser les réceptions.
+\end{itemize}
+\vspace{0.2cm}
+\textbf{Résultats :} Réduction du temps d'arrêt logistique de 300h à 120h/mois (gain estimé : 684 000 DH/mois).
+\end{minipage}
+}
+\end{center}
+
+\subsubsection{Contrôler (Control)}
+
+La phase \textbf{Contrôler} vise à pérenniser les gains et à assurer que les améliorations se maintiennent dans le temps.
+
+\begin{description}
+    \item[Objectifs de la phase :]
+    \begin{itemize}
+        \item Standardiser les nouvelles méthodes de travail.
+        \item Mettre en place des indicateurs de suivi.
+        \item Former le personnel aux nouvelles pratiques.
+        \item Établir un plan de contrôle et d'audit.
+    \end{itemize}
+    
+    \item[Outils utilisés :]
+    \begin{itemize}
+        \item \textbf{Tableaux de bord :} Suivi visuel des indicateurs de performance.
+        \item \textbf{Procédures standardisées :} Documentation des nouvelles méthodes.
+        \item \textbf{Audits 5S :} Évaluation périodique de l'application des standards.
+        \item \textbf{Cartes de contrôle :} Surveillance statistique des processus.
+    \end{itemize}
+\end{description}
+
+\begin{center}
+\fcolorbox{red}{red!5}{
+\begin{minipage}{0.9\textwidth}
+\centering
+\textbf{Remarque importante :} \\
+\og La phase Contrôler est souvent négligée, ce qui conduit à un retour à l'ancien état après quelques mois. Sans standardisation et suivi, les améliorations ne sont pas pérennes. \fg
+\end{minipage}
+}
+\end{center}
+
+\subsubsection{Exemple Synthétique : Application du DMAIC en Laboratoire}
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{|p{2cm}|p{4cm}|p{4.5cm}|p{3cm}|}
+\hline
+\textbf{Phase} & \textbf{Objectif} & \textbf{Outils utilisés} & \textbf{Livrables} \\
+\hline
+Définir & Réduire les temps d'attente en laboratoire & SIPOC, QQOQCCP & Charte de projet \\
+\hline
+Mesurer & Quantifier les temps d'attente & Chrono-analyse, VSM & Temps moyens mesurés \\
+\hline
+Analyser & Identifier les causes d'attente & Ishikawa, Pareto & Causes racines identifiées \\
+\hline
+Améliorer & Optimiser les flux et l'implantation & 5S, Spaghetti & Nouvelle implantation \\
+\hline
+Contrôler & Suivre la performance & Tableau de bord, Audits & KPI suivis mensuellement \\
+\hline
+\end{tabular}
+\caption{Application synthétique du DMAIC en laboratoire d'analyses}
+\label{tab:dmaic_labo}
+\end{table}
+
+\begin{center}
+\fcolorbox{blue}{blue!5}{
+\begin{minipage}{0.9\textwidth}
+\textbf{Références :}
+\begin{itemize}
+    \item Womack, J., Jones, D. (2009). \textit{Système Lean : penser l'entreprise au plus juste}. Pearson.
+    \item Hohmann, C. \textit{DMAIC - Démarche d'amélioration}. Disponible sur : christian.hohmann.free.fr
+    \item Pillet, M. (2003). \textit{Appliquer Six Sigma}. Éditions d'Organisation.
+\end{itemize}
+\end{minipage}
+}
+\end{center}
+
+\vspace{0.5cm}
+\begin{center}
+\fcolorbox{blue}{blue!5}{
+\begin{minipage}{0.9\textwidth}
+\centering
+\textbf{À retenir :} Le DMAIC n'est pas une simple procédure administrative, c'est un véritable \textit{état d'esprit} qui guide l'équipe vers des solutions fondées sur des faits, et non sur des opinions.
+\end{minipage}
+}
+\end{center}
+\end{document}
