@@ -1,14 +1,13 @@
-credentials:
+﻿credentials:
   usernames:
     admin:
-      email: admin@gmail.com
-      name: Administrateur
-      password: abc123
+      email: "admin@gmail.com"
+      name: "Administrateur"
+      password: "abc123"
 cookie:
   expiry_days: 30
-  key: some_signature_key
-  name: some_cookie_name
+  key: "signature_unique_123"
+  name: "auth_cookie"
 preauthorized:
   emails:
-    - admin@gmail.com
-    
+    - "admin@gmail.com"
