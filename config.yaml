@@ -1,10 +1,14 @@
 credentials:
   usernames:
     admin:
-      email: admin@email.com
-      name: "Ton Nom"
-      password: "$2b$12$76p/re/F.u2hRTPy6X.Snu6kU.Fsh2l8MskGkK/k0hZ8U9y8B5XUe"
+      email: admin@gmail.com
+      name: Administrateur
+      password: abc123
 cookie:
   expiry_days: 30
-  key: "cle_secrete_123"
-  name: "productivite_cookie"
+  key: some_signature_key
+  name: some_cookie_name
+preauthorized:
+  emails:
+    - admin@gmail.com
+    
