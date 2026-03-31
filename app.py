@@ -32,57 +32,51 @@ if st.session_state["authentication_status"]:
     
     st.title("🚀 Mon Organisateur Expert")
 
-    # --- SECTION 1 : AJOUT DE TÂCHE ---
+    # --- ÉTAPE 1 : CHARGEMENT PRIORITAIRE ---
+    # On définit df ici pour qu'il soit disponible partout en dessous
+    try:
+        df = pd.read_csv('base_expert.csv')
+    except Exception:
+        # Si le fichier n'existe pas encore, on crée une structure vide
+        df = pd.DataFrame(columns=["Tâche", "Date", "Durée (min)", "Catégorie", "Priorité", "Statut"])
+
+    # --- ÉTAPE 2 : FORMULAIRE D'AJOUT ---
     with st.expander("➕ Ajouter une nouvelle tâche", expanded=False):
         with st.form("form_tache"):
-            col1, col2 = st.columns(2)
-            with col1:
-                nouvelle_tache = st.text_input("Nom de la tâche")
-                date_tache = st.date_input("Date")
-            with col2:
-                duree = st.number_input("Durée estimée (min)", min_value=15, step=15)
-                priorite = st.selectbox("Priorité", ["Basse", "Normale", "Haute"])
+            c1, c2 = st.columns(2)
+            with c1:
+                nouvelle_tache = st.text_input("Quelle est la tâche ?")
+                date_tache = st.date_input("Pour quand ?")
+            with c2:
+                duree = st.number_input("Durée (min)", min_value=15, step=15)
+                priorite = st.selectbox("Importance", ["Basse", "Normale", "Haute"])
             
-            submit = st.form_submit_button("Enregistrer la tâche")
+            submit = st.form_submit_button("Ajouter à mon planning")
             
             if submit and nouvelle_tache:
-                # Création de la nouvelle ligne
                 nouvelle_ligne = pd.DataFrame([{
-                    "Tâche": nouvelle_tache, "Date": str(date_tache), 
-                    "Durée (min)": duree, "Catégorie": "Travail", 
-                    "Priorité": priorite, "Statut": "À faire"
+                    "Tâche": nouvelle_tache, 
+                    "Date": str(date_tache), 
+                    "Durée (min)": duree, 
+                    "Catégorie": "Révision", 
+                    "Priorité": priorite, 
+                    "Statut": "À faire"
                 }])
-                # Sauvegarde réelle dans le fichier CSV
+                # Maintenant df existe forcément, donc plus d'erreur NameError !
                 df = pd.concat([df, nouvelle_ligne], ignore_index=True)
                 df.to_csv('base_expert.csv', index=False)
-                st.success("Tâche ajoutée avec succès !")
+                st.success("Tâche enregistrée !")
+                st.rerun()
 
-    # --- SECTION 2 : TABLEAU DE BORD ---
-    # Calcul des statistiques pour l'intérêt de l'organisation
-    total_taches = len(df)
-    taches_faites = len(df[df['Statut'] == 'Terminé'])
-    
-    c1, c2, c3 = st.columns(3)
-    c1.metric("Total Tâches", total_taches)
-    c2.metric("Terminées", taches_faites)
-    c3.metric("Temps total (min)", df['Durée (min)'].sum())
-
+    # --- ÉTAPE 3 : TABLEAU DE BORD ---
     st.divider()
+    col_a, col_b, col_c = st.columns(3)
+    col_a.metric("Tâches totales", len(df))
+    col_b.metric("Temps requis", f"{df['Durée (min)'].sum()} min")
+    col_c.metric("Priorités Hautes", len(df[df['Priorité'] == 'Haute']) if 'Priorité' in df.columns else 0)
 
-    # Affichage du tableau interactif
-    st.subheader("📋 Liste de mes priorités")
+    st.subheader("📋 Ma liste de travail")
     st.dataframe(df, use_container_width=True)
-    
-    # Filtres simples
-    st.subheader("Vos Tâches")
-    status_filter = st.multiselect("Filtrer par Statut", options=df['Statut'].unique(), default=df['Statut'].unique())
-    
-    filtered_df = df[df['Statut'].isin(status_filter)]
-    st.dataframe(filtered_df, use_container_width=True)
-    
-    # Graphique
-    st.subheader("Répartition par Catégorie")
-    st.bar_chart(df['Catégorie'].value_counts())
 
 elif st.session_state["authentication_status"] is False:
     st.error('Utilisateur ou mot de passe incorrect.')
